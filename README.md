@@ -123,14 +123,16 @@ cons:
 *	some elements kind of sound the same, clearer titling or perhaps mergaing sections would be more ideal.
 *	Fix imagery
 
-## Target Demographics
+## Strategy Plane
+
+### Target Demographics
 Talking with the client the, the target Demographic/s for this business are:
 * Small independent Businesses
 * Personal Trainers
 * Sports oriented therapists
 * semi-professional Athletes
 
-## User Goals
+### User Goals
 
 ### **Small Independent Businesses**
 * _As a small business owner, I need to create some short instructional videos for our new staff in regard to some of our internal work systems_
@@ -148,6 +150,70 @@ Talking with the client the, the target Demographic/s for this business are:
 ### **Semi-Professional Athletes**
 * _As a Semi-professional Athelete, I want to document a trial or challenge that I am training for, which I can then publish or blog about._
 
+#### Based on the User Goals, this website needs to achieve the following:
+* Demonstrate what this company does
+* Showcase skills and portfolio of the company
+* Show Pricing of different types of projects and packages
+* answer any initial queries about creating such projects with the company
+* Get in touch with the company to start a dialogue
+
+#### Based on the stakeholder goals, this website needs to achieve the following:
+* inspire site visitors to contact the company
+* answer any frequently asked questions prior to contacting
+* Showcase previous work with partners and affiliates
+* Link to existing partners to show ongiong healthy business relationships
+
+## Scope Plane
+
+Using goals discerned int he strategy plane, site features have been categorised into _Content_ and _Functional_ requirements:
+**Content Requirements**
+* Portfolio of existing content
+* FAQ
+* Pricelist
+* Contact Form
+* Links to affiliates
+**Functional Requirements**
+* Straightforward navigation
+* linear narrative that leads to starting a dialogue
+* concise information
+* Immediate demonstration of value
+
+## Structure Plane
+
+Given the Above information. Site structure was created with the focus of immediate demonstration of product value, which then leads to a point of contact, with an FAQ and Project Library supplementing the main page:
+Site structure created in [Balsamiq](https://balsamiq.com/)
+
+![Sitemap](assets/images/readme/site-map.png "Sitemap")
+
+## Skeleton Plane
+
+Wireframes for the site were created in [Balsamiq](https://balsamiq.com/). Given that the company has high face-to-face interaction with potential clients on a daly basis, a mobile-first approach was adopted:
+
+_smartphone wireframes_
+![Smartphone Wireframes](assets/images/readme/wireframe-smaller-smartphones-iphone-se.png "Smartphone Wireframes")
+
+_Tablet Wireframes_
+![Tablet Wireframes](assets/images/readme/wireframe-tablet-ipad-mini-scale.png "Tablet Wireframes")
+
+_Desktop/Laptop Wireframes_
+![Desktop and Latptop Wireframes](assets/images/readme/wireframe-desktop-laptop-16x9.png "Desktop and Latptop Wireframes")
+
+## Design
+
+### Colors
+![Original Ronin Logo](assets/images/readme/old-ronin-logo.png "Original Ronin Logo")
+
+The client's Original Logo was taken as inspiration to create a color palette for the site. the image was ran through [Colorimind.io](http://colormind.io/) to create a color palette
+
+![Colormind Palette](assets/images/readme/colormind-palette.png "Colormind Palette")
+
+### typography
+
+Taking the old Logo as a reference, Fonts were sampled from [Google fonts](https://fonts.google.com/) and new logo samples were created from the selected fonts. As the Original Logo fonts had specific rights reserved by the author, they could not be embedded within a website.
+
+![Font samples](assets/images/readme/ronin-logo-swatch.png "Font Samples")
+
+### Imagery
 
 # FEATURES
 
