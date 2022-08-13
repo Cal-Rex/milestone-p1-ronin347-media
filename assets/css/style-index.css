@@ -6,9 +6,13 @@
     border: none;
 }
 
-h1 {font-family: 'teko', impact, sans-serif;}
+h1 {
+    font-family: 'teko', impact, sans-serif;
+}
 
-body {font-family: 'Michroma', 'roboto', sans-serif;}
+body {
+    font-family: 'Michroma', 'roboto', sans-serif;
+}
 
 /* header and logo  */
 
@@ -18,7 +22,7 @@ header {
 
 #logo-container {
     margin: 10px auto;
-    color: #070505; 
+    color: #070505;
     width: 230px;
     height: 115px;
     text-transform: uppercase;
@@ -51,7 +55,7 @@ header {
     font-size: 74px;
     position: absolute;
     top: 5px;
-    left: 80px; 
+    left: 80px;
     z-index: 1;
 }
 
@@ -66,7 +70,9 @@ header {
 
 /* navigation */
 
-nav {margin: 20px 10%;}
+nav {
+    margin: 20px 10%;
+}
 
 
 #navigation {
@@ -80,9 +86,9 @@ nav {margin: 20px 10%;}
     position: relative;
     padding: 20px;
     z-index: 2;
-  }
+}
 
-  #navigation a {
+#navigation a {
     text-decoration: none;
     color: #070505;
     text-transform: uppercase;
@@ -92,7 +98,25 @@ nav {margin: 20px 10%;}
     letter-spacing: 4px;
     position: relative;
     z-index: 3;
-  }
+}
+
+#nav-hover-home {
+    font-family: 'Comforter', cursive;
+    font-weight: 500;
+    font-size: 5rem;
+    color: white;
+    position: absolute;
+    bottom: -25px;
+    left: 5px;
+}
+
+#navigation a:hover {
+    border-bottom: 2px solid #db0a0b;
+}
+
+#navigation a:hover + #nav-hover-home {
+    color: #db0a0b;
+}
 
 /* hero image  */
 
@@ -103,11 +127,10 @@ nav {margin: 20px 10%;}
     overflow: hidden;
 }
 
-#hero-project { 
+#hero-project {
     overflow: hidden;
-  /* 16:9 aspect ratio */
-  padding-top: 56.25%;
-  position: relative;
+    padding-top: 56.25%;
+    position: relative;
 
 }
 
@@ -118,7 +141,7 @@ nav {margin: 20px 10%;}
     position: absolute;
     top: 0;
     width: 100%;
-  }
+}
 
 #hero-call-box {
     position: absolute;
