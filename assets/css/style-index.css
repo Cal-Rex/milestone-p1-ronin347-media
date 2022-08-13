@@ -6,6 +6,10 @@
     border: none;
 }
 
+h1 {font-family: 'teko', impact, sans-serif;}
+
+body {font-family: 'Michroma', 'roboto', sans-serif;}
+
 /* header and logo  */
 
 header {
@@ -14,6 +18,7 @@ header {
 
 #logo-container {
     margin: 10px auto;
+    color: #070505; 
     width: 230px;
     height: 115px;
     text-transform: uppercase;
@@ -71,6 +76,24 @@ nav {margin: 20px 10%;}
     justify-content: space-between;
 }
 
+#navigation li {
+    position: relative;
+    padding: 20px;
+    z-index: 2;
+  }
+
+  #navigation a {
+    text-decoration: none;
+    color: #070505;
+    text-transform: uppercase;
+    font-family: 'Michroma', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    position: relative;
+    z-index: 3;
+  }
+
 /* hero image  */
 
 #hero-container {
@@ -81,10 +104,21 @@ nav {margin: 20px 10%;}
 }
 
 #hero-project { 
-    width: 100%;
-    height: 600px;
-    background-color: blue;
+    overflow: hidden;
+  /* 16:9 aspect ratio */
+  padding-top: 56.25%;
+  position: relative;
+
 }
+
+#hero-project video {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
 
 #hero-call-box {
     position: absolute;
