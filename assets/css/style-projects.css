@@ -175,3 +175,87 @@ nav {
     text-shadow: 1px 1px #000000;
     margin-bottom: 75px;
   }
+
+  /* footer */
+
+#social-footer {
+    margin-top: 5%;
+    width: 100%;
+    height: 200px;
+    background-color: #070505;
+    color:#f8f8f7;
+    position: relative;
+}
+
+.social-buttons {
+    text-align: center;
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+}
+
+.social-buttons li {
+    margin: 15px 15%;
+    list-style-type: none;
+}
+
+.social-buttons i {
+    font-size: 300%;
+    padding: 5%;
+    margin: 1%;
+}
+
+#social {
+    float: left;
+    width: 66%;
+    padding-top: 30px;
+}
+
+#social h2 {
+    text-align: center;
+    font-size: 80%;
+}
+
+#twitter {
+    color: #f8f8f7;
+}
+
+#twitter i:hover {
+    color: rgb(29, 155, 240);
+}
+
+#youtube {
+    color: #f8f8f7;
+}
+
+#youtube i:hover {
+    color: #c00;
+}
+
+#instagram {
+    color: #f8f8f7;
+}
+
+#instagram i:hover {
+    color: peachpuff;
+}
+#company-address {
+    float: right;
+    margin: 20px 40px;
+    text-align: right;
+    font-size: 1.25em;
+}
+
+#cal-rex-git {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 5px;
+}
+
+#copyright {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 5px;
+}
