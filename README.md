@@ -221,6 +221,7 @@ Taking the old Logo as a reference, Fonts were sampled from [Google fonts](https
 * navigation buttons not responding to hover
 * Main page video hero image not fitting in container
   * fixed with 3rd party code benmarshall.me
+* text shrinking to too small when viewport changes size
 
 # TECHNOLOGIES
 
