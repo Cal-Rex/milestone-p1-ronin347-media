@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Montserrat&family=Archivo+Black&family=Archivo+Narrow:wght@700&family=Caveat:wght@700&family=Comforter&family=Hammersmith+One&family=Homemade+Apple&family=Josefin+Sans:wght@200&family=Jost&family=Kanit:wght@700&family=Lexend+Exa:wght@900&family=Libre+Barcode+39+Text&family=Marcellus&family=Merienda:wght@700&family=Michroma&family=Monda&family=Montserrat+Subrayada:wght@700&family=Mr+Dafoe&family=Orbitron&family=Oxanium:wght@200;800&family=Quantico:wght@700&family=Rock+Salt&family=Russo+One&family=Splash&family=Teko:wght@700&family=Water+Brush&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+h1 {
+    font-family: 'teko', impact, sans-serif;
+}
+
+h2 {
+    font-family: 'Michroma', sans-serif;
+    letter-spacing: 4px;
+}
+
+body {
+    font-family: 'Monsterrat', 'roboto', sans-serif;
+}
+
+/* header and logo  */
+
+header {
+    width: 100%
+}
+
+#logo-container {
+    margin: 10px auto;
+    color: #070505;
+    width: 230px;
+    height: 115px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+
+#logo-r {
+    font-family: 'Russo One', sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    position: relative;
+    top: 15px;
+    z-index: 3;
+}
+
+#logo-o {
+    font-family: 'Comforter', cursive;
+    font-weight: 500;
+    font-size: 108px;
+    position: absolute;
+    left: 19px;
+    top: -20px;
+    z-index: 2;
+    color: #db0a0b
+}
+
+#logo-nin {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 74px;
+    position: absolute;
+    top: 5px;
+    left: 80px;
+    z-index: 1;
+}
+
+#logo-347 {
+    font-family: 'Mr Dafoe', cursive;
+    position: absolute;
+    right: 45px;
+    top: 42px;
+    font-size: 57.6px;
+    color: #db0a0b;
+}
+
+/* navigation */
+
+nav {
+    margin: 20px 10%;
+}
+
+
+#navigation {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#navigation li {
+    position: relative;
+    padding: 20px;
+    z-index: 2;
+}
+
+#navigation a {
+    text-decoration: none;
+    color: #070505;
+    text-transform: uppercase;
+    font-family: 'Michroma', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    position: relative;
+    z-index: 3;
+}
+
+#nav-hover-home {
+    font-family: 'Comforter', cursive;
+    font-weight: 500;
+    font-size: 5rem;
+    color: white;
+    position: absolute;
+    bottom: -25px;
+    left: 5px;
+}
+
+#navigation a:hover {
+    border-bottom: 2px solid #db0a0b;
+}
+
+#navigation a:hover+#nav-hover-home {
+    color: #db0a0b;
+}
+
+/* faq accordion */
+
+#faq {
+    width: 100%;
+    padding: 10%;
+}
+
+#faq-accordion {
+    width: 75vw;
+}
+
+details {
+    border: 1px solid #070505;
+    padding: 2%;
+}
+
+summary {
+    font-family: 'Michroma', sans-serif;
+    letter-spacing: 4px;
+    font-size: 1.5em;
+}
+
