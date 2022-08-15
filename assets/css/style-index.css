@@ -35,42 +35,22 @@ header {
     overflow: hidden;
 }
 
-#logo-r {
-    font-family: 'Russo One', sans-serif;
-    font-weight: 700;
-    font-size: 72px;
-    position: relative;
-    top: 15px;
-    z-index: 3;
-}
-
-#logo-o {
-    font-family: 'Comforter', cursive;
-    font-weight: 500;
-    font-size: 108px;
-    position: absolute;
-    left: 19px;
-    top: -20px;
-    z-index: 2;
-    color: #db0a0b
-}
-
-#logo-nin {
-    font-family: 'Archivo Black', sans-serif;
+#logo-ronin {
+    font-family: 'Teko', sans-serif;
     font-size: 74px;
     position: absolute;
     top: 5px;
-    left: 80px;
     z-index: 1;
 }
 
 #logo-347 {
     font-family: 'Mr Dafoe', cursive;
     position: absolute;
-    right: 45px;
-    top: 42px;
-    font-size: 57.6px;
+    right: 57px;
+    top: 47px;
+    font-size: 50px;
     color: #db0a0b;
+    z-index: 2;
 }
 
 /* navigation */
