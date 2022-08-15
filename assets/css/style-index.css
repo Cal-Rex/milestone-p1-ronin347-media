@@ -32,6 +32,7 @@ header {
     color: #f8f8f7;
     width: 230px;
     height: 115px;
+    text-align: center;
     text-transform: uppercase;
     position: relative;
     overflow: hidden;
@@ -40,16 +41,16 @@ header {
 #logo-ronin {
     font-family: 'Teko', sans-serif;
     font-size: 74px;
-    position: absolute;
-    top: 5px;
+    position: relative;
+    letter-spacing: 2px;
     z-index: 1;
 }
 
 #logo-347 {
     font-family: 'Mr Dafoe', cursive;
     position: absolute;
-    right: 57px;
-    top: 47px;
+    right: 23px;
+    top: 58px;
     font-size: 50px;
     color: #db0a0b;
     z-index: 2;
@@ -58,33 +59,58 @@ header {
 /* navigation */
 
 nav {
-    margin: 20px 10%;
+    margin: 20px 0;
+    width: 100%;
+    height: 100px;
+    background-color: #070505;
 }
 
 
-#navigation {
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.navigation {
+    width: 50%;
+    display: grid;
+    grid-template-rows: 50% 50%;
 }
 
-#navigation li {
-    position: relative;
-    padding: 20px;
-    z-index: 2;
+#navigation-1 {
+    float: left;
 }
 
-#navigation a {
+#navigation-2 {
+    float: right;
+}
+
+.navigation div {
+    width: 100%;
+    text-align: center;
+}
+
+.navigation a {
     text-decoration: none;
-    color: #070505;
-    text-transform: uppercase;
-    font-family: 'Michroma', sans-serif;
+    padding: 10px;
+    color: #f8f8f7;
+    /* text-transform: uppercase; */
+    font-family: 'teko', sans-serif;
     font-weight: 700;
-    font-size: 1.5rem;
-    letter-spacing: 4px;
+    font-size: 2rem;
+    letter-spacing: 6px;
     position: relative;
     z-index: 3;
+    background-color: black;
+}
+
+#navigation-1 a {
+    background-color: black;
+    background: linear-gradient(to left, black 50%, #f8f8f7 50%) right;
+    background-size: 200%;
+    transition: .5s cubic-bezier(1,0,0.2,1);
+}
+
+#navigation-2 a {
+    background-color: black;
+    background: linear-gradient(to right, black 50%, #f8f8f7 50%) left;
+    background-size: 200%;
+    transition: .5s cubic-bezier(1,0,0.2,1);
 }
 
 #nav-hover-home {
@@ -97,8 +123,16 @@ nav {
     left: 5px;
 }
 
-#navigation a:hover {
-    border-bottom: 2px solid #db0a0b;
+.navigation a:hover {
+    color: #db0a0b;
+}
+
+#navigation-1 a:hover {
+    background-position: left;
+}
+
+#navigation-2 a:hover {
+    background-position: right;
 }
 
 #navigation a:hover+#nav-hover-home {
@@ -110,9 +144,17 @@ nav {
     height: 200px;
     background: url(../images/index/ink-partition-4.png) no-repeat center center;
     position: absolute;
-    top: 100px;
+    top: 200px;
     z-index: 1;
 }
+
+/* navigation animations */
+
+/* @keyframes nav-hover {
+    from {background-color: black;}
+    to {background-color: #f8f8f7;}
+ } */
+
 /* hero image  */
 
 #hero-container {
