@@ -1,0 +1,23 @@
+/* Media queries */
+
+/* screens less than 1300px width */
+@media screen and (max-width: 1300px){ 
+    #hero-project {
+        padding-top: 0;
+    }
+    
+    #hero-project video {
+        position: relative;
+        width: 1300px;
+    }
+}
+
+/* media queries for irregular height screens */
+/* surface pro 7 screens  */
+
+@media screen and (max-height: 1368px) and (max-width: 912px){ 
+    #hero-project video {
+        position: relative;
+        width: 2432px;
+    }
+}

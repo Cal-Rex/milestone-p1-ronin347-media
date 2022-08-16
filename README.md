@@ -222,6 +222,10 @@ Taking the old Logo as a reference, Fonts were sampled from [Google fonts](https
 * Main page video hero image not fitting in container
   * fixed with 3rd party code benmarshall.me
 * text shrinking to too small when viewport changes size
+* hero video not adapting to smaller screen sizes
+* navigation button on smaller screens has an unwanted line solid white line that appears
+  * fixed by adding positioning media query in navigation class
+* media queries for screen widths of 800px~ not working
 
 # TECHNOLOGIES
 
