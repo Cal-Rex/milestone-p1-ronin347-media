@@ -419,7 +419,7 @@ nav {
     
     #hero-project video {
         position: relative;
-        width: 1300px;
+        width: 1422px;
     }
 }
 
@@ -456,6 +456,7 @@ nav {
     }
 }
 
+
 /* ipad air */
 @media screen and (min-height: 1180px) and (max-width: 820px){ 
     #hero-project video {
@@ -474,11 +475,11 @@ nav {
     }
 }
 
-/* galaxy a51/71 */
-@media screen and (min-height: 914px) and (max-width: 412px){ 
+/* galaxy a51/71 | iphone xr + 12pro | pixel 5 | Galaxy s20 ultra*/
+@media screen and (max-height: 916px) and (max-width: 500px) { 
     #hero-project video {
         position: relative;
-        width: 1624px;
+        width: 1630px;
         left: -541px;
     }
 }
