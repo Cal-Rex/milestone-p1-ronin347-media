@@ -219,17 +219,21 @@ Taking the old Logo as a reference, Fonts were sampled from [Google fonts](https
 
 # BUGS
 * navigation buttons not responding to hover
+  * error in code targeting wrong element
 * Main page video hero image not fitting in container
   * fixed with 3rd party code benmarshall.me
 * text shrinking to too small when viewport changes size
 * hero video not adapting to smaller screen sizes
+  * resolved by adjusting with media queries
 * navigation button on smaller screens has an unwanted line solid white line that appears
   * fixed by adding positioning media query in navigation class
 * media queries for screen widths of 800px~ not working
   * resolved by identifying conflict in pre-existing media queries
-* about-bg animation frame kittery and not static on resolutions narrower than 1000px
+* about-bg animation frame jittery and not static on resolutions narrower than 1000px
   * vertical edges hidden with ink partition design
-  *  
+  * black background added to smaller resolutions to hide jittery horizontal borders on animation
+
+
 
 # TECHNOLOGIES
 

@@ -17,6 +17,10 @@ h2 {
 
 body {
     font-family: 'Monsterrat', 'roboto', sans-serif;
+    color: #f8f8f7;
+    text-shadow: 1px 1px #000000;
+    background-color: #000000;
+    font-size: 1.25em;
 }
 
 /* header and logo  */
@@ -89,6 +93,7 @@ nav {
     text-decoration: none;
     padding: 10px;
     color: #f8f8f7;
+    text-shadow: none;
     text-transform: uppercase;
     font-family: 'Marcellus', serif;
     font-weight: 700;
@@ -260,24 +265,23 @@ right: 10%;
 #about-text {
     position: absolute;
     top: 100px;
-    color: #f8f8f7;
-    text-shadow: 1px 1px #000000;
     width: 90%;
-    font-size: 1.25em;
     Margin: 0 auto;
     padding: 10px 5% 10px 5%;
     z-index: 4;
 }
 
 /* call to action secton */
+#call-to-action-container {
+    margin-top: 520px;
+}
 
 #call-to-actions {
     width: 50%;
     margin: 5% auto;
-    font-size: 1.2em;
 }
 
-#call-to-actions>h2 {
+#call-to-actions > h2 {
     text-align: center;
     margin-bottom: 0.5em;
 }
@@ -457,11 +461,11 @@ right: 10%;
         height: 500px;
         margin: 0 5%;
         float: right;
+        top: 20%;
     }
 
     #about-image-shade {
        visibility: hidden;
-
     }
 
     #about-image {
@@ -469,21 +473,17 @@ right: 10%;
         top: 0;
         height: 100%;
     }
-    /* #about-text-container {
-        width: 50%;
-    } */
     
     #about-text {
-        position: absolute;
-        top: 100px;
-        color: #f8f8f7;
         width: 40%;
         font-size: 1em;
         Margin: 0 5%;
-        padding: 10px 5% 10px 5%;
-        z-index: 4;
     }
-    
+
+
+    #call-to-action-container {
+        margin-top: 220px;
+    }
 }
 
 
