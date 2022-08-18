@@ -21,3 +21,137 @@
         width: 2432px;
     }
 }
+
+
+/* form */
+
+#contact-container {
+    width: 100%;
+    height: 650px;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+}
+
+#ink-partition-contact {
+    top: -100px;
+    z-index: 3;
+}
+
+#contact-bg {
+    background: url(../images/index/contact-bg.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+}
+
+.contact-form {
+    margin-top: 60px;
+    color: #f8f8f7;
+    background-color: rgba(34, 32, 32, 0.6);
+    position: absolute;
+    width: 100%;
+}
+
+.contact-form > h2 {
+    color: #f8f8f7;
+    padding-bottom: 0.5em;
+}
+
+.form-text {
+    background: transparent;
+    color: #f8f8f7;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #f8f8f7;
+    border-radius: 2px;
+}
+
+.form-text:focus {
+    outline: 2px solid #db0a0b !important;
+    border: 1px solid rgba(0, 0, 0, 0) !important;
+    padding-left: 0.2em;
+}
+
+.form-note {
+    min-width: 300px;
+    min-height: 150px;
+}
+
+.submit-contact {
+    float: right;
+    font-family: 'Michroma', sans-serif;
+    color:#f8f8f7;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #f8f8f7;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.submit-contact:hover {
+    background-color: #f8f8f7;
+    color: #070505;
+}
+
+ /* form media query */
+ #ink-partition-contact {
+    visibility: hidden;
+}
+#contact-container {
+    width: 95%;
+    top: 50px;
+    overflow: hidden;
+}
+.contact-form {
+    margin-top: 60px;
+    color: #f8f8f7;
+    background-color: rgba(34, 32, 32, 0.6);
+    position: absolute;
+    left: 10%;
+    max-width: 450px;
+    padding: 30px;
+}
+
+.contact-form > h2 {
+    color: #f8f8f7;
+    padding-bottom: 0.5em;
+}
+
+.form-text {
+    background: transparent;
+    color: #f8f8f7;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #f8f8f7;
+    border-radius: 2px;
+}
+
+.form-text:focus {
+    outline: 2px solid #db0a0b !important;
+    border: 1px solid rgba(0, 0, 0, 0) !important;
+    padding-left: 0.2em;
+}
+
+.form-note {
+    min-width: 300px;
+    min-height: 150px;
+}
+
+.submit-contact {
+    float: right;
+    font-family: 'Michroma', sans-serif;
+    color:#f8f8f7;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #f8f8f7;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.submit-contact:hover {
+    background-color: #f8f8f7;
+    color: #070505;
+}
+}
