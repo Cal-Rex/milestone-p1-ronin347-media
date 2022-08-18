@@ -226,6 +226,10 @@ Taking the old Logo as a reference, Fonts were sampled from [Google fonts](https
 * navigation button on smaller screens has an unwanted line solid white line that appears
   * fixed by adding positioning media query in navigation class
 * media queries for screen widths of 800px~ not working
+  * resolved by identifying conflict in pre-existing media queries
+* about-bg animation frame kittery and not static on resolutions narrower than 1000px
+  * vertical edges hidden with ink partition design
+  *  
 
 # TECHNOLOGIES
 
