@@ -232,7 +232,8 @@ Taking the old Logo as a reference, Fonts were sampled from [Google fonts](https
 * about-bg animation frame jittery and not static on resolutions narrower than 1000px
   * vertical edges hidden with ink partition design
   * black background added to smaller resolutions to hide jittery horizontal borders on animation
-
+* contact box exceeding viewport width when inder 950px~
+  * resolved by changing form padding to % from px variable
 
 
 # TECHNOLOGIES
