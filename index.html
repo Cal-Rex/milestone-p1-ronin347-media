@@ -12,41 +12,40 @@
 <body>
     <header>
         <nav>
-        <div class="logo" id="logo-container">
+            <div class="logo" id="logo-container">
                 <span id="logo-ronin">Ronin</span>
                 <span id="logo-347">347</span>
-        </div>
+            </div>
             <div class="nleft" id="navigation-1">
-                <a href="index.html" alt="home"><div>Home</div></a>
-                <a href="projects.html" alt="projects"><div>Projects</div></a>
+                <a href="index.html" alt="home">
+                    <div>Home</div>
+                </a>
+                <a href="projects.html" alt="projects">
+                    <div>Projects</div>
+                </a>
             </div>
             <div class="nright" id="navigation-2">
-                <a href="#social-footer" alt="Social"><div>Social</div></a>
-                <a href="faq.html" alt="FAQ"><div>FAQ</div></a>
+                <a href="#social-footer" alt="Social">
+                    <div>Social</div>
+                </a>
+                <a href="faq.html" alt="FAQ">
+                    <div>FAQ</div>
+                </a>
         </nav>
+        </div>
     </header>
-    <div class="ink-partition" id="ink-partition-nav"></div>
-    <section class="hero" id="hero-container">
-        <div id="hero-project">
-            <video autoplay muted loop id="myVideo">
+    <div class="index-layout">
+        <section class="hero" id="hero-project">
+            <div class="ink-partition" id="ip-hero-top"></div>
+            <video autoplay muted loop>
                 <source src="assets/videos/hero-video-final.mp4" type="video/mp4">
             </video>
-        </div>
-    </section>
-    <section id="current-project-link">
-        <div id="hero-call-box">
-            Link to this project
-        </div>
-    </section>
-    <section id="about-container">
-        <div class="ink-partition" id="ink-partition-about-top"></div>
-        <div id="about-image-container">
-            <div id="about-image"><div id="about-image-shade"></div>
-            </div>
-        </div>
-        <!-- <div id="about-text-container"> -->
-            <div id="about-text">
-                <h2 id="about-heading-mobile">About Ronin</h2><br><br>
+            <div class="ink-partition" id="ip-hero-bottom"></div>
+        </section>
+
+        <section class="call-to-action">
+            <div id="call-to-actions">
+                <h2>call to action blurb</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus consectetur ex, nec hendrerit
                     libero. Nam ac consectetur tortor. Vestibulum semper feugiat nisi a aliquet. Curabitur auctor sem
                     vitae
@@ -62,52 +61,35 @@
                     pellentesque. Phasellus nisi sem, pulvinar sed sollicitudin sollicitudin, rutrum in justo.<br><br>
                 </p>
             </div>
-        <!-- </div> -->
-        <div class="ink-partition" id="ink-partition-about-bottom"></div>
-    </section>
-    <section class="call-to-action" id="call-to-action-container">
-        <div id="call-to-actions">
-            <h2>call to action blurb</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus consectetur ex, nec hendrerit
-                libero. Nam ac consectetur tortor. Vestibulum semper feugiat nisi a aliquet. Curabitur auctor sem vitae
-                lorem feugiat volutpat. Aliquam erat volutpat. Nunc auctor, nibh eu varius cursus, nunc magna vehicula
-                leo, in posuere ligula lectus ac eros. Praesent sit amet risus ac elit convallis blandit.<br><br>
+        </section>
+        <section class="contact" id="contact-container">
+            <div class="ink-partition" id="ip-contact-top"></div>
+            <div id="contact-bg">
+                <div id="form-box">
+                    <form method="post" action="#" class="contact-form">
+                        <h2>Contact Form</h2>
+                        <label for="name">Name</label>
+                        <input class="form-text" id="name" name="name" type="text" required>
 
-                Sed sodales tortor in quam vehicula hendrerit. Duis at mauris rhoncus, varius urna et, sagittis sapien.
-                Sed iaculis magna a lacus ultrices lacinia. In aliquet dui pulvinar ante fringilla, quis lobortis felis
-                ultrices. Sed id est efficitur, bibendum augue a, lobortis dolor. Sed scelerisque dolor id dictum
-                pellentesque. Phasellus nisi sem, pulvinar sed sollicitudin sollicitudin, rutrum in justo.<br><br>
-            </p>
-        </div>
-    </section>
-   
-    <section id="contact-container">
-        <div class="ink-partition" id="ink-partition-contact"></div>
-        <div id="contact-bg">
-            <div id="form-box">
-            <form method="post" action="#" class="contact-form">
-                <h2>Contact Form</h2>
-                <label for="name">Name</label>
-                <input class="form-text" id="name" name="name" type="text" required>
+                        <label for="email">Email Address</label>
+                        <input class="form-text" type="email" id="email" name="email" required>
 
-                <label for="email">Email Address</label>
-                <input class="form-text" type="email" id="email" name="email" required>
+                        <label for="number">Contact Number (Optional)</label>
+                        <input class="form-text" type="tel" id="number" name="number"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{4}">
 
-                <label for="number">Contact Number (Optional)</label>
-                <input class="form-text" type="tel" id="number" name="number"
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                        <label for="note">Additional Information</label>
+                        <textarea class="form-text form-note" id="note" name="note"></textarea>
 
-                <label for="note">Additional Information</label>
-                <textarea class="form-text form-note" id="note" name="note"></textarea>
-
-                <input class="submit-contact" type="submit" value="Contact">
-            </form></div>
-        </div>
-    </section>
+                        <input class="submit-contact" type="submit" value="Contact">
+                    </form>
+                </div>
+            </div>
+            <div class="ink-partition" id="ip-contact-bottom"></div>
+        </section>
     </div>
     <footer>
         <div class="footer" id="social-footer">
-            <div class="ink-partition" id="ink-partition-footer"></div>
             <div id="social">
                 <h2>See what i'm up to</h2>
                 <ul class="social-buttons">

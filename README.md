@@ -234,6 +234,8 @@ Taking the old Logo as a reference, Fonts were sampled from [Google fonts](https
   * black background added to smaller resolutions to hide jittery horizontal borders on animation
 * contact box exceeding viewport width when inder 950px~
   * resolved by changing form padding to % from px variable
+* contact box background overlapping ink partition even though overflow rule set
+  * solved by adding a top border to hide the break in black background and ink partition
 
 
 # TECHNOLOGIES
