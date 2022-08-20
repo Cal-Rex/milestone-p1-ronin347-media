@@ -1,4 +1,49 @@
-/* Media queries */
+/* hero image  */
+
+#hero-container {
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    position: -webkit-sticky; /* Safari compatibility */
+    top: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#hero-project {
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
+    z-index: -1;
+
+}
+
+#hero-project video {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+#current-project-link {
+position: absolute;
+top: 90%;
+right: 10%;
+}
+
+#hero-call-box {
+    position: absolute;
+    background-color: blanchedalmond;
+    bottom: -20%;
+    right: 10%;
+}
+
+
+
+/* media queries for old video code */
 
 /* screens less than 1300px width */
 @media screen and (max-width: 1300px){ 
@@ -8,150 +53,61 @@
     
     #hero-project video {
         position: relative;
-        width: 1300px;
+        width: 1422px;
     }
 }
 
-/* media queries for irregular height screens */
 /* surface pro 7 screens  */
-
-@media screen and (max-height: 1368px) and (max-width: 912px){ 
+@media screen and (min-height: 1368px) and (max-width: 912px){ 
     #hero-project video {
         position: relative;
         width: 2432px;
+        left: -810px;
     }
 }
 
 
-/* form */
-
-#contact-container {
-    width: 100%;
-    height: 650px;
-    margin: 0 auto;
-    position: relative;
-    top: 100px;
+/* ipad air */
+@media screen and (min-height: 1180px) and (max-width: 820px){ 
+    #hero-project video {
+        position: relative;
+        width: 2097px;
+        left: -699px;
+    }
 }
 
-#ink-partition-contact {
-    top: -100px;
-    z-index: 3;
+/* ipad mini */
+@media screen and (min-height: 1024px) and (max-width: 786px){ 
+    #hero-project video {
+        position: relative;
+        width: 1820px;
+        left: -606px;
+    }
 }
 
-#contact-bg {
-    background: url(../images/index/contact-bg.png) no-repeat center;
-    background-size: cover;
-    width: 100%;
-    height: 650px;
-    overflow: hidden;
+/* galaxy a51/71 | iphone xr + 12pro | pixel 5 | Galaxy s20 ultra*/
+@media screen and (max-height: 916px) and (max-width: 500px) { 
+    #hero-project video {
+        position: relative;
+        width: 1630px;
+        left: -541px;
+    }
 }
 
-.contact-form {
-    margin-top: 60px;
-    color: #f8f8f7;
-    background-color: rgba(34, 32, 32, 0.6);
-    position: absolute;
-    width: 100%;
+/* galaxy s8+ */
+@media screen and (min-height: 740px) and (max-width: 360px){ 
+    #hero-project video {
+        position: relative;
+        width: 1315px;
+        left: -438px;
+    }
 }
 
-.contact-form > h2 {
-    color: #f8f8f7;
-    padding-bottom: 0.5em;
-}
-
-.form-text {
-    background: transparent;
-    color: #f8f8f7;
-    width: 100%;
-    height: 25px;
-    margin: 5px 0 20px 0;
-    border: 1px solid #f8f8f7;
-    border-radius: 2px;
-}
-
-.form-text:focus {
-    outline: 2px solid #db0a0b !important;
-    border: 1px solid rgba(0, 0, 0, 0) !important;
-    padding-left: 0.2em;
-}
-
-.form-note {
-    min-width: 300px;
-    min-height: 150px;
-}
-
-.submit-contact {
-    float: right;
-    font-family: 'Michroma', sans-serif;
-    color:#f8f8f7;
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid #f8f8f7;
-    padding: 5px;
-    border-radius: 2px;
-}
-
-.submit-contact:hover {
-    background-color: #f8f8f7;
-    color: #070505;
-}
-
- /* form media query */
- #ink-partition-contact {
-    visibility: hidden;
-}
-#contact-container {
-    width: 95%;
-    top: 50px;
-    overflow: hidden;
-}
-.contact-form {
-    margin-top: 60px;
-    color: #f8f8f7;
-    background-color: rgba(34, 32, 32, 0.6);
-    position: absolute;
-    left: 10%;
-    max-width: 450px;
-    padding: 30px;
-}
-
-.contact-form > h2 {
-    color: #f8f8f7;
-    padding-bottom: 0.5em;
-}
-
-.form-text {
-    background: transparent;
-    color: #f8f8f7;
-    width: 100%;
-    height: 25px;
-    margin: 5px 0 20px 0;
-    border: 1px solid #f8f8f7;
-    border-radius: 2px;
-}
-
-.form-text:focus {
-    outline: 2px solid #db0a0b !important;
-    border: 1px solid rgba(0, 0, 0, 0) !important;
-    padding-left: 0.2em;
-}
-
-.form-note {
-    min-width: 300px;
-    min-height: 150px;
-}
-
-.submit-contact {
-    float: right;
-    font-family: 'Michroma', sans-serif;
-    color:#f8f8f7;
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid #f8f8f7;
-    padding: 5px;
-    border-radius: 2px;
-}
-
-.submit-contact:hover {
-    background-color: #f8f8f7;
-    color: #070505;
-}
+/* galaxy fold video only */
+@media screen and (min-height: 653px) and (max-width: 280px){ 
+    #hero-project video {
+        position: relative;
+        width: 1310px;
+        left: -386px;
+    }
 }

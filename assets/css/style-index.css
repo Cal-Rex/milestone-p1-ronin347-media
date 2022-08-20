@@ -23,6 +23,54 @@ body {
     font-size: 1.25em;
 }
 
+nav {
+    display: grid;
+    grid-template-areas:
+    'nleft logo nright';
+}
+
+/* grid layout test */
+.index-layout {
+    display: grid;
+    grid-template-areas:
+    'hero hero hero'
+    'call-to-action'
+    'footer';
+}
+
+.logo {
+grid-area: logo;
+}
+
+.nleft {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-area: nleft;
+    width: 100%;
+    text-align: center;
+}
+
+.nright {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-area: nright;
+    width: 100%;
+    text-align: center;
+}
+
+.hero {
+    grid-area: hero;
+}
+
+.call-to-action {
+    grid-area: call-to-action;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
 /* header and logo  */
 
 header {
@@ -47,7 +95,7 @@ header {
     font-size: 74px;
     position: relative;
     letter-spacing: 2px;
-    z-index: 1;
+    z-index: 2;
 }
 
 #logo-347 {
@@ -57,7 +105,7 @@ header {
     top: 58px;
     font-size: 50px;
     color: #db0a0b;
-    z-index: 2;
+    z-index: 3;
 }
 
 /* navigation */
@@ -69,27 +117,12 @@ nav {
     background-color: #070505;
 }
 
-
-.navigation {
-    width: 50%;
-    display: grid;
-    grid-template-rows: 50% 50%;
-}
-
-#navigation-1 {
-    float: left;
-}
-
-#navigation-2 {
-    float: right;
-}
-
 .navigation div {
     width: 100%;
     text-align: center;
 }
 
-.navigation a {
+.nleft a {
     text-decoration: none;
     padding: 10px;
     color: #f8f8f7;
@@ -104,6 +137,20 @@ nav {
     background-color: black;
 }
 
+.nright a {
+    text-decoration: none;
+    padding: 10px;
+    color: #f8f8f7;
+    text-shadow: none;
+    text-transform: uppercase;
+    font-family: 'Marcellus', serif;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: 8px;
+    position: relative;
+    z-index: 3;
+    background-color: black;
+}
 #navigation-1 a {
     background-color: black;
     background: linear-gradient(to left, black 50%, #f8f8f7 50%) right;
@@ -128,7 +175,11 @@ nav {
     left: 5px;
 }
 
-.navigation a:hover {
+.nleft a:hover {
+    color: #db0a0b;
+}
+
+.nright a:hover {
     color: #db0a0b;
 }
 
@@ -147,54 +198,33 @@ nav {
 .ink-partition {
     width: 100%;
     height: 200px;
-    background: url(../images/index/ink-partition-4.png) no-repeat center center;
+    background: url(../images/index/ink-partition-4.png) no-repeat center;
+    background-size: cover;
     position: absolute;
-    top: 200px;
     z-index: 1;
 }
 
-/* hero image  */
-
-#hero-container {
-    width: 100%;
-    height: 100%;
-    position: sticky;
-    position: -webkit-sticky; /* Safari compatibility */
+#ink-partition-nav {
     top: 0;
-    z-index: -1;
-    overflow: hidden;
 }
+
+/* hero section */
 
 #hero-project {
     overflow: hidden;
+    /* 16:9 aspect ratio */
     padding-top: 56.25%;
     position: relative;
-    z-index: -1;
-
-}
-
+  }
 #hero-project video {
-    border: 0;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -1;
-}
+     border: 0;
+     height: 100%;
+     left: 0;
+     position: absolute;
+     top: 0;
+     width: 100%;
+  }
 
-#current-project-link {
-position: absolute;
-top: 90%;
-right: 10%;
-}
-
-#hero-call-box {
-    position: absolute;
-    background-color: blanchedalmond;
-    bottom: -20%;
-    right: 10%;
-}
 
 /* about section */
 
@@ -277,7 +307,7 @@ right: 10%;
 }
 
 #call-to-actions {
-    width: 50%;
+    width: 90%;
     margin: 5% auto;
 }
 
@@ -293,7 +323,7 @@ right: 10%;
     height: 650px;
     margin: 0 auto;
     position: relative;
-    top: 200px;
+    top: 50px;
 }
 
 #ink-partition-contact {
@@ -315,13 +345,14 @@ right: 10%;
     top: 20px;
     overflow: hidden;
     height: 700px;
-    background-color: rgba(34, 32, 32, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 .contact-form {
     margin-top: 60px;
     color: #f8f8f7;
     position: absolute;
-    width: 100%;
+    width: 95vw;
+    padding: 0 3%;
 }
 
 .contact-form > h2 {
@@ -336,62 +367,6 @@ label {
 .form-text {
     background: transparent;
     color: #f8f8f7;
-    width: 50%;
-    height: 25px;
-    margin: 5px 0 20px 0;
-    border: 1px solid #f8f8f7;
-    border-radius: 2px;
-}
-
-.form-text:focus {
-    outline: 2px solid #db0a0b !important;
-    border: 1px solid rgba(0, 0, 0, 0) !important;
-    padding-left: 0.2em;
-}
-
-.form-note {
-    min-width: 300px;
-    min-height: 150px;
-}
-
-.submit-contact {
-    float: right;
-    font-family: 'Michroma', sans-serif;
-    color:#f8f8f7;
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid #f8f8f7;
-    padding: 5px;
-    border-radius: 2px;
-}
-
-.submit-contact:hover {
-    background-color: #f8f8f7;
-    color: #070505;
-}
-
- /* form media query */
- 
-#contact-container {
-    width: 100%;
-    top: 50px;
-}
-.contact-form {
-    margin-top: 60px;
-    color: #f8f8f7;
-    background-color: rgba(34, 32, 32, 0.6);
-    position: absolute;
-    max-width: 95vw;
-    padding: 3%;
-}
-
-.contact-form > h2 {
-    color: #f8f8f7;
-    padding-bottom: 0.5em;
-}
-
-.form-text {
-    background: transparent;
-    color: #f8f8f7;
     width: 100%;
     height: 25px;
     margin: 5px 0 20px 0;
@@ -406,7 +381,7 @@ label {
 }
 
 .form-note {
-    min-width: 300px;
+    min-width: 250px;
     min-height: 150px;
 }
 
@@ -432,7 +407,7 @@ label {
     margin-top: 5%;
     width: 100%;
     height: 200px;
-    background-color: #070505;
+    background-color: #000000;
     color:#f8f8f7;
     position: relative;
     top: 100px;
@@ -538,9 +513,9 @@ label {
     }
     
     #about-image-container {
-        width: 40%;
+        width: 50%;
         height: 500px;
-        margin: 0 5%;
+        margin: 0;
         float: right;
         top: 20%;
     }
@@ -556,9 +531,9 @@ label {
     }
     
     #about-text {
-        width: 40%;
+        width: 50%;
         font-size: 1em;
-        Margin: 0 5%;
+        Margin: 0;
     }
 
     /* call to action section */
@@ -567,23 +542,38 @@ label {
         margin-top: 220px;
     }
 
+    #call-to-actions {
+        width: 50%;
+        margin: 5% auto;
+    }
+
     /* contact form section */
     #ink-partition-contact {
         visibility: hidden;
     }
-}
 
-/* screens less than 1300px width */
-@media screen and (max-width: 1300px){ 
-    #hero-project {
-        padding-top: 0;
+    #contact-container {
+        top: 0px;
+    }
+
+    #contact-bg {
+        margin: 0 auto;
+        max-width: 80%;
+
+    }
+    .contact-form {
+        max-width: 450px;
+        padding-left: 25px;
     }
     
-    #hero-project video {
-        position: relative;
-        width: 1422px;
+    #form-box {
+        top: 47.5px;
+        max-width: 500px;
+        max-height: 600px;
+        left: 10%;
     }
 }
+
 
 /* screens less than 415px width */
 @media screen and (max-width: 415px){ 
@@ -609,57 +599,13 @@ label {
 
 /* media queries for portrait orientation screens */
 
-/* surface pro 7 screens  */
-@media screen and (min-height: 1368px) and (max-width: 912px){ 
-    #hero-project video {
-        position: relative;
-        width: 2432px;
-        left: -810px;
-    }
-}
-
-
-/* ipad air */
-@media screen and (min-height: 1180px) and (max-width: 820px){ 
-    #hero-project video {
-        position: relative;
-        width: 2097px;
-        left: -699px;
-    }
-}
-
-/* ipad mini */
-@media screen and (min-height: 1024px) and (max-width: 786px){ 
-    #hero-project video {
-        position: relative;
-        width: 1820px;
-        left: -606px;
-    }
-}
-
-/* galaxy a51/71 | iphone xr + 12pro | pixel 5 | Galaxy s20 ultra*/
-@media screen and (max-height: 916px) and (max-width: 500px) { 
-    #hero-project video {
-        position: relative;
-        width: 1630px;
-        left: -541px;
-    }
-}
-
-/* galaxy s8+ */
-@media screen and (min-height: 740px) and (max-width: 360px){ 
-    #hero-project video {
-        position: relative;
-        width: 1315px;
-        left: -438px;
-    }
-}
-
 /* galaxy fold */
 @media screen and (min-height: 653px) and (max-width: 280px){ 
-    #hero-project video {
-        position: relative;
-        width: 1310px;
-        left: -386px;
+    body {
+        font-size: 1.1em;
     }
+    /* footer adjustment */
+    #social-footer {
+        top: 120px;
+}
 }
