@@ -10,12 +10,17 @@
 </head>
 
 <body>
+<div class="bg"><div class="bg-overlay"></div></div>
+    <!-- top -->
     <header>
         <nav>
+            <!-- logo -->
             <div class="logo" id="logo-container">
                 <span id="logo-ronin">Ronin</span>
                 <span id="logo-347">347</span>
             </div>
+
+            <!-- nav buttons -->
             <div class="nleft" id="navigation-1">
                 <a href="index.html" alt="home">
                     <div>Home</div>
@@ -34,60 +39,78 @@
         </nav>
         </div>
     </header>
+
+    <!-- middle -->
+
     <div class="index-layout">
-        <section class="hero" id="hero-project">
-            <div class="ink-partition" id="ip-hero-top"></div>
-            <video autoplay muted loop>
-                <source src="assets/videos/hero-video-final.mp4" type="video/mp4">
-            </video>
-            <div class="ink-partition" id="ip-hero-bottom"></div>
-        </section>
 
-        <section class="call-to-action">
-            <div id="call-to-actions">
-                <h2>call to action blurb</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus consectetur ex, nec hendrerit
-                    libero. Nam ac consectetur tortor. Vestibulum semper feugiat nisi a aliquet. Curabitur auctor sem
-                    vitae
-                    lorem feugiat volutpat. Aliquam erat volutpat. Nunc auctor, nibh eu varius cursus, nunc magna
-                    vehicula
-                    leo, in posuere ligula lectus ac eros. Praesent sit amet risus ac elit convallis blandit.<br><br>
+            <!-- hero video -->
+            <section class="hero" id="hero-project">
+                <div class="ink-partition ip-top-hero"></div>
+                <video autoplay muted loop>
+                    <source src="assets/videos/hero-video-final.mp4" type="video/mp4">
+                </video>
+                <div class="ink-partition ip-bottom-hero"></div>
+            </section>
 
-                    Sed sodales tortor in quam vehicula hendrerit. Duis at mauris rhoncus, varius urna et, sagittis
-                    sapien.
-                    Sed iaculis magna a lacus ultrices lacinia. In aliquet dui pulvinar ante fringilla, quis lobortis
-                    felis
-                    ultrices. Sed id est efficitur, bibendum augue a, lobortis dolor. Sed scelerisque dolor id dictum
-                    pellentesque. Phasellus nisi sem, pulvinar sed sollicitudin sollicitudin, rutrum in justo.<br><br>
-                </p>
-            </div>
-        </section>
-        <section class="contact" id="contact-container">
-            <div class="ink-partition" id="ip-contact-top"></div>
-            <div id="contact-bg">
-                <div id="form-box">
-                    <form method="post" action="#" class="contact-form">
-                        <h2>Contact Form</h2>
-                        <label for="name">Name</label>
-                        <input class="form-text" id="name" name="name" type="text" required>
+            <!-- blurb -->
+            <section class="call-to-action">
+                <div class="ink-partition ip-top-cta"></div>
+                <div id="call-to-actions">
+                    <h2>call to action blurb</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin faucibus consectetur ex, nec
+                        hendrerit
+                        libero. Nam ac consectetur tortor. Vestibulum semper feugiat nisi a aliquet. Curabitur auctor
+                        sem
+                        vitae
+                        lorem feugiat volutpat. Aliquam erat volutpat. Nunc auctor, nibh eu varius cursus, nunc magna
+                        vehicula
+                        leo, in posuere ligula lectus ac eros. Praesent sit amet risus ac elit convallis
+                        blandit.<br><br>
 
-                        <label for="email">Email Address</label>
-                        <input class="form-text" type="email" id="email" name="email" required>
-
-                        <label for="number">Contact Number (Optional)</label>
-                        <input class="form-text" type="tel" id="number" name="number"
-                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{4}">
-
-                        <label for="note">Additional Information</label>
-                        <textarea class="form-text form-note" id="note" name="note"></textarea>
-
-                        <input class="submit-contact" type="submit" value="Contact">
-                    </form>
+                        Sed sodales tortor in quam vehicula hendrerit. Duis at mauris rhoncus, varius urna et, sagittis
+                        sapien.
+                        Sed iaculis magna a lacus ultrices lacinia. In aliquet dui pulvinar ante fringilla, quis
+                        lobortis
+                        felis
+                        ultrices. Sed id est efficitur, bibendum augue a, lobortis dolor. Sed scelerisque dolor id
+                        dictum
+                        pellentesque. Phasellus nisi sem, pulvinar sed sollicitudin sollicitudin, rutrum in
+                        justo.<br><br>
+                    </p>
                 </div>
-            </div>
-            <div class="ink-partition" id="ip-contact-bottom"></div>
-        </section>
+                <div class="ink-partition ip-bottom-cta"></div>
+            </section>
+
+            <!-- contact -->
+            <section class="contact" id="contact-container">
+                <div class="ink-partition ip-top-con"></div>
+                <div id="contact-bg">
+                    <div id="form-box">
+                        <form method="post" action="#" class="contact-form">
+                            <h2>Contact Form</h2>
+                            <label for="name">Name</label>
+                            <input class="form-text" id="name" name="name" type="text" required>
+
+                            <label for="email">Email Address</label>
+                            <input class="form-text" type="email" id="email" name="email" required>
+
+                            <label for="number">Contact Number (Optional)</label>
+                            <input class="form-text" type="tel" id="number" name="number"
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+                            <label for="note">Additional Information</label>
+                            <textarea class="form-text form-note" id="note" name="note"></textarea>
+
+                            <input class="submit-contact" type="submit" value="Contact">
+                        </form>
+                    </div>
+                </div>
+                <div class="ink-partition ip-bottom-con"></div>
+            </section>
     </div>
+
+    <!-- footer -->
     <footer>
         <div class="footer" id="social-footer">
             <div id="social">
@@ -110,12 +133,14 @@
                     </li>
                 </ul>
             </div>
-            <div id="cal-rex-git">
-                <p>Site Developed for Ronin347 by <a href:"#" aria-label="link to Cal-Rex's Github" target="_blank"
-                        rel="noopener">Cal-Rex</a></p>
-            </div>
-            <div id="copyright">
-                <p>Copyright Ronin347 Media 2022 ©</p>
+            <div class="footer-creds">
+                <div class="creds-1" id="cal-rex-git">
+                    <p>Site Developed for Ronin347 by <a href:"#" aria-label="link to Cal-Rex's Github" target="_blank"
+                            rel="noopener">Cal-Rex</a></p>
+                </div>
+                <div class="creds-2" id="copyright">
+                    <p>Copyright Ronin347 Media 2022 ©</p>
+                </div>
             </div>
         </div>
     </footer>
