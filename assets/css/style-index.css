@@ -29,7 +29,7 @@ nav {
     padding: 15px 0;
     width: 100%;
     height: 100px;
-    background-color: #070505;
+    background-color: #000000;
     display: grid;
     grid-template-areas:
         'nleft logo nright';
@@ -188,7 +188,6 @@ nav {
 }
 
 /* navigation */
-
 .nleft a {
     text-decoration: none;
     padding: 10px;
@@ -261,8 +260,8 @@ nav {
     background: url(../images/index/pb1.png) no-repeat;
     background-position: 100% 40%;
     background-size: 400px;
-    /* border: 4px solid #000000; */
     border-radius: 10px;
+    opacity: 0.7;
 }
 
 .hero a:hover {
@@ -273,6 +272,7 @@ nav {
     transition-duration: 1s;
     animation-duration: 1s;
     background-size: 400px;
+    opacity: 1;
 }
 
 
@@ -641,7 +641,6 @@ label {
     margin: 0 auto;
     padding-right: 20%;
 }
-
 nav {
     padding-top: 40px;
 }
