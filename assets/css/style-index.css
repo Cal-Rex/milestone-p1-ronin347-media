@@ -23,8 +23,6 @@ body {
     font-size: 1.25em;
 }
 
-/* page layout */
-
 .bg {
     background: url(../images/index/index-bg-b.png) no-repeat;
     background-position: right;
@@ -34,13 +32,13 @@ body {
     position: fixed;
     z-index: -2;
     /* animation */
-    animation-name: about-slide;
+    animation-name: index-bg-slide;
     animation-duration: 30s;
     animation-fill-mode: forwards;
 }
 
 /* about image animation */
-@keyframes about-slide {
+@keyframes index-bg-slide {
     from {
         transform: scale(1.1);
     }
@@ -56,6 +54,8 @@ body {
     z-index: -1;
 }
 
+
+/* page layout */
 .index-layout {
     display: grid;
     row-gap: 0px;
@@ -67,46 +67,29 @@ body {
         overflow: hidden;
 }
 
-.footer-creds {
-    display: grid;
-    grid-template-areas:
-        'creds-1 creds-2';
-}
-
-.logo {
-    grid-area: logo;
-}
-
-.nleft {
-    display: grid;
-    grid-template-rows: 50% 50%;
-    grid-area: nleft;
-    width: 100%;
-    text-align: center;
-}
-
-.nright {
-    display: grid;
-    grid-template-rows: 50% 50%;
-    grid-area: nright;
-    width: 100%;
-    text-align: center;
-}
-
 .hero {
     grid-area: hero;
     overflow: hidden;
+    top: -10%;
 }
 
 .call-to-action {
     grid-area: call-to-action;
     overflow: hidden;
     position: relative;
+    top: -10%;
 }
 
 .contact {
     grid-area: contact;
     overflow: hidden;
+    top: -10%;
+}
+
+.footer-creds {
+    display: grid;
+    grid-template-areas:
+        'creds-1 creds-2';
 }
 
 .footer {
@@ -226,7 +209,8 @@ nav {
 .nav-burger {
     position: fixed;
     overflow: hidden;
-    right: 2.5%;
+    opacity: 0;
+    right: 10%;
     top: 4%;
     width: 85px;
     height: 75px;
@@ -240,6 +224,19 @@ nav {
     background-position: 3% 85%;
     border-radius: 20px;
     z-index: 10;
+    animation-name: nav-page-open;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes nav-page-open {
+    from { opacity: 0;
+    right: 10%;
+}
+to { opacity: 1;
+right: 2.5%;
+}
 }
 
 .nav-burger:hover {
@@ -326,7 +323,18 @@ nav {
     background-position: 100% 40%;
     background-size: 400px;
     border-radius: 10px;
-    opacity: 0.7;
+    opacity: 0;
+    animation-name: hero-a-page-open;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes hero-a-page-open {
+    from { opacity: 0;
+}
+to { opacity: 0.9;
+}
 }
 
 .hero a:hover {
@@ -344,7 +352,7 @@ nav {
     /* 16:9 aspect ratio */
     padding-top: 56.25%;
     position: relative;
-    top: 0%;
+    bottom: 0%;
     z-index: 0;
 }
 
@@ -352,7 +360,7 @@ nav {
     border: 0;
     left: 0;
     position: absolute;
-    top: -20%;
+    top: 0%;
     width: 100%;
     z-index: 1;
 }
