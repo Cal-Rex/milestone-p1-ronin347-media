@@ -1,108 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Montserrat&family=Archivo+Black&family=Archivo+Narrow:wght@700&family=Caveat:wght@700&family=Comforter&family=Hammersmith+One&family=Homemade+Apple&family=Josefin+Sans:wght@200&family=Jost&family=Kanit:wght@700&family=Lexend+Exa:wght@900&family=Libre+Barcode+39+Text&family=Marcellus&family=Merienda:wght@700&family=Michroma&family=Monda&family=Montserrat+Subrayada:wght@700&family=Mr+Dafoe&family=Orbitron&family=Oxanium:wght@200;800&family=Quantico:wght@700&family=Rock+Salt&family=Russo+One&family=Splash&family=Teko:wght@700&family=Water+Brush&display=swap');
+/* navigation */
 
-* {
-    margin: 0;
-    padding: 0;
-    border: none;
+* body {
+    height: 200vh;
+    background-color: aquamarine;
 }
 
 nav {
-    width: 100%;
-    Height: 200%;
-    position: absolute;
-    background-color: white;
-    font-family: sans-serif;
-    top: 0;
-    z-index: 0;
-}
-
-.nav-burger {
     position: fixed;
-    overflow: hidden;
-    right: 5%;
-    top: 20%;
-    width: 85px;
-    height: 75px;
-    padding-left: 15px;
-    text-align: center;
-    color: #f8f8f7;
-    font-size: 50px;
-    line-height: 75px;
-    background: url(../images/index/pb1.png) no-repeat;
-    background-size: 350px;
-    background-position: 3% 85%;
-    border-radius: 20px;
-    z-index: 1;
-}
-
-.nav-burger:hover {
-    width: 80px;
-    padding-left: 15px;
-    padding-right: 7px;
-    padding-top: 1.5px;
-    background: url(../images/index/pb2.png) no-repeat;
-    background-size: 500px;
-    background-position: 7.5% 60%;
-    border-radius: 20px;
-    color: #000000;
-    letter-spacing: 4px;
-    transition-duration: 1s;
-}
-
-.nav-burger:focus {
-    width: 280px;
-    height: 400px;
-    text-align: right;
-    vertical-align: top;
-    padding: 10px 40px 10px 0px; 
-    color: #000000;
-    background: url(../images/index/pb3.png) no-repeat;
-    background-size: cover;
-    border-radius: 0px;
-    background-position: 30% 45%;
-    transition-duration: 1s;
-}
-
-.nav-content {
-    display: none;
-    position: absolute;
-    top: 0px;
-    Right: 0px;
-    width: 0px;
-    height: 0px;
-    padding-right: 10px;
-    letter-spacing: 4px !important;
-    text-decoration: none;
-    background-color: #00000000 !important;
-    color: #00000000 !important;
-    font-size: 18px;
-    z-index: 2;
-    transition-duration: 1s;
-}
-
-.nav-burger:focus .nav-content {
-    display: block;
+    z-index: 0;
+    top: 4%;
+    right: 10%;
     width: 270px;
-    height: 375px;
-    color: #000000 !important;
-    background-color: #f8f8f7 !important;
-    transition-duration: 1s;
+    height: 470px;
+    background: none;
+    overflow: hidden;
 }
 
-.nav-content li:hover {
+.nav-potiioner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.nav-menu {
+    position: relative;
+    z-index: 2;
+    top: 0;
+    left: 185px;
+    width: 85px;
+    height: 65px;
+    line-height: 65px;
+    background-color: none;
+    background: url(../images/index/pb1flip.png) no-repeat;
+    background-size: 365px;
+    background-position: 0% 77%;
+    border-radius: 20px;
+    color: #f8f8f7;
+    cursor: pointer;
+    padding-right: 10px;
+    border: none;
+    text-align: right;
+    font-size: 50px;
+    transition: 0.4s;
+}
+
+.active, .nav-menu:hover {
+    left: 205px;
+    background: none;
+    background-color: #f8f8f7;
+    border-radius: 0px;
+    color: #000000;
+    width: 65px;
+}
+
+.panel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: -75px;
+    right: 100%;
+    padding: 47px 0px 0px 0px;
+    display: none;
+    background-color: #f8f8f7;
+    overflow: hidden;
+    text-align: right;
+    line-height: 65px;
+    font-size: 18px;
+    letter-spacing: 4px;
+    /* animation */
+    animation-name: try;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.panel li {
+    list-style-type: none;
+}
+
+.panel a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.panel a:hover {
+    color: #db0a0b;
+}
+
+#current {
+    border-right: 4px solid #db0a0b;
+}
+
+.panel a:hover {
     letter-spacing: 8px;
     color: #db0a0b;
     transition-duration: 1.5s;
-    
 }
 
-.nav-content a {
-    text-decoration: none;
-    color:#000000;
+@keyframes try {
+    from {opacity: 0;
+        top: -100%;
+        right: -100%;
 }
-
-#nav-active {
-    border-right: 4px solid #db0a0b;
-    color: #db0a0b;
+to {opacity: 1;
+    top: 0%;
+right: 0%;}
 }
-

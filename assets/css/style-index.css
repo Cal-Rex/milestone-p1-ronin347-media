@@ -139,6 +139,7 @@ body {
     height: 100%;
     display: flex;
     justify-content: center;
+    transition-duration: 1s;
 }
 
 #logo-container {
@@ -150,6 +151,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     position: relative;
+    transition-duration: 1s;
 }
 
 #logo-ronin {
@@ -165,6 +167,7 @@ body {
     animation-delay: 2s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
+    transition-duration: 1s;
 }
 @keyframes ronin-page-open {
     from { opacity: 0;
@@ -173,29 +176,6 @@ body {
         to { opacity: 1;
             padding-left: 0px;
         }
-}
-
-@media screen and (min-width: 1000px) {
-    #logo-positioner {
-        top: 30%;
-    }
-    #logo-container {
-        width: 460px;
-        height: 230px;
-    }
-    #logo-ronin {
-        font-size: 148px;
-        letter-spacing: 2 !important;
-    }
-    #logo-347 {
-        font-family: 'Mr Dafoe', cursive;
-        position: absolute;
-        right: 50px !important;
-        top: 100px !important;
-        font-size: 100px !important;
-        color: #db0a0b;
-        z-index: 3;
-    }
 }
 
 #logo-347 {
@@ -213,6 +193,7 @@ body {
     animation-delay: 2.2s;
     animation-timing-function: cubic-bezier(1,0,0.2,1);;
     animation-fill-mode: forwards;
+    transition-duration: 1s;
 }
 @keyframes number-page-open {
     from { opacity: 0;
@@ -226,117 +207,110 @@ body {
 /* navigation */
 
 nav {
-    width: 75px;
-    Height: 75px;
-    position: absolute;
-    background-color: none;
-    font-family: sans-serif;
-    top: 0;
-    z-index: 2;
+    position: fixed;
+    z-index: 0;
+    top: 4%;
+    right: 10%;
+    width: 270px;
+    height: 470px;
+    background: none;
+    overflow: hidden;
 }
 
-.nav-burger {
-    position: fixed;
-    overflow: hidden;
-    opacity: 0;
-    right: 10%;
-    top: 4%;
+.nav-potiioner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.nav-menu {
+    position: relative;
+    z-index: 20;
+    top: 0;
+    left: 185px;
     width: 85px;
-    height: 75px;
-    padding-left: 15px;
-    text-align: center;
-    color: #f8f8f7;
-    font-size: 50px;
-    line-height: 75px;
-    background: url(../images/index/pb1.png) no-repeat;
-    background-size: 350px;
-    background-position: 3% 85%;
+    height: 65px;
+    line-height: 65px;
+    background-color: none;
+    background: url(../images/index/pb1flip.png) no-repeat;
+    background-size: 365px;
+    background-position: 0% 77%;
     border-radius: 20px;
-    z-index: 10;
-    animation-name: nav-page-open;
+    color: #f8f8f7;
+    cursor: pointer;
+    padding-right: 10px;
+    border: none;
+    text-align: right;
+    font-size: 50px;
+    transition: 0.4s;
+}
+
+.active, .nav-menu:hover {
+    left: 205px;
+    background: none;
+    background-color: #f8f8f7;
+    border-radius: 0px;
+    color: #000000;
+    width: 65px;
+}
+
+.panel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9;
+    top: -75px;
+    right: 100%;
+    padding: 60px 0px 0px 0px;
+    display: none;
+    background-color: #f8f8f7;
+    overflow: hidden;
+    text-align: right;
+    line-height: 65px;
+    font-size: 18px;
+    letter-spacing: 4px;
+    /* animation */
+    animation-name: try;
+    animation-delay: 0s;
     animation-duration: 1s;
-    animation-delay: 1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
-@keyframes nav-page-open {
-    from { opacity: 0;
-    right: 10%;
-}
-to { opacity: 1;
-right: 2.5%;
-}
+
+.panel li {
+    list-style-type: none;
 }
 
-.nav-burger:hover {
-    width: 80px;
-    padding-left: 15px;
-    padding-right: 7px;
-    padding-top: 1.5px;
-    background: url(../images/index/pb2.png) no-repeat;
-    background-size: 500px;
-    background-position: 7.5% 60%;
-    border-radius: 20px;
-    color: #000000;
-    letter-spacing: 4px;
-    transition-duration: 1s;
-}
-
-.nav-burger:focus {
-    width: 280px;
-    height: 400px;
-    text-align: right;
-    vertical-align: top;
-    padding: 10px 40px 10px 0px; 
-    color: #000000;
-    background: url(../images/index/pb3.png) no-repeat;
-    background-size: cover;
-    border-radius: 0px;
-    background-position: 30% 45%;
-    transition-duration: 1s;
-}
-
-.nav-content {
-    display: none;
-    position: absolute;
-    top: 0px;
-    Right: 0px;
-    width: 0px;
-    height: 0px;
-    padding-right: 10px;
-    letter-spacing: 4px !important;
+.panel a {
+    font-family: 'times new roman', 'serif';
     text-decoration: none;
-    background-color: #00000000 !important;
-    color: #00000000 !important;
-    font-size: 18px;
-    z-index: 2;
-    transition-duration: 1s;
+    text-shadow: none;
+    color: #000000;
 }
 
-.nav-burger:focus .nav-content {
-    display: block;
-    width: 270px;
-    height: 375px;
-    color: #000000 !important;
-    background-color: #f8f8f7 !important;
-    transition-duration: 1s;
+.panel a:hover {
+    color: #db0a0b;
 }
 
-.nav-content li:hover {
+#current {
+    border-right: 4px solid #db0a0b;
+}
+
+.panel a:hover {
     letter-spacing: 8px;
     color: #db0a0b;
     transition-duration: 1.5s;
-    
 }
 
-.nav-content a {
-    text-decoration: none;
-    color:#000000;
+@keyframes try {
+    from {opacity: 0;
+        top: -100%;
+        right: -100%;
 }
-
-#nav-active {
-    border-right: 4px solid #db0a0b;
-    color: #db0a0b;
+to {opacity: 1;
+    top: 0%;
+right: 0%;}
 }
 
 /* hero section */
@@ -579,14 +553,17 @@ label {
 @media screen and (min-width: 1000px) {
     #logo-positioner {
         top: 30%;
+        transition-duration: 1s;
     }
     #logo-container {
         width: 460px;
         height: 230px;
+        transition-duration: 1s;
     }
     #logo-ronin {
         font-size: 148px;
         letter-spacing: 2 !important;
+        transition-duration: 1s;
     }
     #logo-347 {
         font-family: 'Mr Dafoe', cursive;
@@ -596,15 +573,14 @@ label {
         font-size: 100px !important;
         color: #db0a0b;
         z-index: 3;
+        transition-duration: 1s;
     }
 
     nav {
-        width: 75px;
-        Height: 75px;
-        position: absolute;
+        position: fixed;
         background-color: none;
         font-family: sans-serif;
-        top: 0;
+        top: 4%;
         z-index: 2;
     }
 

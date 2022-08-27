@@ -15,20 +15,21 @@
         
     </div>
     <div class="index-layout">
-        <nav>
-            <button class="nav-burger">
-                <div id="big-nav">Menu</div><span><i class="fa-solid fa-bars" id="burger-hide"></i></span>
-                <div class="nav-content">
+        <nav><div class="nav-positioner">
+            <button class="nav-menu"><i class="fa-solid fa-bars"></i></button>
+                <div class="panel">
                     <ul>
-                        <a href="index.html" alt="home"><li id="nav-active">Home</li></a>
+                        <a href="index.html" alt="home"><li id="current">Home</li></a>
                         <a href="about.html" alt="About us"><li>About Us</li></a>
                         <a href="testimonials.html" alt="Testimonials from our clients and partners"><li>Testimonials</li></a>
                         <a href="faq.html" alt="FAQ"><li>FAQ</li></a>
                         <a href="#social-footer" alt="Social media contacts"><li>Social</li></a>
-                        <a href="mailto:#" alt="contact us by email"></a><li>Contact</li></a>
+                        <a href="mailto:#" alt="contact us by email"></a>
+                        <li>Contact</li></a>
                     </ul>
                 </div>
-        </button></nav>
+                </div>
+                </nav>
         <header class="hero" id="hero-project">
             <div id="logo-positioner">
             <div class="logo" id="logo-container">
@@ -39,7 +40,7 @@
             <video autoplay muted loop>
                 <source src="assets/videos/hero-video-final.mp4" type="video/mp4">
             </video>
-            <a href="nav-test.html">Watch our Portfolio</a>
+            <a href="contact-confirmed.html">Watch our Portfolio</a>
             <div class="ink-partition ip-bottom-hero"></div>
         </header>
 
@@ -110,5 +111,20 @@
     </footer>
 </body>
 <script src="https://kit.fontawesome.com/85f184e105.js" crossorigin="anonymous"></script>
-
+<script>
+    var acc = document.getElementsByClassName("nav-menu");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
 </html>
