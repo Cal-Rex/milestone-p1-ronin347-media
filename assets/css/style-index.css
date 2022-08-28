@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Montserrat&family=Archivo+Black&family=Archivo+Narrow:wght@700&family=Caveat:wght@700&family=Comforter&family=Hammersmith+One&family=Homemade+Apple&family=Josefin+Sans:wght@200&family=Jost&family=Kanit:wght@700&family=Lexend+Exa:wght@900&family=Libre+Barcode+39+Text&family=Marcellus&family=Merienda:wght@700&family=Michroma&family=Monda&family=Montserrat+Subrayada:wght@700&family=Mr+Dafoe&family=Orbitron&family=Oxanium:wght@200;800&family=Quantico:wght@700&family=Rock+Salt&family=Russo+One&family=Splash&family=Teko:wght@700&family=Water+Brush&display=swap');
 
+/* background, wildcards and base page formatting*/
 * {
     margin: 0;
     padding: 0;
@@ -41,21 +42,9 @@ body {
     height: 100vh;
     position: fixed;
     z-index: -2;
-    /* animation */
     animation-name: index-bg-slide;
     animation-duration: 30s;
     animation-fill-mode: forwards;
-}
-
-/* about image animation */
-@keyframes index-bg-slide {
-    from {
-        transform: scale(1.1);
-    }
-
-    to {
-        transform: scale(1);
-    }
 }
 
 .bg-overlay {
@@ -89,11 +78,6 @@ body {
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
 }
-@keyframes hero-opening {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
 
 .call-to-action {
     grid-area: call-to-action;
@@ -105,10 +89,6 @@ body {
     animation-duration: 1s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
-}
-@keyframes cta-opening {
-    from {top: -50%;}
-    to {top: -15%;}
 }
 
 .footer-creds {
@@ -135,10 +115,6 @@ body {
     animation-duration: 1s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
-}
-@keyframes ink-opening {
-    from {opacity: 0;}
-    to {opacity: 1;}
 }
 
 .ip-bottom-hero {
@@ -193,17 +169,13 @@ body {
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
 }
-@keyframes logo-opening {
-    from {opacity: 1;}
-    to {opacity: 0;}
-}
 
 #logo-container img {
     width: 70%;
     height: 70%;
 }
 
-#logo-ronin {
+/* #logo-ronin {
     opacity: 0;
     padding-left: 200px;
     font-family: 'Teko', sans-serif;
@@ -260,7 +232,7 @@ body {
         opacity: 1;
         padding-right: 0px;
     }
-}
+} */
 
 /* navigation */
 
@@ -279,18 +251,6 @@ nav {
     animation-delay: 1s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-}
-
-@keyframes nav-page-open {
-    from {
-        opacity: 0;
-        right: 10%;
-    }
-
-    to {
-        opacity: 1;
-        right: 2.5%;
-    }
 }
 
 .nav-potiioner {
@@ -351,7 +311,7 @@ nav {
     font-size: 18px;
     letter-spacing: 4px;
     /* animation */
-    animation-name: try;
+    animation-name: nav-focus;
     animation-delay: 0s;
     animation-duration: 1s;
     animation-timing-function: ease-in-out;
@@ -383,20 +343,6 @@ nav {
     transition-duration: 1.5s;
 }
 
-@keyframes try {
-    from {
-        opacity: 0;
-        top: -100%;
-        right: -100%;
-    }
-
-    to {
-        opacity: 1;
-        top: 0%;
-        right: 0%;
-    }
-}
-
 /* hero section */
 .hero a {
     position: absolute;
@@ -416,16 +362,6 @@ nav {
     animation-delay: 1.5s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-}
-
-@keyframes hero-a-page-open {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 0.9;
-    }
 }
 
 .hero a:hover {
@@ -735,4 +671,74 @@ label {
 /* for smaller screens */
 @media screen and (max-width: 999px) {
     
+}
+
+/* animations */
+/* background */
+@keyframes index-bg-slide {
+    from {
+        transform: scale(1.1);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes logo-opening {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes ink-opening {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes nav-page-open {
+    from {
+        opacity: 0;
+        right: 10%;
+    }
+
+    to {
+        opacity: 1;
+        right: 2.5%;
+    }
+}
+
+@keyframes nav-focus {
+    from {
+        opacity: 0;
+        top: -100%;
+        right: -100%;
+    }
+
+    to {
+        opacity: 1;
+        top: 0%;
+        right: 0%;
+    }
+}
+
+/* header and hero section */
+@keyframes hero-opening {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes hero-a-page-open {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.9;
+    }
+}
+
+/* call to action section */
+@keyframes cta-opening {
+    from {top: -50%;}
+    to {top: -15%;}
 }
