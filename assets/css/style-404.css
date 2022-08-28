@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Montserrat&family=Archivo+Black&family=Archivo+Narrow:wght@700&family=Caveat:wght@700&family=Comforter&family=Hammersmith+One&family=Homemade+Apple&family=Josefin+Sans:wght@200&family=Jost&family=Kanit:wght@700&family=Lexend+Exa:wght@900&family=Libre+Barcode+39+Text&family=Marcellus&family=Merienda:wght@700&family=Michroma&family=Monda&family=Montserrat+Subrayada:wght@700&family=Mr+Dafoe&family=Orbitron&family=Oxanium:wght@200;800&family=Quantico:wght@700&family=Rock+Salt&family=Russo+One&family=Splash&family=Teko:wght@700&family=Water+Brush&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: block;
+}
+
+head {display: none;}
+
+h1 {font-family: 'Teko', Arial, Helvetica, sans-serif;
+color: #f7f7f8;
+text-align: center;
+margin: 30px auto;}
+
+h2 {font-family: 'Monsterrat', Arial, Helvetica, sans-serif;
+    color: #f7f7f8;
+
+}
+
+p {font-family: 'Monsterrat', 'roboto', sans-serif;}
+
+body {background-color: black;}
+
+a {
+    text-decoration: none;
+    color: #db0a0b;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #cc7d6f;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 70%;
+}
+
+.text-1 {
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    width: 33%;
+    z-index: 2;
+    text-shadow: 2px 2px #00000094;
+    transform: rotate(-20deg);
+    text-align: center;
+}
+
+.pot-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 500px;
+    z-index: 1;
+    animation-name: pog-move;
+    animation-timing-function: cubic-bezier(0, 1.5, 1, 1.5);
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes pog-move {
+    from {top: 500px;}
+    to {top: 0;}
+}
+
+.pot-img img {
+    width: auto;
+    height: 450px;
+    margin: 0 auto;
+    transition-duration: 1s;
+    animation-name: pog;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    position: relative;
+    top: 200%;
+}
+
+@keyframes pog {
+    from {transform: rotate(-1800deg);
+    }
+    to {transform: rotate(0deg);}
+}
+
+.pot-img img:hover {
+    box-shadow: 0px 0px 10px 4px #f5bb00d0;
+    cursor: pointer;
+    animation-name: pog-scale;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    /* transform: scale(1.1);
+    transition-duration: 2s; */
+}
+@keyframes pog-scale {
+    from {transform: scale(1);}
+    to {transform: scale(1.1);}
+}
+
+.text-2 {
+    position: absolute;
+    right: 20%;
+    bottom: -5%;
+    width: 33%;
+    z-index: 2;
+    text-shadow: 2px 2px #00000094;
+}
+
+.acknowledgements {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    color:#f7f7f8
+}
+
+#oh-dear {font-family: 'Mr Dafoe', cursive;
+    font-size: 3em;
+color: #db0a0b;
+letter-spacing: 6px;
+text-transform: uppercase;}
+
+#no-u {font-family: 'Monsterrat', 'roboto', sans-serif;}
+
+#good-thing {
+
+}
+
+#direction {text-align: right;
+
+}
