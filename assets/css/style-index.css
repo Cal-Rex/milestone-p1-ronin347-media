@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     border: none;
+    transition-duration: 1s;
 }
 
 h1 {
@@ -13,6 +14,16 @@ h1 {
 h2 {
     font-family: 'Michroma', sans-serif;
     letter-spacing: 4px;
+}
+
+a {
+    text-decoration: none;
+    color: #db0a0b;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #cc7d6f;
 }
 
 body {
@@ -47,6 +58,7 @@ body {
         transform: scale(1);
     }
 }
+
 .bg-overlay {
     background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
@@ -64,7 +76,7 @@ body {
         'call-to-action'
         'contact'
         'footer';
-        overflow: hidden;
+    overflow: hidden;
 }
 
 .hero {
@@ -103,7 +115,7 @@ body {
     background: url(../images/index/ink-partition-4.png) no-repeat center;
     background-size: cover;
     position: absolute;
-    z-index: 1 ;
+    z-index: 1;
 }
 
 /* .ip-top-hero {
@@ -169,13 +181,17 @@ body {
     animation-fill-mode: forwards;
     transition-duration: 1s;
 }
+
 @keyframes ronin-page-open {
-    from { opacity: 0;
+    from {
+        opacity: 0;
         padding-left: 200px;
-       }
-        to { opacity: 1;
-            padding-left: 0px;
-        }
+    }
+
+    to {
+        opacity: 1;
+        padding-left: 0px;
+    }
 }
 
 #logo-347 {
@@ -191,30 +207,53 @@ body {
     animation-name: number-page-open;
     animation-duration: 1s;
     animation-delay: 2.2s;
-    animation-timing-function: cubic-bezier(1,0,0.2,1);;
+    animation-timing-function: cubic-bezier(1, 0, 0.2, 1);
+    ;
     animation-fill-mode: forwards;
     transition-duration: 1s;
 }
+
 @keyframes number-page-open {
-    from { opacity: 0;
+    from {
+        opacity: 0;
         padding-right: 280px;
-       }
-        to { opacity: 1;
-            padding-right: 0px;
-        }
+    }
+
+    to {
+        opacity: 1;
+        padding-right: 0px;
+    }
 }
 
 /* navigation */
 
 nav {
     position: fixed;
-    z-index: 0;
+    z-index: 2;
+    opacity: 0;
     top: 4%;
     right: 10%;
     width: 270px;
     height: 470px;
     background: none;
     overflow: hidden;
+    animation-name: nav-page-open;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes nav-page-open {
+    from {
+        opacity: 0;
+        right: 10%;
+    }
+
+    to {
+        opacity: 1;
+        right: 2.5%;
+    }
 }
 
 .nav-potiioner {
@@ -246,9 +285,13 @@ nav {
     transition: 0.4s;
 }
 
-.active, .nav-menu:hover {
+#big-nav {display: none;}
+
+.active,
+.nav-menu:hover {
     left: 205px;
     background: none;
+    font-family: 'Times New Roman', Times, serif;
     background-color: #f8f8f7;
     border-radius: 0px;
     color: #000000;
@@ -304,13 +347,17 @@ nav {
 }
 
 @keyframes try {
-    from {opacity: 0;
+    from {
+        opacity: 0;
         top: -100%;
         right: -100%;
-}
-to {opacity: 1;
-    top: 0%;
-right: 0%;}
+    }
+
+    to {
+        opacity: 1;
+        top: 0%;
+        right: 0%;
+    }
 }
 
 /* hero section */
@@ -333,18 +380,23 @@ right: 0%;}
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
+
 @keyframes hero-a-page-open {
-    from { opacity: 0;
-}
-to { opacity: 0.9;
-}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.9;
+    }
 }
 
 .hero a:hover {
     letter-spacing: 2px;
-    padding: 20px 15px 17px 40px!important;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px 15px 17px 40px !important;
     background: url(../images/index/pb2.png) no-repeat !important;
-    background-position:  0% 50% !important;
+    background-position: 0% 50% !important;
     transition-duration: 1s;
     animation-duration: 1s;
     background-size: 400px;
@@ -367,6 +419,7 @@ to { opacity: 0.9;
     width: 100%;
     z-index: 1;
 }
+
 /* body */
 
 #call-to-actions {
@@ -380,6 +433,20 @@ to { opacity: 0.9;
 #call-to-actions>h2 {
     text-align: center;
     margin-bottom: 0.5em;
+}
+
+#call-to-actions p {
+    margin: 20px auto;
+}
+
+.contact-head {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.contact-mail {
+    text-align: center;
+    margin: 0 auto;
 }
 
 /* contact form */
@@ -555,16 +622,19 @@ label {
         top: 30%;
         transition-duration: 1s;
     }
+
     #logo-container {
         width: 460px;
         height: 230px;
         transition-duration: 1s;
     }
+
     #logo-ronin {
         font-size: 148px;
         letter-spacing: 2 !important;
         transition-duration: 1s;
     }
+
     #logo-347 {
         font-family: 'Mr Dafoe', cursive;
         position: absolute;
@@ -576,80 +646,56 @@ label {
         transition-duration: 1s;
     }
 
-    nav {
-        position: fixed;
-        background-color: none;
-        font-family: sans-serif;
-        top: 4%;
-        z-index: 2;
+    .nav-menu {
+        left: 100px;
+        width: 170px;
     }
 
-    #big-nav {display: inline-block;
+    .active,
+    .nav-menu:hover {
+        background: none;
+        background-color: #f8f8f7;
+        border-radius: 0px;
+        color: #000000;
+        width: 170px;
+        left: 100px;
+    }
+
+    #big-nav {
+        display: inline-block;
         position: relative;
         top: -15%;
-    font-size: 50%;
-    font-family: 'teko';
-    letter-spacing: 8px;
-    text-transform: uppercase;
-text-align: center;
-line-height: 60px;}
-
-    .nav-burger {
-        position: fixed;
-        overflow: hidden;
-        opacity: 0;
-        right: 10%;
-        top: 4%;
-        width: 200px;
-        height: 60px;
-        padding-left: 5px;
-        padding-right: 15px;
-        text-align: right;
-        color: #f8f8f7;
-        font-size: 50px;
+        font-size: 50%;
+        font-family: 'teko', sans-serif;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        text-align: center;
         line-height: 60px;
-        background: url(../images/index/pb1flip.png) no-repeat;
-        background-size: 440px;
-        background-position: -3% 55%;
-        border-radius: 20px;
-        z-index: 10;
-        animation-name: nav-page-open;
-        animation-duration: 1s;
-        animation-delay: 1s;
-        animation-timing-function: ease-in-out;
-        animation-fill-mode: forwards;
     }
-    @keyframes nav-page-open {
-        from { opacity: 0;
-        right: 10%;
+
+    #big-nav:focus {
+        font-family: 'Times New Roman', Times, serif;
     }
-    to { opacity: 1;
-    right: 2.5%;
+
+    .active,
+    .nav-menu:hover #big-nav {
+        font-family: 'Times New Roman', Times, serif;
     }
-    }
-    
-    .nav-burger:hover {
-        width: 200px;
-        padding-left: 15px;
-        padding-right: 50px;
-        padding-top: 1.5px;
-        background: url(../images/index/pb2.png) no-repeat;
-        background-size: 450px;
-        background-position: 100% 30%;
-        border-radius: 20px;
-        color: #000000;
-        letter-spacing: 4px;
-        transition-duration: 1s;
-    }
+  
 }
 
 @media screen and (min-width: 1750px) {
-    .call-to-action {top: -20%;}
-    #call-to-actions {padding-top: 15%;
-        padding-bottom: 7.5%;}
+    .call-to-action {
+        top: -20%;
+    }
+
+    #call-to-actions {
+        padding-top: 15%;
+        padding-bottom: 7.5%;
+    }
 }
 
 /* for smaller screens */
 @media screen and (max-width: 999px) {
-    #big-nav {display: none;}
+    
 }
