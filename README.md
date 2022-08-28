@@ -222,7 +222,6 @@ Taking the old Logo as a reference, Fonts were sampled from [Google fonts](https
   * error in code targeting wrong element
 * Main page video hero image not fitting in container
   * fixed with 3rd party code benmarshall.me
-* text shrinking to too small when viewport changes size
 * hero video not adapting to smaller screen sizes
   * resolved by adjusting with media queries
 * navigation button on smaller screens has an unwanted line solid white line that appears
@@ -236,6 +235,8 @@ Taking the old Logo as a reference, Fonts were sampled from [Google fonts](https
   * resolved by changing form padding to % from px variable
 * contact box background overlapping ink partition even though overflow rule set
   * solved by adding a top border to hide the break in black background and ink partition
+* Links in nav not clickable
+  * resolved by re-working nav bar to use Javascript from W3schools
 
 
 # TECHNOLOGIES
