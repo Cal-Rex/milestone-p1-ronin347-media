@@ -105,6 +105,8 @@ body {
 
 /* page layout */
 .index-layout {
+    position: relative;
+    top: -500px;
     display: grid;
     row-gap: 0px;
     grid-template-areas:
@@ -113,6 +115,11 @@ body {
         'contact'
         'footer';
     overflow: hidden;
+    animation-name: index-opener;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
 }
 
 /* navigation */
@@ -155,7 +162,9 @@ nav {
     transition: 0.4s;
 }
 
-#big-nav {display: none;}
+#big-nav {
+    display: none;
+}
 
 .active,
 .nav-menu:hover {
@@ -217,8 +226,8 @@ nav {
 
 /* header and hero section */
 .hero {
+    position: relative;
     grid-area: hero;
-    overflow: hidden;
     top: -10%;
     opacity: 0;
     animation-name: hero-opening;
@@ -281,21 +290,32 @@ nav {
     top: 89%;
 }
 
-/* call to action section */
 .ip-top-cta {
-    bottom: 90%;
-    animation-delay: 1.7s;
+    top: 80%;
+    z-index: -1;
+}
+
+/* call to action section */
+#mobile-logo {
+    display: none;
+    position: relative;
+    top: 25%;
+    justify-content: center;
+}
+#mobile-logo img {
+    width: 35%;
+    height: 35%;
 }
 
 #call-to-actions {
     width: 30%;
-    padding-top: 10%;
-    padding-bottom: 2.5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     margin: 0 auto;
     background-size: cover;
 }
 
-#call-to-actions > h2 {
+#call-to-actions>h2 {
     text-align: center;
     margin-bottom: 0.5em;
 }
@@ -308,12 +328,8 @@ nav {
     grid-area: call-to-action;
     overflow: hidden;
     position: relative;
-    top: -50%;
-    animation-name: cta-opening;
-    animation-delay: 1s;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
+    top: 0%;
+    opacity: 1;
 }
 
 .contact-head {
@@ -419,7 +435,7 @@ nav {
 }
 
 /* media-queries */
-/* for larger screens */
+/* navigation adjustment for larger screens */
 @media screen and (min-width: 1000px) {
     #logo-positioner {
         top: 30%;
@@ -460,27 +476,74 @@ nav {
     .nav-menu:hover #big-nav {
         font-family: 'Times New Roman', Times, serif;
     }
-  
+
 }
 
-@media screen and (min-width: 1750px) {
-    .call-to-action {
-        top: -20%;
+@media screen and (min-width: 1500px) {
+    .ip-top-cta {
+        top: 90%;
     }
 
-    #call-to-actions {
-        padding-top: 15%;
-        padding-bottom: 7.5%;
-    }
 }
 
 /* for smaller screens */
-@media screen and (max-width: 999px) {
-    
+@media screen and (max-width: 1025px) {
+    #call-to-actions {padding-top: 15%;}
+}
+
+
+@media screen and (max-width: 915px) {
+    #call-to-actions {width: 66%;}
+
+}
+
+@media screen and (max-width: 825px) {
+    #call-to-actions {padding-top: 20%;}
+}
+
+@media screen and (max-width: 770px) {
+    #call-to-actions {width: 80%;}
+
+}
+
+@media screen and (max-width: 545px) {
+    .bg {background-position: 75% 50%;}
+    .hero a {background: url(../images/index/pb1flip.png) no-repeat;
+        background-position: 100% 40%;
+        left: 30%;
+        bottom: 4%;}
+    #mobile-logo {display: flex;
+    top: 15%;}
+    #logo-positioner {display: none;}
+    #call-to-actions {padding-top: 40%;
+    padding-bottom: 20%;}
+}
+
+@media screen and (max-width: 420px) {
+    .ip-bottom-hero {top: 80%;}
+    .ip-top-cta {top: 40%;}
+    #mobile-logo {top: 12.5%;}
+    #call-to-actions {padding-top: 50%;}
+}
+
+@media screen and (max-width: 380px) {
+    .hero a {bottom: 47%;
+    left: 0%;}
+    #mobile-logo {top: 6%;}
+    #call-to-actions {padding-top: 70%;}
+}
+
+@media screen and (max-width: 285px) {
+    .hero a {bottom: 0%;}
 }
 
 /* animations */
 /* background */
+@keyframes index-opener {
+    from {top: -500px;}
+    to {top: 0px;}
+}
+
 @keyframes index-bg-slide {
     from {
         transform: scale(1.1);
@@ -492,13 +555,23 @@ nav {
 }
 
 @keyframes logo-opening {
-    from {opacity: 1;}
-    to {opacity: 0;}
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
 }
 
 @keyframes ink-opening {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes nav-page-open {
@@ -529,8 +602,13 @@ nav {
 
 /* header and hero section */
 @keyframes hero-opening {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes hero-a-page-open {
@@ -541,10 +619,4 @@ nav {
     to {
         opacity: 0.9;
     }
-}
-
-/* call to action section */
-@keyframes cta-opening {
-    from {top: -50%;}
-    to {top: -15%;}
 }
