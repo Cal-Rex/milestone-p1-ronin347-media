@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     border: none;
-    transition-duration: 1s;
 }
 
 h1 {
@@ -83,19 +82,33 @@ body {
     grid-area: hero;
     overflow: hidden;
     top: -10%;
+    opacity: 0;
+    animation-name: hero-opening;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
 }
+@keyframes hero-opening {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 
 .call-to-action {
     grid-area: call-to-action;
     overflow: hidden;
     position: relative;
-    top: -15%;
+    top: -50%;
+    animation-name: cta-opening;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
 }
-
-.contact {
-    grid-area: contact;
-    overflow: hidden;
-    top: -10%;
+@keyframes cta-opening {
+    from {top: -50%;}
+    to {top: -15%;}
 }
 
 .footer-creds {
@@ -116,11 +129,17 @@ body {
     background-size: cover;
     position: absolute;
     z-index: 1;
+    opacity: 0;
+    animation-name: ink-opening;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
 }
-
-/* .ip-top-hero {
-    bottom: 85%;
-} */
+@keyframes ink-opening {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 
 .ip-bottom-hero {
     top: 89%;
@@ -128,10 +147,12 @@ body {
 
 .ip-top-cta {
     bottom: 90%;
+    animation-delay: 1.7s;
 }
 
 .ip-bottom-cta {
     top: -30%;
+    animation-delay: 0s;
 }
 
 /* .ip-top-con {
@@ -164,6 +185,22 @@ body {
     text-transform: uppercase;
     position: relative;
     transition-duration: 1s;
+    z-index: 4;
+    opacity: 1;
+    animation-name: logo-opening;
+    animation-delay: 0.5s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+@keyframes logo-opening {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+#logo-container img {
+    width: 70%;
+    height: 70%;
 }
 
 #logo-ronin {
@@ -233,7 +270,7 @@ nav {
     opacity: 0;
     top: 4%;
     right: 10%;
-    width: 270px;
+    width: 220px;
     height: 470px;
     background: none;
     overflow: hidden;
@@ -267,7 +304,7 @@ nav {
     position: relative;
     z-index: 20;
     top: 0;
-    left: 185px;
+    left: 135px;
     width: 85px;
     height: 65px;
     line-height: 65px;
@@ -289,7 +326,7 @@ nav {
 
 .active,
 .nav-menu:hover {
-    left: 205px;
+    left: 155px;
     background: none;
     font-family: 'Times New Roman', Times, serif;
     background-color: #f8f8f7;
@@ -309,7 +346,7 @@ nav {
     display: none;
     background-color: #f8f8f7;
     overflow: hidden;
-    text-align: right;
+    text-align: center;
     line-height: 65px;
     font-size: 18px;
     letter-spacing: 4px;
@@ -597,7 +634,7 @@ label {
 }
 
 #instagram i:hover {
-    color: peachpuff;
+    color: #C0007A;
 }
 
 #company-address {
@@ -647,7 +684,7 @@ label {
     }
 
     .nav-menu {
-        left: 100px;
+        left: 50px;
         width: 170px;
     }
 
@@ -658,7 +695,7 @@ label {
         border-radius: 0px;
         color: #000000;
         width: 170px;
-        left: 100px;
+        left: 50px;
     }
 
     #big-nav {
