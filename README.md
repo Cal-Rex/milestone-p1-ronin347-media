@@ -231,15 +231,19 @@ Taking the old Logo as a reference, Fonts were sampled from [Google fonts](https
 * about-bg animation frame jittery and not static on resolutions narrower than 1000px
   * vertical edges hidden with ink partition design
   * black background added to smaller resolutions to hide jittery horizontal borders on animation
+  * bug and solution now obselete as structure of website changed to grid display
 * contact box exceeding viewport width when inder 950px~
   * resolved by changing form padding to % from px variable
+  * contact box now removed, bug and solution no longer relevant
 * contact box background overlapping ink partition even though overflow rule set
   * solved by adding a top border to hide the break in black background and ink partition
 * Links in nav not clickable
   * resolved by re-working nav bar to use Javascript from W3schools
-* following images not loading after first deployment:
-  * 404 media
-  * Index Ronin logo
+* some images not loading after first deployment:
+  * filepaths were absolute, changed to relative.
+* scroll bar toggling repeatedly on 404
+  * fixed with 3rd party code found on stack overflow: https://stackoverflow.com/questions/28411499/disable-scrolling-on-body 
+  
 
 
 # TECHNOLOGIES
