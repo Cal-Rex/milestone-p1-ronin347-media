@@ -127,3 +127,205 @@ nav {
     color: #db0a0b;
     transition-duration: 1.5s;
 }
+
+/* footer */
+.ink-partition {
+    width: 100%;
+    height: 200px;
+    background: url(../images/index/ink-partition-4.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    animation-name: ink-opening;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.footer {
+    grid-area: footer;
+    position: relative;
+}
+
+#social-footer {
+    width: 100%;
+    height: 200px;
+    background-color: #000000;
+    color: #f8f8f7;
+    position: relative;
+}
+
+.ip-bottom-cta {
+    top: -30%;
+    animation-delay: 0s;
+}
+
+#social {
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+}
+
+#social h2 {
+    text-align: center;
+    font-size: 80%;
+    position: relative;
+    z-index: 4;
+}
+
+.social-buttons {
+    text-align: center;
+    display: grid;
+    position: relative;
+    bottom: 10px;
+    z-index: 4;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.social-buttons li {
+    margin: 15px 15%;
+    list-style-type: none;
+}
+
+.social-buttons i {
+    font-size: 300%;
+    padding: 5%;
+    margin: 1%;
+}
+
+#twitter {
+    color: #f8f8f7;
+}
+
+#twitter i:hover {
+    color: rgb(29, 155, 240);
+}
+
+#youtube {
+    color: #f8f8f7;
+}
+
+#youtube i:hover {
+    color: #c00;
+}
+
+#instagram {
+    color: #f8f8f7;
+}
+
+#instagram i:hover {
+    color: #C0007A;
+}
+
+.footer-creds {
+    display: grid;
+    grid-template-areas:
+        'creds-1 creds-2';
+}
+
+#cal-rex-git {
+    grid-area: creds-1;
+    text-align: left;
+}
+
+#copyright {
+    grid-area: creds-2;
+    text-align: right;
+}
+
+/* media-queries */
+/* navigation adjustment for larger screens */
+@media screen and (min-width: 1000px) {
+    #logo-positioner {
+        top: 30%;
+    }
+
+    #logo-container {
+        width: 460px;
+        height: 230px;
+    }
+
+    .nav-menu {
+        left: 35px;
+        width: 185px;
+    }
+
+    .active,
+    .nav-menu:hover {
+        background: none;
+        background-color: #f8f8f7;
+        border-radius: 0px;
+        color: #000000;
+        width: 170px;
+        left: 50px;
+    }
+
+    #big-nav {
+        display: inline-block;
+        position: relative;
+        top: -15%;
+        font-size: 50%;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 60px;
+    }
+
+    .active,
+    .nav-menu:hover #big-nav {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+}
+
+/* animations */
+/* background and layout */
+@keyframes index-bg-slide {
+    from {
+        transform: scale(1.1);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/* navigation */
+@keyframes nav-page-open {
+    from {
+        opacity: 0;
+        right: 10%;
+    }
+
+    to {
+        opacity: 1;
+        right: 2.5%;
+    }
+}
+
+@keyframes nav-focus {
+    from {
+        opacity: 0;
+        top: -100%;
+        right: -100%;
+    }
+
+    to {
+        opacity: 1;
+        top: 0%;
+        right: 0%;
+    }
+}
+
+/* footer */
+@keyframes ink-opening {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

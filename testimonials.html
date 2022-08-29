@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="bg">
+    <div class="bg"></div>
         <div class="bg-overlay"></div>
         <nav><div>
             <button class="nav-menu"><span id="big-nav">Menu</span><i class="fa-solid fa-bars"></i></button>
@@ -27,9 +27,56 @@
                 </div>
                 </nav>
     <header></header>
-        <footer></footer>
-</footer>
+    <footer>
+        <div class="footer" id="social-footer">
+            <div class="ink-partition ip-bottom-cta"></div>
+            <div id="social">
+                <h2>Follow us</h2>
+                <ul class="social-buttons">
+                    <li>
+                        <a id="twitter" href="https://twitter.com" target="_blank" rel="noopener"
+                            aria-label="Visit our facebook page (opens in a new tab)"><i
+                                class="fa-brands fa-twitter-square"></i></a>
+                    </li>
+                    <li>
+                        <a id="youtube" href="https://youtube.com" target="_blank" rel="noopener"
+                            aria-label="watch our youtube playlist (opens in a new tab)"><i
+                                class="fa-brands fa-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a id="instagram" href="https://instagram.com" target="_blank" rel="noopener"
+                            aria-label="Visit our Instagram (opens in a new tab)"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-creds">
+                <div class="creds-1" id="cal-rex-git">
+                    <p>Site Developed for Ronin347 by <a href="https://github.com/Cal-Rex" aria-label="link to Cal-Rex's Github" target="_blank" rel="noopener">Cal-Rex</a></p>
+                </div>
+                <div class="creds-2" id="copyright">
+                    <p>Copyright Ronin347 Media 2022 ©</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 <script src="https://kit.fontawesome.com/85f184e105.js" crossorigin="anonymous"></script>
+<script>
+    var acc = document.getElementsByClassName("nav-menu");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
 </html>
 </html>
