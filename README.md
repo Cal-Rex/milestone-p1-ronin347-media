@@ -237,6 +237,9 @@ Taking the old Logo as a reference, Fonts were sampled from [Google fonts](https
   * solved by adding a top border to hide the break in black background and ink partition
 * Links in nav not clickable
   * resolved by re-working nav bar to use Javascript from W3schools
+* following images not loading after first deployment:
+  * 404 media
+  * Index Ronin logo
 
 
 # TECHNOLOGIES
