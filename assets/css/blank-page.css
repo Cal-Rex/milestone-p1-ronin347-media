@@ -8,8 +8,6 @@
 
 h1 {
     font-family: 'teko', impact, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 6px;
 }
 
 h2 {
@@ -155,41 +153,6 @@ nav {
     letter-spacing: 8px;
     color: #db0a0b;
     transition-duration: 1.5s;
-}
-
-/* page header */
-header {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 175px;
-    display: grid;
-    grid-template-areas: 'logo-c page-name spacer';
-}
-
-.logo-c {
-    grid-area: logo-c;
-    display: grid;
-    grid-template-columns: 10% 80% 10%;
-    grid-template-rows: 15% 70% 15%;
-}
-
-.logo {
-    background: url(../images/index/ronin-logo-clip.png) no-repeat;
-    background-size: contain;
-    background-position: 25% 25%;
-}
-
-.page-name {
-    grid-area: page-name;
-    text-align: center;
-    line-height: 175px;
-}
-
-.spacer-l {
-}
-.spacer {
-    grid-area: spacer;
 }
 
 /* footer */
