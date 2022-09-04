@@ -192,6 +192,47 @@ header {
 }
 
 /* body */
+#fly {
+    background: url(../images/testimonials/fly-project-bg.png), #00000061;
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: 0% 40%;
+}
+
+#suji {
+    background: url(../images/testimonials/pro-2-bg.png), #00000061;
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: top left;
+}
+
+#ali-crawford {
+    background: url(../images/testimonials/alison-crawford-prov.png), #00000061;
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: top left;
+}
+
+#adam {
+    background: url(../images/testimonials/pro-4-bg.png), #00000061;
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#ross-park {
+    background: url(../images/testimonials/pro-5-bg.png), #00000061;
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: 50% 10%;
+}
+
+#puresport {
+    background: url(../images/testimonials/pro-6-bg.png), #00000061;
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: 50% 10%;
+}
 
 .project-container {
     margin: 0 auto 50px auto;
@@ -199,15 +240,13 @@ header {
       display: grid;
       grid-template-areas:
         'iframe text';
-      gap: 40px;
-      background-color: #2196F3;
-      width: 70vw;
+      width: 80vw;
     }
     
     iframe { grid-area: iframe;
     margin: auto auto;
-    width: 35vw;
-    height: 400px;}
+    width: 30vw;
+    height: 350px;}
     .testimonial-text { grid-area: text;}
     
     .project-container > div {
@@ -215,7 +254,7 @@ header {
       text-align: left;
       padding: 20px 5%;
       font-size: 1em;
-      width: 25vw;
+      width: 35vw;
       margin: auto auto;
     }
 
