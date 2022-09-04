@@ -15,6 +15,7 @@ h1 {
 h2 {
     font-family: 'Michroma', sans-serif;
     letter-spacing: 4px;
+    margin-bottom: 10px;
 }
 
 a {
@@ -36,7 +37,8 @@ body {
 }
 
 .bg {
-    background: url(../images/testimonials/test-bg2.png) no-repeat;
+    background: url(../images/testimonials/test-bg2.png) no-repeat, #00000061;
+    background-blend-mode: overlay;
     background-position: 50%;
     background-size: cover;
     width: 100%;
@@ -166,9 +168,9 @@ header {
     height: 400px;
     display: grid;
     grid-template-rows: 40% 60%;
-    grid-template-areas: 
-    'logo-c'
-    'page-name';
+    grid-template-areas:
+        'logo-c'
+        'page-name';
 }
 
 .logo {
@@ -190,118 +192,32 @@ header {
 }
 
 /* body */
-.testimonial-grid {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 550px;
-    row-gap: 150px;
-    width: 100%;
-    position: relative;
-}
 
-.col-heading {
-    display: none;
-}
-
-.pro-1 {
-    width: 100%;
-    background: url(../images/testimonials/fly-project-bg.png) no-repeat;
-    background-size: cover;
-    background-position: 50%;
-    position: relative;
-}
-
-.pro-2 {
-    width: 100%;
-    background: url(../images/testimonials/pro-2-bg.png) no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.pro-3 {
-    width: 100%;
-    background: url(../images/testimonials/alison-crawford-prov.png) no-repeat;
-    background-size: cover;
-    background-position: right;
-    position: relative;
-}
-
-#pro-3-h2 {
-    padding: 0% 5% 2% 5%;
-}
-
-.pro-4 {
-    width: 100%;
-    background: url(../images/testimonials/pro-4-bg.png) no-repeat;
-    background-size: cover;
-    background-position: right;
-    position: relative;
-}
-
-.pro-5 {
-    width: 100%;
-    background: url(../images/testimonials/pro-5-bg.png) no-repeat;
-    background-size: cover;
-    background-position: right;
-    position: relative;
-}
-
-.pro-6 {
-    width: 100%;
-    background: url(../images/testimonials/pro-6-bg.png) no-repeat;
-    background-size: cover;
-    background-position: top right;
-    position: relative;
-}
-
-.pro-content {
-    background-color: #000000b8;
-    height: 550px;
-    position: relative;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 5% 42.5% 5% 42.5% 5%;
-    grid-template-rows: 15% 70% 15%;
-    grid-template-areas:
-        '. . . . .'
-        '. vid . test .'
-        '. . . . .';
-}
-
-.video-container {
-    grid-area: vid;
-    overflow: hidden;
-    /* 16:9 aspect ratio */
-    padding-top: 56.25%;
-    position: relative;
-    max-height: 437.32px;
-    max-width: 624.75px;
-}
-
-.video-container iframe {
-border: 0;
-   height: 100%;
-   left: 0;
-   position: absolute;
-   top: 0;
-   width: 100%;
-}
-
-.testimonial-about {
-    grid-area: test;
-    /* background-color: #00000090; */
-}
-
-.testimonial-about p {
-    padding: 0% 2% 3.5% 5%;
-    letter-spacing: 2px;
-}
-
-.testimonial-about h2 {
-    padding: 3% 5% 2% 5%;
-}
-
-
+.project-container {
+    margin: 0 auto 50px auto;
+    padding: 40px 3%;
+      display: grid;
+      grid-template-areas:
+        'iframe text';
+      gap: 40px;
+      background-color: #2196F3;
+      width: 70vw;
+    }
+    
+    iframe { grid-area: iframe;
+    margin: auto auto;
+    width: 35vw;
+    height: 400px;}
+    .testimonial-text { grid-area: text;}
+    
+    .project-container > div {
+      background-color: #000000b8;
+      text-align: left;
+      padding: 20px 5%;
+      font-size: 1em;
+      width: 25vw;
+      margin: auto auto;
+    }
 
 /* footer */
 .ink-partition {
@@ -457,30 +373,30 @@ border: 0;
 
 /* smaller screens */
 @media screen and (max-width: 1350px) {
-.pro-content {
-    background-color: #000000b8;
-    height: 550px;
-    position: relative;
-    overflow: hidden;
-    display: grid;
-    grid-template-columns: 2% 96% 2%;
-    grid-template-rows: 2% 40% 2% 54% 2%;
-    grid-template-areas:
-    '. . .'    
-    '. vid .'
-        '. . .'
-        '. test .'
-        '. . .';
-}
+    .pro-content {
+        background-color: #000000b8;
+        height: 550px;
+        position: relative;
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 2% 96% 2%;
+        grid-template-rows: 2% 40% 2% 54% 2%;
+        grid-template-areas:
+            '. . .'
+            '. vid .'
+            '. . .'
+            '. test .'
+            '. . .';
+    }
 
-.video-container {
-    grid-area: vid;
-    overflow: hidden;
-    padding-top: 56.25%;
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-}
+    .video-container {
+        grid-area: vid;
+        overflow: hidden;
+        padding-top: 56.25%;
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 /* animations */
