@@ -193,45 +193,45 @@ header {
 
 /* body */
 #fly {
-    background: url(../images/testimonials/fly-project-bg.png), #00000061;
+    background: url(../images/testimonials/fly-project-bg.png) no-repeat, #00000061;
     background-blend-mode: overlay;
     background-size: cover;
     background-position: 0% 40%;
 }
 
 #suji {
-    background: url(../images/testimonials/pro-2-bg.png), #00000061;
+    background: url(../images/testimonials/pro-2-bg.png) no-repeat, #00000061;
     background-blend-mode: overlay;
     background-size: cover;
-    background-position: top left;
+    background-position: 80% 0%;
 }
 
 #ali-crawford {
-    background: url(../images/testimonials/alison-crawford-prov.png), #00000061;
+    background: url(../images/testimonials/alison-crawford-prov.png) no-repeat, #00000061;
     background-blend-mode: overlay;
     background-size: cover;
-    background-position: top left;
+    background-position: 45%;
 }
 
 #adam {
-    background: url(../images/testimonials/pro-4-bg.png), #00000061;
+    background: url(../images/testimonials/pro-4-bg.png) no-repeat, #00000061;
     background-blend-mode: overlay;
     background-size: cover;
     background-position: 50% 50%;
 }
 
 #ross-park {
-    background: url(../images/testimonials/pro-5-bg.png), #00000061;
+    background: url(../images/testimonials/pro-5-bg.png) no-repeat, #00000061;
     background-blend-mode: overlay;
     background-size: cover;
     background-position: 50% 10%;
 }
 
 #puresport {
-    background: url(../images/testimonials/pro-6-bg.png), #00000061;
+    background: url(../images/testimonials/pro-6-bg.png) no-repeat, #00000061;
     background-blend-mode: overlay;
     background-size: cover;
-    background-position: 50% 10%;
+    background-position: right;
 }
 
 .project-container {
@@ -411,32 +411,76 @@ header {
 }
 
 /* smaller screens */
-@media screen and (max-width: 1350px) {
-    .pro-content {
-        background-color: #000000b8;
-        height: 550px;
-        position: relative;
-        overflow: hidden;
-        display: grid;
-        grid-template-columns: 2% 96% 2%;
-        grid-template-rows: 2% 40% 2% 54% 2%;
-        grid-template-areas:
-            '. . .'
-            '. vid .'
-            '. . .'
-            '. test .'
-            '. . .';
+@media screen and (max-width: 1100px) {
+    .project-container {
+          grid-template-areas:
+            'iframe'
+            'text';
+          width: 80vw;
+          row-gap: 30px;
+        }
+        
+        iframe {
+        width: 66vw;
     }
+   
+        .project-container > div {
+          width: 58vw;
+        }
+}
 
-    .video-container {
-        grid-area: vid;
-        overflow: hidden;
-        padding-top: 56.25%;
-        position: relative;
-        width: 100%;
-        margin: 0 auto;
+@media screen and (max-width: 770px) {
+    .project-container {
+          width: 85vw;
+        }
+        
+        iframe {
+        width: 75vw;
+    }
+   
+        .project-container > div {
+          width: 67vw;
+        }
+}
+
+@media screen and (max-width: 545px) {
+    #fly {
+        background-position: 90%;
     }
 }
+
+@media screen and (max-width: 420px) {
+    .project-container {
+          width: 95vw;
+        }
+        
+        iframe {
+        width: 90vw;
+    }
+   
+        .project-container > div {
+          width: 82vw;
+        }
+        #suji {
+            background-position: 70% 0%;
+        }
+}
+
+@media screen and (max-width: 300px) {
+    .project-container {
+          width: 100%;
+          padding: 40px 5px;
+        }
+        
+        iframe {
+        width: 100%;
+    }
+   
+        .project-container > div {
+          width: 100%;
+        }
+}
+    
 
 /* animations */
 /* background and layout */
