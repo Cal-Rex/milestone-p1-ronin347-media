@@ -231,7 +231,7 @@ header {
     background: url(../images/testimonials/pro-6-bg.png) no-repeat, #00000061;
     background-blend-mode: overlay;
     background-size: cover;
-    background-position: right;
+    background-position: top right;
 }
 
 .project-container {
