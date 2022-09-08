@@ -302,6 +302,7 @@ nav {
     top: 25%;
     justify-content: center;
 }
+
 #mobile-logo img {
     width: 35%;
     height: 35%;
@@ -487,61 +488,145 @@ nav {
 }
 
 /* for smaller screens */
+@media screen and (max-width: 1700px) {
+    #call-to-actions {
+        width: 40%;
+        margin: 0 auto 0 15%;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    #call-to-actions {
+        margin: 0 auto 0 10%;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .bg {
+        background-position: 80%;
+    }
+
+    #call-to-actions {
+        width: 50%;
+        margin: 0 auto 0 12.5%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .bg {
+        background-position: 80%;
+    }
+
+    #call-to-actions {
+        width: 50%;
+        margin: 0 auto 0 10%;
+    }
+}
+
 @media screen and (max-width: 1025px) {
-    #call-to-actions {padding-top: 15%;}
+    #call-to-actions {
+        padding-top: 15%;
+    }
 }
 
-
-@media screen and (max-width: 915px) {
-    #call-to-actions {width: 66%;}
-
-}
-
-@media screen and (max-width: 825px) {
-    #call-to-actions {padding-top: 20%;}
+@media screen and (max-width: 900px) {
+    #call-to-actions {
+        width: 66%;
+        margin: 15% auto 10% auto;
+        background-color: #00000061;
+    backdrop-filter: blur(10px);
+    padding-top: 0;
+    padding: 5%;
+    }
 }
 
 @media screen and (max-width: 770px) {
-    #call-to-actions {width: 80%;}
+    #call-to-actions {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    #call-to-actions {
+        margin: 20% auto 10% auto;
+    }
 
 }
 
 @media screen and (max-width: 545px) {
-    .bg {background-position: 75% 50%;}
-    .hero a {background: url(../images/index/pb1flip.png) no-repeat;
+    .bg {
+        background-position: 75% 50%;
+    }
+
+    .hero a {
+        background: url(../images/index/pb1flip.png) no-repeat;
         background-position: 100% 40%;
         left: 30%;
-        bottom: 4%;}
-    #mobile-logo {display: flex;
-    top: 15%;}
-    #logo-positioner {display: none;}
-    #call-to-actions {padding-top: 40%;
-    padding-bottom: 20%;}
+        bottom: 4%;
+    }
+
+    #mobile-logo {
+        display: flex;
+        top: 15%;
+    }
+
+    #logo-positioner {
+        display: none;
+    }
+
+    #call-to-actions {
+        margin: 50% auto 15% auto;
+    }
 }
 
 @media screen and (max-width: 420px) {
-    .ip-bottom-hero {top: 80%;}
-    .ip-top-cta {top: 40%;}
-    #mobile-logo {top: 12.5%;}
-    #call-to-actions {padding-top: 50%;}
+    .ip-bottom-hero {
+        top: 80%;
+    }
+
+    .ip-top-cta {
+        top: 40%;
+    }
+
+    #mobile-logo {
+        top: 12.5%;
+    }
+
+    #call-to-actions {
+        margin: 50% 0 15% 0;
+        width: 95vw;
+        padding: 2.5%;
+    }
 }
 
 @media screen and (max-width: 380px) {
-    .hero a {bottom: 47%;
-    left: 0%;}
-    #mobile-logo {top: 6%;}
-    #call-to-actions {padding-top: 70%;}
+    .hero a {
+        bottom: 47%;
+        left: 0%;
+    }
+
+    #mobile-logo {
+        top: 10%;
+    }
 }
 
 @media screen and (max-width: 285px) {
-    .hero a {bottom: 0%;}
+    .hero a {
+        bottom: 0%;
+    }
 }
 
 /* animations */
 /* background */
 @keyframes index-opener {
-    from {top: -500px;}
-    to {top: 0px;}
+    from {
+        top: -500px;
+    }
+
+    to {
+        top: 0px;
+    }
 }
 
 @keyframes index-bg-slide {
