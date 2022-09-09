@@ -11,7 +11,6 @@
 
 <body>
     <div class="bg"></div>
-        <div class="bg-overlay"></div>
         <nav><div>
             <button class="nav-menu"><span id="big-nav">Menu</span><i class="fa-solid fa-bars"></i></button>
                 <div class="panel">
@@ -26,11 +25,28 @@
                 </div>
                 </div>
                 </nav>
-    <header> <div class="logo">
+    <header><div class="logo">
     </div>
     <div class="page-name">
         <h1>Get in Touch</h1>
     </div></header>
+    <section class="contact-form">
+        <form method="POST" action="https://formdump.codeinstitute.net/" class="signup-form">
+            <label for="first-name">First Name</label>
+            <input class="text" id="first-name" name="first_name" type="text" required>
+            
+            <label for="last-name">Last Name</label>
+            <input class="text" id="last-name" name="last_name" type="text" required>
+            
+            <label for="email">Email Address</label>
+            <input class="text" type="email" id="email" name="email_address" required>
+
+            <label for="note">Got a note for us?</label>
+            <textarea class="text-area" id="note" name="note" rows="10"></textarea>
+
+            <input class="contact-button" type="submit" value="Contact">
+        </form>
+    </section>
     <footer>
         <div class="footer" id="social-footer">
             <div class="ink-partition ip-bottom-cta"></div>
