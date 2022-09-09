@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Montserrat&family=Archivo+Black&family=Archivo+Narrow:wght@700&family=Caveat:wght@700&family=Comforter&family=Hammersmith+One&family=Homemade+Apple&family=Josefin+Sans:wght@200&family=Jost&family=Kanit:wght@700&family=Lexend+Exa:wght@900&family=Libre+Barcode+39+Text&family=Marcellus&family=Merienda:wght@700&family=Michroma&family=Monda&family=Montserrat+Subrayada:wght@700&family=Mr+Dafoe&family=Orbitron&family=Oxanium:wght@200;800&family=Quantico:wght@700&family=Rock+Salt&family=Russo+One&family=Splash&family=Teko:wght@700&family=Water+Brush&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+h1 {
+    font-family: 'teko', impact, sans-serif;
+}
+
+h2 {
+    font-family: 'Michroma', sans-serif;
+    letter-spacing: 4px;
+}
+
+a {
+    text-decoration: none;
+    color: #db0a0b;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #cc7d6f;
+}
+
+body {
+    font-family: 'Monsterrat', 'roboto', sans-serif;
+    color: #f8f8f7;
+    text-shadow: 1px 1px #000000;
+    background-color: #000000;
+    font-size: 1.25em;
+}
+
+.bg {
+    background: url(../images/index/index-bg-b.png) no-repeat;
+    background-position: right;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -2;
+    animation-name: index-bg-slide;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+}
+
+.bg-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+/* navigation */
+nav {
+    position: fixed;
+    z-index: 2;
+    opacity: 0;
+    top: 4%;
+    right: 10%;
+    width: 220px;
+    height: 470px;
+    background: none;
+    overflow: hidden;
+    animation-name: nav-page-open;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.nav-menu {
+    position: relative;
+    z-index: 20;
+    top: 0;
+    left: 135px;
+    width: 85px;
+    height: 65px;
+    line-height: 65px;
+    background-color: none;
+    background: url(../images/index/pb1flip.png) no-repeat;
+    background-size: 365px;
+    background-position: 0% 77%;
+    border-radius: 20px;
+    color: #f8f8f7;
+    cursor: pointer;
+    padding-right: 10px;
+    border: none;
+    text-align: right;
+    font-size: 50px;
+    transition: 0.4s;
+}
+
+#big-nav {
+    display: none;
+}
+
+.active,
+.nav-menu:hover {
+    left: 155px;
+    background: none;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f8f8f7;
+    border-radius: 0px;
+    color: #000000;
+    width: 65px;
+}
+
+.panel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 9;
+    top: -75px;
+    right: 100%;
+    padding: 60px 0px 0px 0px;
+    display: none;
+    background-color: #f8f8f7;
+    overflow: hidden;
+    text-align: center;
+    line-height: 65px;
+    font-size: 18px;
+    letter-spacing: 4px;
+    animation-name: nav-focus;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.panel li {
+    list-style-type: none;
+}
+
+.panel a {
+    font-family: 'times new roman', 'serif';
+    text-decoration: none;
+    text-shadow: none;
+    color: #000000;
+}
+
+.panel a:hover {
+    color: #db0a0b;
+}
+
+#current {
+    border-right: 4px solid #db0a0b;
+}
+
+.panel a:hover {
+    letter-spacing: 8px;
+    color: #db0a0b;
+    transition-duration: 1.5s;
+}
+
+/* page header */
+header {
+    padding-top: 20px;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-rows: 40% 60%;
+    grid-template-areas:
+        '.'
+        'page-name';
+}
+
+.logo {
+    background: url(../images/index/ronin-logo-clip.png) no-repeat;
+    background-size: contain;
+    background-position: 50%;
+}
+
+.page-name {
+    grid-area: page-name;
+    text-align: center;
+    margin: 50px auto;
+}
+
+
+
+/* footer */
+.ink-partition {
+    width: 100%;
+    height: 200px;
+    background: url(../images/index/ink-partition-4.png) no-repeat center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    animation-name: ink-opening;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.footer {
+    grid-area: footer;
+    position: relative;
+}
+
+#social-footer {
+    width: 100%;
+    height: 200px;
+    background-color: #000000;
+    color: #f8f8f7;
+    position: relative;
+}
+
+.ip-bottom-cta {
+    top: -30%;
+    animation-delay: 0s;
+}
+
+#social {
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+}
+
+#social h2 {
+    text-align: center;
+    font-size: 80%;
+    position: relative;
+    z-index: 4;
+}
+
+.social-buttons {
+    text-align: center;
+    display: grid;
+    position: relative;
+    bottom: 10px;
+    z-index: 4;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.social-buttons li {
+    margin: 15px 15%;
+    list-style-type: none;
+}
+
+.social-buttons i {
+    font-size: 300%;
+    padding: 5%;
+    margin: 1%;
+}
+
+#twitter {
+    color: #f8f8f7;
+}
+
+#twitter i:hover {
+    color: rgb(29, 155, 240);
+}
+
+#youtube {
+    color: #f8f8f7;
+}
+
+#youtube i:hover {
+    color: #c00;
+}
+
+#instagram {
+    color: #f8f8f7;
+}
+
+#instagram i:hover {
+    color: #C0007A;
+}
+
+.footer-creds {
+    display: grid;
+    grid-template-areas:
+        'creds-1 creds-2';
+}
+
+#cal-rex-git {
+    grid-area: creds-1;
+    text-align: left;
+}
+
+#copyright {
+    grid-area: creds-2;
+    text-align: right;
+}
+
+/* media-queries */
+/* navigation adjustment for larger screens */
+@media screen and (min-width: 1000px) {
+    #logo-positioner {
+        top: 30%;
+    }
+
+    #logo-container {
+        width: 460px;
+        height: 230px;
+    }
+
+    .nav-menu {
+        left: 35px;
+        width: 185px;
+    }
+
+    .active,
+    .nav-menu:hover {
+        background: none;
+        background-color: #f8f8f7;
+        border-radius: 0px;
+        color: #000000;
+        width: 170px;
+        left: 50px;
+    }
+
+    #big-nav {
+        display: inline-block;
+        position: relative;
+        top: -15%;
+        font-size: 50%;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 60px;
+    }
+
+    .active,
+    .nav-menu:hover #big-nav {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+}
+
+/* animations */
+/* background and layout */
+@keyframes index-bg-slide {
+    from {
+        transform: scale(1.1);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+/* navigation */
+@keyframes nav-page-open {
+    from {
+        opacity: 0;
+        right: 10%;
+    }
+
+    to {
+        opacity: 1;
+        right: 2.5%;
+    }
+}
+
+@keyframes nav-focus {
+    from {
+        opacity: 0;
+        top: -100%;
+        right: -100%;
+    }
+
+    to {
+        opacity: 1;
+        top: 0%;
+        right: 0%;
+    }
+}
+
+/* footer */
+@keyframes ink-opening {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
