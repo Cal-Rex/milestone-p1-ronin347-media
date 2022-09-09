@@ -254,7 +254,7 @@ nav {
     bottom: 20%;
     z-index: 10 !important;
     text-decoration: none;
-    color: #f8f8f7;
+    color: #f8f8f7 !important;
     background: url(../images/index/pb1.png) no-repeat;
     background-position: 100% 40%;
     background-size: 400px;
@@ -265,6 +265,10 @@ nav {
     animation-delay: 1.5s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
+}
+
+.hero-link a {
+    color: #f8f8f7;
 }
 
 .hero-link:hover {
@@ -569,18 +573,6 @@ nav {
         background-position: 75% 50%;
     }
 
-    .hero a {
-        background: url(../images/index/pb1flip.png) no-repeat;
-        background-position: 100% 40%;
-        left: 30%;
-        bottom: 4%;
-    }
-
-    #mobile-logo {
-        display: flex;
-        top: 15%;
-    }
-
     #logo-positioner {
         display: none;
     }
@@ -588,6 +580,21 @@ nav {
     #call-to-actions {
         margin: 50% auto 15% auto;
     }
+}
+
+@media screen and (max-width: 450px) {
+.hero-link {
+    position: absolute;
+    padding: 20px 40px 17px 15px;
+    left: 0;
+    bottom: 0%;
+    z-index: 10 !important;
+    text-decoration: none;
+    background: url(../images/index/pb2.png) no-repeat;
+    background-position: 100% 30%;
+    background-size: 400px;
+    border-radius: 10px 10px 10px 0px;
+}
 }
 
 @media screen and (max-width: 420px) {
