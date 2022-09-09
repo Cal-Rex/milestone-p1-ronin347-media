@@ -225,6 +225,16 @@ nav {
 }
 
 /* header and hero section */
+#moblink {
+    visibility: hidden;
+    width: 100%;
+    z-index: 8;
+}
+
+@media screen and (max-width: 420px) {
+    #moblink {visibility: visible;}
+}
+
 .hero {
     position: relative;
     grid-area: hero;
@@ -237,7 +247,7 @@ nav {
     animation-fill-mode: forwards;
 }
 
-.hero a {
+.hero-link {
     position: absolute;
     padding: 20px 40px 17px 15px;
     left: 5%;
@@ -257,7 +267,7 @@ nav {
     animation-fill-mode: forwards;
 }
 
-.hero a:hover {
+.hero-link:hover {
     letter-spacing: 2px;
     font-family: 'Times New Roman', Times, serif;
     padding: 20px 15px 17px 40px !important;
@@ -581,6 +591,7 @@ nav {
 }
 
 @media screen and (max-width: 420px) {
+
     .ip-bottom-hero {
         top: 80%;
     }
@@ -601,21 +612,13 @@ nav {
 }
 
 @media screen and (max-width: 380px) {
-    .hero a {
-        bottom: 47%;
-        left: 0%;
-    }
 
     #mobile-logo {
         top: 10%;
     }
 }
 
-@media screen and (max-width: 285px) {
-    .hero a {
-        bottom: 0%;
-    }
-}
+@media screen and (max-width: 285px) {}
 
 /* animations */
 /* background */
