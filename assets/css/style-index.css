@@ -35,7 +35,8 @@ body {
 }
 
 .bg {
-    background: url(../images/index/index-bg-b.png) no-repeat;
+    background: url(../images/index/index-bg-b.png) no-repeat, #00000022;
+    background-blend-mode: overlay;
     background-position: right;
     background-size: cover;
     width: 100%;
@@ -47,47 +48,6 @@ body {
     animation-fill-mode: forwards;
 }
 
-.bg-overlay {
-    background-color: rgba(0, 0, 0, 0.3);
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
-}
-
-#logo-positioner {
-    position: absolute;
-    top: 40%;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    transition-duration: 1s;
-}
-
-#logo-container {
-    margin: 0 auto;
-    padding-top: 15px;
-    color: #f8f8f7;
-    width: 230px;
-    height: 115px;
-    text-align: center;
-    text-transform: uppercase;
-    position: relative;
-    transition-duration: 1s;
-    z-index: 4;
-    opacity: 1;
-    animation-name: logo-opening;
-    animation-delay: 0.5s;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
-}
-
-#logo-container img {
-    width: 70%;
-    height: 70%;
-}
-
 .ink-partition {
     width: 100%;
     height: 200px;
@@ -97,25 +57,6 @@ body {
     z-index: 1;
     opacity: 0;
     animation-name: ink-opening;
-    animation-delay: 1s;
-    animation-duration: 1s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
-}
-
-/* page layout */
-.index-layout {
-    position: relative;
-    top: -500px;
-    display: grid;
-    row-gap: 0px;
-    grid-template-areas:
-        'hero'
-        'call-to-action'
-        'contact'
-        'footer';
-    overflow: hidden;
-    animation-name: index-opener;
     animation-delay: 1s;
     animation-duration: 1s;
     animation-timing-function: ease-in;
@@ -224,17 +165,74 @@ nav {
     transition-duration: 1.5s;
 }
 
-/* header and hero section */
-#moblink {
-    visibility: hidden;
+/* logo sections */
+#logo-positioner {
+    position: absolute;
+    top: 40%;
     width: 100%;
-    z-index: 8;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    transition-duration: 1s;
 }
 
-@media screen and (max-width: 420px) {
-    #moblink {visibility: visible;}
+#logo-container {
+    margin: 0 auto;
+    padding-top: 15px;
+    color: #f8f8f7;
+    width: 230px;
+    height: 115px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    transition-duration: 1s;
+    z-index: 4;
+    opacity: 1;
+    animation-name: logo-opening;
+    animation-delay: 0.5s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
 }
 
+#logo-container img {
+    width: 70%;
+    height: 70%;
+}
+
+/* mobile-only logo */
+#mobile-logo {
+    display: none;
+    position: relative;
+    top: 25%;
+    justify-content: center;
+}
+
+#mobile-logo img {
+    width: 35%;
+    height: 35%;
+}
+
+/* page layout */
+.index-layout {
+    position: relative;
+    top: -500px;
+    display: grid;
+    row-gap: 0px;
+    grid-template-areas:
+        'hero'
+        'call-to-action'
+        'contact'
+        'footer';
+    overflow: hidden;
+    animation-name: index-opener;
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+/* hero video section */
 .hero {
     position: relative;
     grid-area: hero;
@@ -254,7 +252,7 @@ nav {
     bottom: 20%;
     z-index: 10 !important;
     text-decoration: none;
-    color: #f8f8f7 !important;
+    color: #f8f8f7;
     background: url(../images/index/pb1.png) no-repeat;
     background-position: 100% 40%;
     background-size: 400px;
@@ -284,6 +282,7 @@ nav {
 }
 
 #hero-project {
+    /* padding math and structure for responsive "iframe" code by benmarshall */
     padding-top: 56.25%;
     position: relative;
     bottom: 0%;
@@ -292,6 +291,7 @@ nav {
 }
 
 #hero-project video {
+    /* padding math and structure for responsive "iframe" code by benmarshall */
     border: 0;
     left: 0;
     position: absolute;
@@ -309,19 +309,7 @@ nav {
     z-index: -1;
 }
 
-/* call to action section */
-#mobile-logo {
-    display: none;
-    position: relative;
-    top: 25%;
-    justify-content: center;
-}
-
-#mobile-logo img {
-    width: 35%;
-    height: 35%;
-}
-
+/* main body section */
 #call-to-actions {
     width: 30%;
     padding-top: 5%;
@@ -548,9 +536,9 @@ nav {
         width: 66%;
         margin: 15% auto 10% auto;
         background-color: #00000061;
-    backdrop-filter: blur(10px);
-    padding-top: 0;
-    padding: 5%;
+        backdrop-filter: blur(10px);
+        padding-top: 0;
+        padding: 5%;
     }
 }
 
@@ -583,18 +571,18 @@ nav {
 }
 
 @media screen and (max-width: 450px) {
-.hero-link {
-    position: absolute;
-    padding: 20px 40px 17px 15px;
-    left: 0;
-    bottom: 0%;
-    z-index: 10 !important;
-    text-decoration: none;
-    background: url(../images/index/pb2.png) no-repeat;
-    background-position: 100% 30%;
-    background-size: 400px;
-    border-radius: 10px 10px 10px 0px;
-}
+    .hero-link {
+        position: absolute;
+        padding: 20px 40px 17px 15px;
+        left: 0;
+        bottom: 0%;
+        z-index: 10 !important;
+        text-decoration: none;
+        background: url(../images/index/pb2.png) no-repeat;
+        background-position: 100% 30%;
+        background-size: 400px;
+        border-radius: 10px 10px 10px 0px;
+    }
 }
 
 @media screen and (max-width: 420px) {
@@ -625,8 +613,6 @@ nav {
     }
 }
 
-@media screen and (max-width: 285px) {}
-
 /* animations */
 /* background */
 @keyframes index-opener {
@@ -649,6 +635,7 @@ nav {
     }
 }
 
+/* logo */
 @keyframes logo-opening {
     from {
         opacity: 1;
@@ -669,6 +656,7 @@ nav {
     }
 }
 
+/* navigattion animation */
 @keyframes nav-page-open {
     from {
         opacity: 0;

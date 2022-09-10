@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&family=Michroma&family=Montserrat&display=swap');
 
+/* page-wide attributes */
 * {
     margin: 0;
     padding: 0;
@@ -198,7 +199,7 @@ label {
     padding: 30px;
 }
 
-.signup-form > h2 {
+.signup-form>h2 {
     color: #f7f7f8;
     margin-bottom: 20px;
 }
@@ -238,6 +239,7 @@ label {
     transition-duration: 1s;
     font-family: 'Montserrat', 'roboto', sans-serif;
 }
+
 .text-area:focus {
     border-radius: 0px;
     background-color: #f7f7f8;
@@ -432,7 +434,7 @@ label {
     }
 }
 
-/* navigation */
+/* navigation animation */
 @keyframes nav-page-open {
     from {
         opacity: 0;

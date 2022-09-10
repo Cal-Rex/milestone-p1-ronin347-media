@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&family=Michroma&family=Montserrat&display=swap');
+/* page-wide attributes */
 * {
     margin: 0;
     padding: 0;
@@ -471,7 +472,7 @@ header {
     }
 }
 
-/* navigation */
+/* navigation animations */
 @keyframes nav-page-open {
     from {
         opacity: 0;

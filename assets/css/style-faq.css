@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&family=Michroma&family=Montserrat&display=swap');
 
+/* page-wide attributes */
 * {
     margin: 0;
     padding: 0;
@@ -180,7 +181,6 @@ header {
 }
 
 /* body */
-
 .faq-container {
     display: grid;
     row-gap: 100px;
@@ -341,35 +341,36 @@ header {
 /* smaller screens */
 @media screen and (max-width: 1100px) {
     .bg {
-        background-position: 40% 100%;  
-}
+        background-position: 40% 100%;
+    }
 }
 
 @media screen and (max-width: 915px) {
-.faq {
-    width: 75vw;
-}
+    .faq {
+        width: 75vw;
+    }
 }
 
 @media screen and (max-width: 900px) {
     .bg {
-        background-position: 30% 100%;  
-}
+        background-position: 30% 100%;
+    }
 }
 
 @media screen and (max-width: 420px) {
     .bg {
-        background-position: 25% 100%;  
-}
-.faq {
-    width: 85vw;
-}
+        background-position: 25% 100%;
+    }
+
+    .faq {
+        width: 85vw;
+    }
 }
 
 @media screen and (max-width: 300px) {
     .bg {
         background-position: 15% 100%;
-    }  
+    }
 }
 
 
@@ -385,7 +386,7 @@ header {
     }
 }
 
-/* navigation */
+/* navigation animation */
 @keyframes nav-page-open {
     from {
         opacity: 0;
