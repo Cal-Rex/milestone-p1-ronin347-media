@@ -11,31 +11,54 @@
 </head>
 
 <body>
+    <!-- background image -->
     <div class="bg"></div>
-        <nav><div>
+
+    <!-- navigation button -->
+    <nav>
+        <div>
             <button class="nav-menu"><span id="big-nav">Menu</span><i class="fa-solid fa-bars"></i></button>
-                <div class="panel">
-                    <ul>
-                        <a href="index.html" alt="home"><li>Home</li></a>
-                        <a href="404.html" alt="About us"><li>About Us</li></a>
-                        <a href="testimonials.html" alt="Testimonials from our clients and partners"><li>Testimonials</li></a>
-                        <a href="404.html" alt="FAQ"><li>FAQ</li></a>
-                        <a href="#social-footer" alt="Social media contacts"><li>Social</li></a>
-                        <a href="contact.html" alt="contact us by email"><li id="current">Contact</li></a>
-                    </ul>
-                </div>
-                </div>
-                </nav>
-    <header><div class="logo">
-    </div>
-    <div class="page-name">
-        <h1>Get in Touch</h1>
-    </div></header>
+            <div class="panel">
+                <ul>
+                    <a href="index.html" alt="home">
+                        <li>Home</li>
+                    </a>
+                    <a href="404.html" alt="About us">
+                        <li>About Us</li>
+                    </a>
+                    <a href="testimonials.html" alt="Testimonials from our clients and partners">
+                        <li>Testimonials</li>
+                    </a>
+                    <a href="404.html" alt="FAQ">
+                        <li>FAQ</li>
+                    </a>
+                    <a href="#social-footer" alt="Social media contacts">
+                        <li>Social</li>
+                    </a>
+                    <a href="contact.html" alt="contact us by email">
+                        <li id="current">Contact</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- page header and logo -->
+    <header>
+        <div class="logo">
+        </div>
+        <div class="page-name">
+            <h1>Get in Touch</h1>
+        </div>
+    </header>
+
+    <!-- contact form, action link taken from code institute for the purpose of assessment, text area is deliberately optional -->
     <section class="contact-form">
-        <form method="POST" action="https://formdump.codeinstitute.net/" class="signup-form">
+        <form method="POST" action="https://formdump.codeinstitute.net/" class="signup-form" target="_blank"
+            rel="noopener">
             <label for="name">Name:</label>
             <input class="text" id="name" name="first_name" type="text" required>
-            
+
             <label for="email">Email Address:</label>
             <input class="text" type="email" id="email" name="email_address" required>
 
@@ -45,6 +68,8 @@
             <input class="contact-button" type="submit" value="Contact">
         </form>
     </section>
+
+    <!-- footer -->
     <footer>
         <div class="footer" id="social-footer">
             <div class="ink-partition ip-bottom-cta"></div>
@@ -68,9 +93,11 @@
                     </li>
                 </ul>
             </div>
+            <!-- link to my github and copyright information -->
             <div class="footer-creds">
                 <div class="creds-1" id="cal-rex-git">
-                    <p>Site Developed for Ronin347 by <a href="https://github.com/Cal-Rex" aria-label="link to Cal-Rex's Github" target="_blank" rel="noopener">Cal-Rex</a></p>
+                    <p>Site Developed for Ronin347 by <a href="https://github.com/Cal-Rex"
+                            aria-label="link to Cal-Rex's Github" target="_blank" rel="noopener">Cal-Rex</a></p>
                 </div>
                 <div class="creds-2" id="copyright">
                     <p>Copyright Ronin347 Media 2022 ©</p>
@@ -79,22 +106,30 @@
         </div>
     </footer>
 </body>
+
+<!-- script for social media icons -->
+<!-- script created by fontawesome.com-->
 <script src="https://kit.fontawesome.com/85f184e105.js" crossorigin="anonymous"></script>
+
+<!-- script for navigation button -->
+<!-- script created by w3C Schools -->
 <script>
     var acc = document.getElementsByClassName("nav-menu");
     var i;
-    
+
     for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-          panel.style.display = "none";
-        } else {
-          panel.style.display = "block";
-        }
-      });
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
     }
-    </script>
+</script>
+
 </html>
+
 </html>
