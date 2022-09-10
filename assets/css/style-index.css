@@ -200,19 +200,6 @@ nav {
     height: 70%;
 }
 
-/* mobile-only logo */
-#mobile-logo {
-    display: none;
-    position: relative;
-    top: 25%;
-    justify-content: center;
-}
-
-#mobile-logo img {
-    width: 35%;
-    height: 35%;
-}
-
 /* page layout */
 .index-layout {
     position: relative;
