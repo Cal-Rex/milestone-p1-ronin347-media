@@ -179,18 +179,16 @@ header {
     line-height: 175px;
 }
 
-.title {
-    background: url(../images/index/pb1.png) no-repeat;
-    background-size: auto 100px;
-    background-position: 50%;
-}
-
 /* body */
 #fly {
     background: url(../images/testimonials/fly-project-bg.png) no-repeat, #00000061;
     background-blend-mode: overlay;
     background-size: cover;
     background-position: 0% 40%;
+}
+
+#fly-insta:hover {
+    color: #39ff14;
 }
 
 #suji {
@@ -214,18 +212,11 @@ header {
     background-position: 50% 50%;
 }
 
-#ross-park {
+#robyn {
     background: url(../images/testimonials/pro-5-bg.png) no-repeat, #00000061;
     background-blend-mode: overlay;
     background-size: cover;
-    background-position: 50% 10%;
-}
-
-#puresport {
-    background: url(../images/testimonials/pro-6-bg.png) no-repeat, #00000061;
-    background-blend-mode: overlay;
-    background-size: cover;
-    background-position: top right;
+    background-position: 50% 30%;
 }
 
 .quote-author {
