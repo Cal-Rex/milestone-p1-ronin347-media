@@ -17,6 +17,10 @@ h2 {
     letter-spacing: 4px;
 }
 
+h3 {
+    display: none;
+}
+
 a {
     text-decoration: none;
     color: #db0a0b;
