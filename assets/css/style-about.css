@@ -19,6 +19,13 @@ h2 {
     color: #db0a0b;
 }
 
+h3 {
+    font-family: 'Michroma', sans-serif;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+    color: #f8f8f7;
+}
+
 a {
     text-decoration: none;
     color: #db0a0b;

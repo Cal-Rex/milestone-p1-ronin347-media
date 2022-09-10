@@ -171,5 +171,12 @@ Testing of Page load:
   ![gif walkthrough of about page on desktop screen](assets/images/readme/testing/09-about-dt-full.gif) 
 
 
+## Automated testing
+ 
+### code validation
+
+all page html was validated using the [W3C Markup Validation Service](https://validator.w3.org/)
+
+### Index 
 
 
