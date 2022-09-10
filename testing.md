@@ -180,34 +180,53 @@ all page html was validated using the [W3C Markup Validation Service](https://va
 ### Index 
 
 #### html
-![Index validation Screenshot](assets/images/readme/testing/automated/html/index.png) 
+![Index html validation Screenshot](assets/images/readme/testing/automated/html/index.png) 
+
+#### css
+![Index css validation Screenshot](assets/images/readme/testing/automated/css/index-css.png) 
 
 ### About 
 
 #### html
-![About validation Screenshot](assets/images/readme/testing/automated/html/about.png) 
+![About html validation Screenshot](assets/images/readme/testing/automated/html/about.png) 
+
+#### css
+![about css validation Screenshot](assets/images/readme/testing/automated/css/about-css.png) 
 
 ### Portfolio 
 
 #### html
-![Portfolio validation Screenshot](assets/images/readme/testing/automated/html/portfolio.png) 
+![Portfolio html validation Screenshot](assets/images/readme/testing/automated/html/portfolio.png) 
+
+#### css
+![portfolio css validation Screenshot](assets/images/readme/testing/automated/css/portfolio-css.png) 
 
 ### FAQ
 
 #### html
-![FAQ validation Screenshot](assets/images/readme/testing/automated/html/faq.png) 
+![FAQ html validation Screenshot](assets/images/readme/testing/automated/html/faq.png) 
+
+#### css
+![FAQ css validation Screenshot](assets/images/readme/testing/automated/css/faq-css.png) 
 
 ### Contact 
 
 #### html
-![Contact validation Screenshot](assets/images/readme/testing/automated/html/contact.png) 
+![Contact html validation Screenshot](assets/images/readme/testing/automated/html/contact.png) 
+
+#### css
+![contact css validation Screenshot](assets/images/readme/testing/automated/css/contact-css.png) 
 
 ### 404
 
 #### html
-![404 validation Screenshot](assets/images/readme/testing/automated/html/404.png) 
+![404 html validation Screenshot](assets/images/readme/testing/automated/html/404.png) 
+
+#### css
+ - as the pages 404 and 500 share the css, this image represents both
+![404 and 500 css validation Screenshot](assets/images/readme/testing/automated/css/404-500-css.png) 
 
 ### 500
 
 #### html
-![500 validation Screenshot](assets/images/readme/testing/automated/html/500.png) 
+![500 html validation Screenshot](assets/images/readme/testing/automated/html/500.png) 
