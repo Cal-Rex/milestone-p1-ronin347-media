@@ -257,5 +257,10 @@ Taking the old Logo as a reference, Fonts were sampled from [Google fonts](https
 Video iframe on main page
 https://www.benmarshall.me/responsive-iframes/
 
+creating and uploading favicon:
+https://www.lcn.com/blog/beginners-guide-favicons/- instructions on how to implement favicon
+http://faviconer.com/ - for creating favicon
+
+
 # ACKNOWLEDGEMENTS
 

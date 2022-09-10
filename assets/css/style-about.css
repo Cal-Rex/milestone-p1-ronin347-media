@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Aldrich&family=Montserrat&family=Archivo+Black&family=Archivo+Narrow:wght@700&family=Caveat:wght@700&family=Comforter&family=Hammersmith+One&family=Homemade+Apple&family=Josefin+Sans:wght@200&family=Jost&family=Kanit:wght@700&family=Lexend+Exa:wght@900&family=Libre+Barcode+39+Text&family=Marcellus&family=Merienda:wght@700&family=Michroma&family=Monda&family=Montserrat+Subrayada:wght@700&family=Mr+Dafoe&family=Orbitron&family=Oxanium:wght@200;800&family=Quantico:wght@700&family=Rock+Salt&family=Russo+One&family=Splash&family=Teko:wght@700&family=Water+Brush&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&family=Michroma&family=Montserrat&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -30,7 +29,7 @@ a:hover {
 }
 
 body {
-    font-family: 'Monsterrat', 'roboto', sans-serif;
+    font-family: 'Montserrat', 'roboto', sans-serif;
     color: #f8f8f7;
     text-shadow: 1px 1px #000000;
     background-color: #000000;
