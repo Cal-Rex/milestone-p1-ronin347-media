@@ -18,7 +18,7 @@ links:
   - when footer links clicked, all go to their relevant pages in seperate tabs
   - links in body text act as secondary links to other pages within the site. all work properly when clicked. and are responsive on `hover`.
 
-    ![gif walkthrough of index page on desktop screen](assets/images/readme/testing/01-index-dt-full.gif)
+    ![gif walkthrough of index page on desktop screen](assets/images/readme/testing/manual/01-index-dt-full.gif)
 
 testing responsive design:
   - navigation button changes to mobile friendly size on resolutions below 1000px
@@ -39,7 +39,7 @@ testing responsive design:
     - Nest hub: 1024 x 600
     - Nest Hub Max: 1280 x 800
     
-    ![gif walkthrough of index responsive design features](assets/images/readme/testing/02-index-response.gif)
+    ![gif walkthrough of index responsive design features](assets/images/readme/testing/manual/02-index-response.gif)
 
 #### Portfolio Page
 Testing of page load:
@@ -55,7 +55,7 @@ content:
 navigation:
   - navigation functions are congruent with all other pages. correct function characterised in index testing section
 
-  ![gif walkthrough of Portfolio page on desktop screen](assets/images/readme/testing/03-portfolio-dt-full.gif)
+  ![gif walkthrough of Portfolio page on desktop screen](assets/images/readme/testing/manual/03-portfolio-dt-full.gif)
 
 testing responsive design:
   - navigation button changes to mobile friendly size on resolutions below 1000px
@@ -76,7 +76,7 @@ testing responsive design:
     - Nest hub: 1024 x 600
     - Nest Hub Max: 1280 x 800
 
-    ![gif walkthrough of Portfolio responsive design features](assets/images/readme/testing/04-portfolio-response.gif)
+    ![gif walkthrough of Portfolio responsive design features](assets/images/readme/testing/manual/04-portfolio-response.gif)
 
 #### FAQ
 Testing of Page load:
@@ -92,7 +92,7 @@ content:
   - extra contact link at bottom of page responds on `hover`
   - extra contact link goes to contact page
 
-    ![gif walkthrough of FAQ page on desktop screen](assets/images/readme/testing/05-faq-dt-full.gif)
+    ![gif walkthrough of FAQ page on desktop screen](assets/images/readme/testing/manual/05-faq-dt-full.gif)
 
 testing responsive design:
   - navigation button changes to mobile friendly size on resolutions below 1000px
@@ -113,7 +113,7 @@ testing responsive design:
     - Nest hub: 1024 x 600
     - Nest Hub Max: 1280 x 800
 
-    ![gif walkthrough of Portfolio responsive design features](assets/images/readme/testing/06-faq-response.gif)
+    ![gif walkthrough of Portfolio responsive design features](assets/images/readme/testing/manual/06-faq-response.gif)
 
 #### Contact 
 
@@ -137,7 +137,7 @@ Contact form:
   - element changes on `focus` to match style of active navigation button
   - form will post data to https://formdump.codeinstitute.net/ to show form works (for assessment purposes)
 
-  ![gif walkthrough of contact page on desktop screen](assets/images/readme/testing/07-contact-dt-full.gif) 
+  ![gif walkthrough of contact page on desktop screen](assets/images/readme/testing/manual/07-contact-dt-full.gif) 
 
 testing responsive design:
   - navigation button changes to mobile friendly size on resolutions below 1000px
@@ -159,7 +159,7 @@ testing responsive design:
     - Nest hub: 1024 x 600
     - Nest Hub Max: 1280 x 800
 
-    ![gif walkthrough of contact responsive design features](assets/images/readme/testing/08-contact-response.gif)
+    ![gif walkthrough of contact responsive design features](assets/images/readme/testing/manual/08-contact-response.gif)
 
 #### About
 
@@ -168,7 +168,7 @@ Testing of Page load:
   - page loads all elements
   - Opening animations load correctly
 
-  ![gif walkthrough of about page on desktop screen](assets/images/readme/testing/09-about-dt-full.gif) 
+  ![gif walkthrough of about page on desktop screen](assets/images/readme/testing/manual/09-about-dt-full.gif) 
 
 
 ## Automated testing
@@ -179,4 +179,35 @@ all page html was validated using the [W3C Markup Validation Service](https://va
 
 ### Index 
 
+#### html
+![Index validation Screenshot](assets/images/readme/testing/automated/html/index.png) 
 
+### About 
+
+#### html
+![About validation Screenshot](assets/images/readme/testing/automated/html/about.png) 
+
+### Portfolio 
+
+#### html
+![Portfolio validation Screenshot](assets/images/readme/testing/automated/html/portfolio.png) 
+
+### FAQ
+
+#### html
+![FAQ validation Screenshot](assets/images/readme/testing/automated/html/faq.png) 
+
+### Contact 
+
+#### html
+![Contact validation Screenshot](assets/images/readme/testing/automated/html/contact.png) 
+
+### 404
+
+#### html
+![404 validation Screenshot](assets/images/readme/testing/automated/html/404.png) 
+
+### 500
+
+#### html
+![500 validation Screenshot](assets/images/readme/testing/automated/html/500.png) 
