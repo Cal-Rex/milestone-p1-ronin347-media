@@ -228,6 +228,10 @@ header {
     background-position: top right;
 }
 
+.quote-author {
+    text-align: right;
+}
+
 .project-container {
     margin: 0 auto 50px auto;
     padding: 40px 3%;
