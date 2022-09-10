@@ -341,11 +341,13 @@ iframe {
 #cal-rex-git {
     grid-area: creds-1;
     text-align: left;
+    padding-left: 2%;
 }
 
 #copyright {
     grid-area: creds-2;
     text-align: right;
+    padding-right: 2%;
 }
 
 /* media-queries */
