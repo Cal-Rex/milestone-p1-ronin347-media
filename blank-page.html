@@ -14,23 +14,36 @@
 
     <!-- background image -->
     <div class="bg"></div>
-        <div class="bg-overlay"></div>
+    <div class="bg-overlay"></div>
 
-        
-        <nav><div>
+
+    <nav>
+        <div>
             <button class="nav-menu"><span id="big-nav">Menu</span><i class="fa-solid fa-bars"></i></button>
-                <div class="panel">
-                    <ul>
-                        <a href="index.html" alt="home"><li id="current">Home</li></a>
-                        <a href="404.html" alt="About us"><li>About Us</li></a>
-                        <a href="testimonials.html" alt="Testimonials from our clients and partners"><li>Testimonials</li></a>
-                        <a href="404.html" alt="FAQ"><li>FAQ</li></a>
-                        <a href="#social-footer" alt="Social media contacts"><li>Social</li></a>
-                        <a href="mailto:ronin347media@gmail.com" alt="contact us by email"><li>Contact</li></a>
-                    </ul>
-                </div>
-                </div>
-                </nav>
+            <div class="panel">
+                <ul>
+                    <a href="index.html" alt="home">
+                        <li id="current">Home</li>
+                    </a>
+                    <a href="404.html" alt="About us">
+                        <li>About Us</li>
+                    </a>
+                    <a href="testimonials.html" alt="Testimonials from our clients and partners">
+                        <li>Testimonials</li>
+                    </a>
+                    <a href="404.html" alt="FAQ">
+                        <li>FAQ</li>
+                    </a>
+                    <a href="#social-footer" alt="Social media contacts">
+                        <li>Social</li>
+                    </a>
+                    <a href="mailto:ronin347media@gmail.com" alt="contact us by email">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <header></header>
     <footer>
         <div class="footer" id="social-footer">
@@ -57,7 +70,8 @@
             </div>
             <div class="footer-creds">
                 <div class="creds-1" id="cal-rex-git">
-                    <p>Site Developed for Ronin347 by <a href="https://github.com/Cal-Rex" aria-label="link to Cal-Rex's Github" target="_blank" rel="noopener">Cal-Rex</a></p>
+                    <p>Site Developed for Ronin347 by <a href="https://github.com/Cal-Rex"
+                            aria-label="link to Cal-Rex's Github" target="_blank" rel="noopener">Cal-Rex</a></p>
                 </div>
                 <div class="creds-2" id="copyright">
                     <p>Copyright Ronin347 Media 2022 ©</p>
@@ -76,18 +90,20 @@
 <script>
     var acc = document.getElementsByClassName("nav-menu");
     var i;
-    
+
     for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-          panel.style.display = "none";
-        } else {
-          panel.style.display = "block";
-        }
-      });
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
     }
-    </script>
+</script>
+
 </html>
+
 </html>
