@@ -8,10 +8,10 @@
 
 ### Contents
 
-1. User Stories
+1. [User Stories](#user-stories)
    1. User Stories: Answered
    2. Site Goals: Achieved
-2. Manual Testing / Common Elements Testing 
+2. [Manual Testing / Common Elements Testing](#manual-testing)
     1. index page
     2. Portfolio page
     3. FAQ page
@@ -19,7 +19,7 @@
     5. About page
     6. 404 page
     7. 500 page
-3. Automated Testing
+3. [Automated Testing](#automated-testing)
     1. Code Validation
        1. index page
        2. about page
@@ -28,8 +28,8 @@
        4. Contact page
        6. 404 page
        7. 500 page
-    2. Browser Validation
-    3. User Testing
+    2. [Browser Validation](#browser-validation)
+4. [User Testing](#user-testing)
     <br><br>
 
 <hr>
@@ -491,8 +491,8 @@ Below are demonstrations of the common elements and functions on each page of th
     <br>
 
 | 404 | 500 |
-| --- | --- |
-|![gif walkthrough of 404 design features](../milestone-p1-ronin347-media/assets/images/readme/testing/manual/11-404-dt-responsive.gif "gif walkthrough of 404 design features") | ![gif walkthrough of 500 design features](../milestone-p1-ronin347-media/assets/images/readme/testing/manual/12-500-dt-responsive.gif "gif walkthrough of 500 design features") |
+| ----- | ----- |
+| [gif walkthrough of 404 design features](../milestone-p1-ronin347-media/assets/images/readme/testing/manual/11-404-dt-responsive.gif "gif walkthrough of 404 design features") | [gif walkthrough of 500 design features](../milestone-p1-ronin347-media/assets/images/readme/testing/manual/12-500-dt-responsive.gif "gif walkthrough of 500 design features") |
 
 <hr>
 

@@ -4,10 +4,10 @@
 <br>
 
 # CONTENTS
-1. INTRODUCTION
+1. [INTRODUCTION](#introduction)
 <br>
 
-2. UX
+2. [UX](#ux)
    - stakeholder Interview
    - Competitor Review
    - Target Demographics
@@ -20,13 +20,13 @@
      - Skeleton
      <br><br>
 
-3. Design
+3. [Design](#design)
    - Colors
    - Typography
    - Imagery
    <br><br>
 
-4. FEATURES
+4. [FEATURES](#features)
    - Design Features
    - index Page
    - about Page
@@ -38,28 +38,28 @@
    - Features to implement in future
   <br><br>
 
- 5. BUGS
+ 5. [BUGS](#bugs)
  <br>
 
- 6. TECHNOLOGIES
+ 6. [TECHNOLOGIES](#technologies)
     - Languages used
     - Frameworks
     - Libraries
     - Programs
 <br><br>
 
-6. [TESTING](../milestone-p1-ronin347-media/testing.md)
-  - is contained as a seperate document [here](../milestone-p1-ronin347-media/testing.md)
+6. [TESTING](https://github.com/Cal-Rex/milestone-p1-ronin347-media/blob/main/testing.md#-index-)
+  - is contained as a seperate document [here](https://github.com/Cal-Rex/milestone-p1-ronin347-media/blob/main/testing.md#-index-)
    <br><br>
 
-7. DEPLOYMENT
+7. [DEPLOYMENT](#deployment)
     - step by step guide on how to deploy
  <br><br>
 
-8. CREDITS
+8. [CREDITS](#credits)
 <br>
 
-9. ACKNOWLEDGEMENTS
+9. [ACKNOWLEDGEMENTS](#acknowledgements)
 <br>
 
 <hr>
@@ -550,9 +550,12 @@ After testing and discussion with test users, the following features may be impl
 - Used to implement Custom Icons for social media links and also navigation button.
 <br><br>
 
+**[amiresponsive](https://ui.dev/amiresponsive)**
+- used to create Example image at top of the readme
+
 <hr>
 
-## TESTING
+## [TESTING](https://github.com/Cal-Rex/milestone-p1-ronin347-media/blob/main/testing.md#-index- "click here to jump to the testing.md") - Click to jump to the testing.md.
 
 
 <hr>
