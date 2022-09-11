@@ -351,11 +351,9 @@ To attempt to adopt this kind of style while giving the page a more modern look 
 <br>
 
 Fortunately, all imagery was supplied by the client. so full consent for all imagery has been given.
-Anything that wasn't supplied by the client was created in ProCreate, namely, button backgrounds and partitions:
+Anything that wasn't supplied by the client was created in ProCreate, MS Powerpoint and MS Paint.
 
 [ink line used to partition elements, as an example.](../milestone-p1-ronin347-media/assets/images/site-wide/ink-partition-4.png)
-
-The only piece of imagery that was not supplied by the client, or created from scratch, was the [pot of Greed Card by Alan Mac](https://www.deviantart.com/alanmac95/art/Pot-of-Greed-389315492) which was sourced from [Deviantart.com](https://www.deviantart.com/), and credited on the 404 and 500 pages where it is used. Should this site go live after assessment this will be removed.
 <br><br>
 
 <hr>
@@ -411,13 +409,14 @@ This page contains a singular block element housing the contact form. To have so
    - form data is posted to [https://formdump.codeinstitute.net/](https://formdump.codeinstitute.net/) for assessment purposes.
 
 ### **404 Page**
-following a different, but simplistic style to the rest of the site. this page calls to a meme that the client finds amusing. the page is simplistic, it displays the 404 error, then after 1 second, the [Pot of Greed](/alanmac95/art/Pot-of-Greed-389315492) card is "played" on the page. it glows with a yellow border and scales slightly in size on `hover`. the prompt on the page tells the user to click it to return to the homepage. The card image is anchored to the Index. The page also credits the artist.
+following a different, but simplistic style to the rest of the site. this page calls to a meme that the client finds amusing. the page is simplistic, it displays the 404 error, then after 1 second, the [Pot of Greed](../milestone-p1-ronin347-media/assets/images/readme/pot-of-greed-pop.png) card is "played" on the page. it glows with a yellow border and scales slightly in size on `hover`. the prompt on the page tells the user to click it to return to the homepage. The card image is anchored to the Index.
+ - This image was bought royalty free on [sketchfab.com](https://sketchfab.com/3d-models/ pot-of-greed-yugioh-049d734aa46845ec9f74a5d2a8a16b05)([proof of purchase](../milestone-p1-ronin347-media/assets/images/readme/pot-of-greed-pop.png)) and then edited into a card style using MS Powerpoint and MS Paint.
 
 ### **500 Page**
 Shares all same design features as 404, only one line of text is changed.
 
-###
-   - Features to implement in future
+## **| Features to implement in future |**
+
 
 # BUGS
 * navigation buttons not responding to hover
