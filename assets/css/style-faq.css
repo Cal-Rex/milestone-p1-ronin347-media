@@ -56,12 +56,13 @@ body {
 /* navigation */
 nav {
     position: fixed;
-    z-index: 2;
+    z-index: 9;
     opacity: 0;
     top: 4%;
     right: 10%;
     width: 220px;
     height: 470px;
+    pointer-events: none;
     background: none;
     overflow: hidden;
     animation-name: nav-page-open;
@@ -79,6 +80,7 @@ nav {
     width: 85px;
     height: 65px;
     line-height: 65px;
+    pointer-events: auto;
     background: url(../images/site-wide/pb1flip.png) no-repeat;
     background-size: 365px;
     background-position: 0% 77%;
@@ -111,6 +113,7 @@ nav {
     width: 100%;
     height: 100%;
     position: absolute;
+    pointer-events: auto;
     z-index: 9;
     top: -75px;
     right: 100%;

@@ -1,3 +1,11 @@
+# Ronin 347 Media
+## Testing
+
+<hr>
+
+## Contents
+
+
 ### User Stories
 
 #### **Small Independent Businesses**
@@ -314,7 +322,8 @@ Chrome: ![Chrome desktop Screenshot](assets/images/readme/testing/automated/brow
 Firefox: ![Chrome desktop Screenshot](assets/images/readme/testing/automated/browser-validation/firefox-sc.png) 
 Opera: ![Chrome desktop Screenshot](assets/images/readme/testing/automated/browser-validation/opera-sc.png) 
 MS Edge: ![Chrome desktop Screenshot](assets/images/readme/testing/automated/browser-validation/edge-sc.png) 
-Chrome mobile: ![Chrome desktop Screenshot](assets/images/readme/testing/automated/browser-validation/chrome-mob-sc.jpeg) 
+Chrome mobile: ![Chrome desktop Screenshot](assets/images/readme/testing/automated/browser-validation/chrome-mob-sc.jpeg)
+Safari mobile: ![Safari desktop Screenshot](assets/images/readme/testing/automated/browser-validation/safari-mob-sc.jpeg) 
 
 ## User Testing
 Special thanks to the following individuals took the time to meticulously go through the site and and give me excellent feedback
