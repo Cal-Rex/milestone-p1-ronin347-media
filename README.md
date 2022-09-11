@@ -416,6 +416,13 @@ following a different, but simplistic style to the rest of the site. this page c
 Shares all same design features as 404, only one line of text is changed.
 
 ## **| Features to implement in future |**
+After testing and discussion with test users, the following features may be implemented int he future:
+- Find a method to implement some adaptable styling to individuals who may acces the page using a "dark-reader" extension on their browser, so that the darker background images are not blacked out.
+- more appropriate images could be used in the future or the pages. more pictures of the client doing some filming, however media like this was not available at time of development
+- add a testimonials page separate from the portfolio page
+- add a more in-depth contact form, may contain field such as "project details", "budget" and "length of project"
+- add icons that consolidate what is being explained int he introductory text on the index. adding visual aid to the text and more clearly highlighting the services of the business.
+- in the future maybe implement some more javascript to improve the smootheness of some of the animated elements.
 
 
 # BUGS
