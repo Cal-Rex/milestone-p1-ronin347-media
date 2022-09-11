@@ -219,7 +219,8 @@ Below are demonstrations of the common elements and functions on each page of th
   - links in body text act as secondary links to other pages within the site. all work properly when clicked. and are responsive on `hover`.
 <br>
 
-![gif walkthrough of index page on desktop screen](assets/images/readme/testing/manual/01-index-dt-full.gif)
+![gif walkthrough of index page on desktop screen](../milestone-p1-ronin347-media/assets/images/readme/testing/manual/01-index-dt-full.gif "gif walkthrough of index page on desktop screen")
+
 <br>
 
 **testing responsive design:**
@@ -245,7 +246,8 @@ Below are demonstrations of the common elements and functions on each page of th
     </details>
     <br>
     
-![gif walkthrough of index responsive design features](assets/images/readme/testing/manual/02-index-response.gif)
+![gif walkthrough of index responsive design features](assets/images/readme/testing/manual/02-index-response.gif "gif walkthrough of index responsive design features")
+
 <br>
 
 <hr>
@@ -273,7 +275,7 @@ Below are demonstrations of the common elements and functions on each page of th
   - navigation functions are congruent with all other pages. correct function characterised in index testing section
   <br>
 
-![gif walkthrough of Portfolio page on desktop screen](assets/images/readme/testing/manual/03-portfolio-dt-full.gif)
+![gif walkthrough of Portfolio page on desktop screen](assets/images/readme/testing/manual/03-portfolio-dt-full.gif "gif walkthrough of Portfolio page on desktop screen")
 <br>
 
 **testing responsive design:**
@@ -299,7 +301,7 @@ Below are demonstrations of the common elements and functions on each page of th
     </details>
     <br>
 
-![gif walkthrough of Portfolio responsive design features](assets/images/readme/testing/manual/04-portfolio-response.gif)
+![gif walkthrough of Portfolio responsive design features](assets/images/readme/testing/manual/04-portfolio-response.gif "gif walkthrough of Portfolio responsive design features")
 <br>
 
 <hr>
@@ -326,7 +328,7 @@ Below are demonstrations of the common elements and functions on each page of th
   - extra contact link at bottom of page responds on `hover`
   - extra contact link goes to contact page
 
-![gif walkthrough of FAQ page on desktop screen](assets/images/readme/testing/manual/05-faq-dt-full.gif)
+![gif walkthrough of FAQ page on desktop screen](assets/images/readme/testing/manual/05-faq-dt-full.gif "gif walkthrough of FAQ page on desktop screen")
 
 **testing responsive design:**
 <br>
@@ -351,7 +353,7 @@ Below are demonstrations of the common elements and functions on each page of th
     </details>
     <br>
 
-![gif walkthrough of Portfolio responsive design features](assets/images/readme/testing/manual/06-faq-response.gif)
+![gif walkthrough of Portfolio responsive design features](assets/images/readme/testing/manual/06-faq-response.gif "gif walkthrough of Portfolio responsive design features")
 <br>
 
 <hr>
@@ -388,7 +390,7 @@ Below are demonstrations of the common elements and functions on each page of th
   - form will post data to https://formdump.codeinstitute.net/ to show form works (for assessment purposes)
   <br>
 
-![gif walkthrough of contact page on desktop screen](assets/images/readme/testing/manual/07-contact-dt-full.gif) 
+![gif walkthrough of contact page on desktop screen](assets/images/readme/testing/manual/07-contact-dt-full.gif "gif walkthrough of contact page on desktop screen") 
 <br>
 
 **testing responsive design:**
@@ -415,7 +417,7 @@ Below are demonstrations of the common elements and functions on each page of th
     </details>
     <br>
 
-![gif walkthrough of contact responsive design features](assets/images/readme/testing/manual/08-contact-response.gif)
+![gif walkthrough of contact responsive design features](assets/images/readme/testing/manual/08-contact-response.gif "gif walkthrough of contact responsive design features")
 <br>
 
 <hr>
@@ -429,7 +431,7 @@ Below are demonstrations of the common elements and functions on each page of th
   - Opening animations load correctly
 <br>
 
-![gif walkthrough of about page on desktop screen](assets/images/readme/testing/manual/09-about-dt-full.gif) 
+![gif walkthrough of about page on desktop screen](assets/images/readme/testing/manual/09-about-dt-full.gif "gif walkthrough of about page on desktop screen") 
 <br>
 
 **testing responsive design:**
@@ -455,7 +457,7 @@ Below are demonstrations of the common elements and functions on each page of th
     </details>
     <br>
 
-![gif walkthrough of About responsive design features](../milestone-p1-ronin347-media/assets/images/readme/testing/manual/10-about-responsive.gif)
+![gif walkthrough of About responsive design features](../milestone-p1-ronin347-media/assets/images/readme/testing/manual/10-about-responsive.gif "gif walkthrough of About responsive design features")
 <br>
 
 <hr>
