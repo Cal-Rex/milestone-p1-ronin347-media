@@ -503,6 +503,9 @@ After testing and discussion with test users, the following features may be impl
 - Used developer tools to check site responsiveness, preview site outside of gitpod, preview and make minor tweaks in real time to code without messing up original code during development.
 <br><br>
 
+**[W3C Markup Validation Service](https://validator.w3.org/)**
+- Used to validate and format code.
+
 **[Apple Procreate](https://apps.apple.com/gb/app/procreate/id425073498)**
 - Used ot create the ink line used for partitions and the background for buttons
 <br><br>

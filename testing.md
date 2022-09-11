@@ -462,25 +462,37 @@ Below are demonstrations of the common elements and functions on each page of th
 
 <hr>
 
-## **| 404 |**
+## **| 404 and 500 |**
 
-**Testing of Page load:**
+**Testing of Page load and responsive design:**
 <br>
 
   - navigating to contact page via the index navigation menu to confirm link works, and to demonstrate correct page loading
   - page loads all elements
   - Opening animations load correctly
+  - Page works with all resolutions listed in chrome.
+    <details><summary>tested resolutions</summary>
+    - desktop: 1290 x 1080<br>
+    - iPhone SE: 375 x 667<br>
+    - iPhone XR: 414 x 896<br>
+    - iPhone 12 Pro: 390 x 844<br>
+    - Google Pixel 5: 393 x 851<br>
+    - Samsung Galaxy S8+: 360 x 740<br>
+    - Samsung Galaxy S20 Ultra: 412 x 915<br>
+    - iPad Air: 820 x 1180<br>
+    - iPad Mini: 768 x 1024<br>
+    - Surface Pro 7: 912 x 1368<br>
+    - Surface Duo: 540 x 720<br>
+    - Samsung Galaxy Fold: 280 x 653 <br>
+    - Samsung Galaxy A51/71: 412 x 914<br>
+    - Nest hub: 1024 x 600<br>
+    - Nest Hub Max: 1280 x 800<br>
+    </details>
+    <br>
 
-<br>
-
-<hr>
-
-## **| 500 |**
-<br>
-
-  - navigating to contact page via the index navigation menu to confirm link works, and to demonstrate correct page loading
-  - page loads all elements
-  - Opening animations load correctly
+| 404 | 500 |
+| --- | --- |
+|![gif walkthrough of 404 design features](../milestone-p1-ronin347-media/assets/images/readme/testing/manual/11-404-dt-responsive.gif "gif walkthrough of 404 design features") | ![gif walkthrough of 500 design features](../milestone-p1-ronin347-media/assets/images/readme/testing/manual/12-500-dt-responsive.gif "gif walkthrough of 500 design features") |
 
 <hr>
 
@@ -492,7 +504,7 @@ Below are demonstrations of the common elements and functions on each page of th
 
 <hr>
 
-all page html was validated using the [W3C Markup Validation Service](https://validator.w3.org/)
+All page html and css was validated using the [W3C Markup Validation Service](https://validator.w3.org/)
 
 ## **| Index |** 
 
