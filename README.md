@@ -309,9 +309,7 @@ _Desktop/Laptop Wireframes_
 
 <hr>
 
-## Design
-
-<hr>
+# Design
 
 
 ## **| Colors |**
@@ -360,46 +358,71 @@ Anything that wasn't supplied by the client was created in ProCreate, MS Powerpo
 
 # FEATURES
 
-## **| Design Features |**
-
 ### **Consistent Design Features**
 The following Design features are prevalent across all pages, with the exception of the 404 and 500 pages (and the index page with regard to the page header)
-- Background: background on all pages has a slow 30 second animation where the background image scales down from `scale(1.1)` to `scale(1)` to give the site a cinematic feel.
+- **Background:** background on all pages has a slow 30 second animation where the background image scales down from `scale(1.1)` to `scale(1)` to give the site a cinematic feel.
    - backgrounds will also adjust to make sure desire focal point of image is always visible (where possible). 
-- header: contains the company logo and an H1 title separated with a grid feature. This allows for a responsive design. The texts adjusts to fit all tested screen sizes and logo always adjusts to fit within the viewing screen.
-- Navigation: The Navigation element resides within a button that remains in a fixed position, regardless of the page being scrolled. meaning users can always access the navigation menu with a click or tap. The button also adjusts in size below resolutions under 1000px and becomes more compact to accomodate the drop and change in orientation of viewport real estate.
+   <br><br>
+
+- **header:** contains the company logo and an H1 title separated with a grid feature. This allows for a responsive design. The texts adjusts to fit all tested screen sizes and logo always adjusts to fit within the viewing screen.
+<br><br>
+
+- **Navigation:** The Navigation element resides within a button that remains in a fixed position, regardless of the page being scrolled. meaning users can always access the navigation menu with a click or tap. The button also adjusts in size below resolutions under 1000px and becomes more compact to accomodate the drop and change in orientation of viewport real estate.
    - when clicked, the navigation menu expands into a vertical banner, each link is resonsive with slow expanding text to let the user know that the element is clickable/interactive.
-- Body text: With the exception of the index page (at mid-to-high resolutions), there is a blurred opaque background on all text boxes to ensure legibility and easy reading of all text.
-- Footer: The footer is at the bottom of all conventional pages. it contains respoinsive social media buttons that highlight in the relevant social media brand colours when hovered over. 
+   <br><br>
+
+- **Body** text: With the exception of the index page (at mid-to-high resolutions), there is a blurred opaque background on all text boxes to ensure legibility and easy reading of all text.
+<br><br>
+
+- **Footer:** The footer is at the bottom of all conventional pages. it contains respoinsive social media buttons that highlight in the relevant social media brand colours when hovered over. 
    - a placeholder link is being used for twitter. as the client has not yet created a business twiter account. for assessment purposes it has reained on the page.
    - The Youtube links directly link to the client's youtube channel. but at this moment they have yet to upload any public material.
    - all social media links open in seperate tabs
    - there is also a link to the author's Github in the bottom left, and copyright information on the right. 
+   <br><br>
+
+<hr>
 
 ### **Index Page**
 When this page loads, it first loads the background and body text, then after 1 second, the hero video scrolls down from the top, followed by swiping animation entry of the navigation button and portfolio button. This give the user a peak of the body text of the page, prompting the understanding that the page can be scrolled. This is especially useful, as on landscape devices, most of the time the hero banner will take up near all of the viewport. 
 another minor prompt is added with the use of the ink partition aong the bottom of the video, further implying there is more below the hero video.
+<br><br>
 
  - **Hero Video**
    - kept under 50mb to ensure web optimisation
+   <br><br>
 
  - **Watch our portfolio**
    - this alternative link to the portfolio appears on the bottom left of the hero video. This is responsive to lower screen resolutions. On mobile, it changes to a red ink splash instead of black and aligns to the bottom right of the video. Changing it to a link that can be tapped and avoid a hover animation that would be obsolete on a touchpad device. 
+   <br><br>
 
  - **Tell your Story**
    - This introductory page text gives a brief overview of the purpose of this site, it also gives prompts to different sections in the site with their intended use. links to the pages are also embedded in the body text in addition to the navigation bar for further call to action.
    - This section's margins adjust to always show the focal point of the background image. when this no longer becomes possible, a blurred background appears in the `div` housing the text to improve legibility. 
+   <br><br>
+
+<hr>
 
 ### **About Page**
 This page uses a responsive grid layout that has a landscape design for larger screens and a portrait design for narrower screens. Images shift to accomodate the layout adjustment. all other features have already been listed in the **Consistent Design Features** section
+<br><br>
+
+<hr>
 
 ### **Portfolio page**
 This page consists of multiple grids stacked as block elements to give a strong pattern and continuity with other pages. Like the About page, this page has landscape focused grids for each block. which adjust to portrait orientation as necessary when resolution shifts. Each Section contains branding or a background representing the company/person or topic it is about.
   - all videos on this page are sourced from the client's youtube.
+  - videos are embedded from youtube in `iframe`s
   - videos embedded into iframes allows for responsive aspect ratio on videos as resolution adjusts
+  <br><br>
+
+<hr>
 
 ### **FAQ Page**
 The most straightforward of all pages. Following the site wide design, each Question is stached in a margined block element, complete with all **Consistent Design Features** listed.
+<br><br>
+
+<hr>
 
 ### **Contact Page**
 This page contains a singular block element housing the contact form. To have some congruence with site design. when a `text` input or `textarea` field is in `focus`, the style of the field changes to match the navigation style when it is in `focus`. The Button to submit the form also adopts the same styling, but on `hover` instead of `focus`.
@@ -407,58 +430,133 @@ This page contains a singular block element housing the contact form. To have so
    - both the name and email field require information to be entered
    - the email field will only accept a valid email
    - form data is posted to [https://formdump.codeinstitute.net/](https://formdump.codeinstitute.net/) for assessment purposes.
+   <br><br>
+
+<hr>
 
 ### **404 Page**
 following a different, but simplistic style to the rest of the site. this page calls to a meme that the client finds amusing. the page is simplistic, it displays the 404 error, then after 1 second, the [Pot of Greed](../milestone-p1-ronin347-media/assets/images/readme/pot-of-greed-pop.png) card is "played" on the page. it glows with a yellow border and scales slightly in size on `hover`. the prompt on the page tells the user to click it to return to the homepage. The card image is anchored to the Index.
- - This image was bought royalty free on [sketchfab.com](https://sketchfab.com/3d-models/ pot-of-greed-yugioh-049d734aa46845ec9f74a5d2a8a16b05)([proof of purchase](../milestone-p1-ronin347-media/assets/images/readme/pot-of-greed-pop.png)) and then edited into a card style using MS Powerpoint and MS Paint.
+ - This image was bought royalty free on [sketchfab.com](https://sketchfab.com/3d-models/pot-of-greed-yugioh-049d734aa46845ec9f74a5d2a8a16b05) ([proof of purchase](../milestone-p1-ronin347-media/assets/images/readme/pot-of-greed-pop.png)) and then edited into a card style using MS Powerpoint and MS Paint.
+ <br><br>
 
 ### **500 Page**
 Shares all same design features as 404, only one line of text is changed.
+<br><br>
+
+<hr>
 
 ## **| Features to implement in future |**
 After testing and discussion with test users, the following features may be implemented int he future:
+- add more transitions into the loading of background images and and general site imagery to make the loading experience appear smoother.
 - Find a method to implement some adaptable styling to individuals who may acces the page using a "dark-reader" extension on their browser, so that the darker background images are not blacked out.
 - more appropriate images could be used in the future or the pages. more pictures of the client doing some filming, however media like this was not available at time of development
 - add a testimonials page separate from the portfolio page
 - add a more in-depth contact form, may contain field such as "project details", "budget" and "length of project"
 - add icons that consolidate what is being explained int he introductory text on the index. adding visual aid to the text and more clearly highlighting the services of the business.
 - in the future maybe implement some more javascript to improve the smootheness of some of the animated elements.
+<br><br>
 
+<hr>
 
 # BUGS
-* navigation buttons not responding to hover
-  * error in code targeting wrong element
-* Main page video hero image not fitting in container
-  * fixed with 3rd party code benmarshall.me
-* hero video not adapting to smaller screen sizes
-  * resolved by adjusting with media queries
-* navigation button on smaller screens has an unwanted line solid white line that appears
-  * fixed by adding positioning media query in navigation class
-* media queries for screen widths of 800px~ not working
-  * resolved by identifying conflict in pre-existing media queries
-* about-bg animation frame jittery and not static on resolutions narrower than 1000px
-  * vertical edges hidden with ink partition design
-  * black background added to smaller resolutions to hide jittery horizontal borders on animation
-  * bug and solution now obselete as structure of website changed to grid display
-* contact box exceeding viewport width when inder 950px~
-  * resolved by changing form padding to % from px variable
-  * contact box now removed, bug and solution no longer relevant
-* contact box background overlapping ink partition even though overflow rule set
-  * solved by adding a top border to hide the break in black background and ink partition
-* Links in nav not clickable
-  * resolved by re-working nav bar to use Javascript from W3schools
-* some images not loading after first deployment:
-  * filepaths were absolute, changed to relative.
-* scroll bar toggling repeatedly on 404
-  * fixed with 3rd party code found on stack overflow: https://stackoverflow.com/questions/28411499/disable-scrolling-on-body 
-  
 
+**index video does not autoplay on safari/iOS devices**
+- tried resolving this with various suggestions across the internet. The common solution was to add `playsinline` to the `video` tag, however, while this makes the video playable, it does not enable an autoplay function.
+
+**alignment and styling for screenwidth's below 300px**
+- upon the last revision of the site body style, the background of the divs misaligns with the text when going below a width of 300px. While this could be fixed in the future easily with media queries, there was not enough time to fix this issue before the project submission date.
+
+**some animations clip if hovered right on the edge of the element for too long**
+- because a lot of the transitions and animations rely on changing of padding or changing absolute/relative position, animations can clip and repeat until unhovered, if hovered over the correct/incorrect point for too long
+- elements effected:
+  - navigation button
+  - index hero portfolio button when on desktop resolution
+  - pot of greed card on 404 and 500 pages
+
+**index logo appearing/disappearing when manually resizing window**
+- due to the transition animation assigned to the logo element, when manually sizing the page window, the logo can randomly appear and then fade, but due to the alignment (why it disspears in the first place), it overlaps other elements briefly before dissapearing. there was not enough time before the project submission date to further investigate this issue.
+<br><br>
+
+<hr>
 
 # TECHNOLOGIES
 
-# TESTING
+### **Main Languages used**
+
+- [CSS3](https://en.wikipedia.org/wiki/CSS)
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [Markdown](https://en.wikipedia.org/wiki/Markdown)
+<br><br>
+
+### **Frameworks | Libraries | Programs**
+<br>
+
+**[Github](https://github.com/)**
+- Used to store, deploy and publish site.
+<br><br>
+
+**[Gitpod](https://gitpod.io/)**
+- Used to write and preview code, commit and push to Github.
+<br><br>
+
+**[Google Chrome](https://www.google.co.uk/chrome)**
+- Used developer tools to check site responsiveness, preview site outside of gitpod, preview and make minor tweaks in real time to code without messing up original code during development.
+<br><br>
+
+**[Apple Procreate](https://apps.apple.com/gb/app/procreate/id425073498)**
+- Used ot create the ink line used for partitions and the background for buttons
+<br><br>
+
+**[MS Word](https://www.microsoft.com/en-us/microsoft-365/word)**
+- Used to spellcheck and format text.
+<br><br>
+
+**[MS Paint](https://apps.microsoft.com/store/detail/paint/9PCFS5B6T72H?hl=en-us&gl=us)**
+- Used to make 404/500 image.
+<br><br>
+
+**[MS Powerpoint](https://www.microsoft.com/en-us/microsoft-365/powerpoint)**
+- Used to make 404/500 image.
+<br><br>
+
+**[ScreenRec](https://screenrec.com/)**
+- Used to capture screen recordings of live site testing for testing.md.
+<br><br>
+
+**[Cloud Converter](https://cloudconvert.com/mp4-to-gif)**
+- Used to convert screen captures into gifs to reduce file size in repo and testing.md.
+<br><br>
+
+**[Opera](https://www.opera.com/)**
+- Used to test UX.
+<br><br>
+
+**[Firefox](https://www.mozilla.org/en-GB/firefox/new/)**
+- Used to test UX.
+<br><br>
+
+**[Balsamiq](https://balsamiq.com/)**
+- Used to create site wireframes.
+<br><br>
+
+**[Google Fonts](https://fonts.google.com/about)**
+- Used to implement custom/bespoke fonts to site text and headings.
+<br><br>
+
+**[Fontawesome](https://fontawesome.com/)**
+- Used to implement Custom Icons for social media links and also navigation button.
+<br><br>
+
+<hr>
+
+## TESTING
+
+
+<hr>
 
 # DEPLOYMENT
+
+<hr>
 
 # CREDITS
 
@@ -469,6 +567,8 @@ creating and uploading favicon:
 https://www.lcn.com/blog/beginners-guide-favicons/- instructions on how to implement favicon
 http://faviconer.com/ - for creating favicon
 
+
+<hr>
 
 # ACKNOWLEDGEMENTS
 
