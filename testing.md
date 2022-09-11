@@ -11,7 +11,7 @@
 1. User Stories
    1. User Stories: Answered
    2. Site Goals: Achieved
-2. Manual Testing
+2. Manual Testing / Common Elements Testing 
     1. index page
     2. Portfolio page
     3. FAQ page
@@ -186,285 +186,413 @@
 ## Manual Testing
 
 <hr>
+<br>
 
 ## Common Elements Testing
 Below are demonstrations of the common elements and functions on each page of the site. Each section has a GIF visual aid, with an itemised checklist of what is being tested on each page
+<hr>
+<br>
 
-#### **Index page*
-testing of page load:
+## **| Index page |**
+<br>
+
+**testing of page load:**
+<br>
+
   - all animations load accordingly, the video slides in from the top to push the main body down, and the navigation sweeps in, same with the portfolio link
+<br><br>
 
-testing of navigation elements:
+**testing of navigation elements:**
+<br>
+
   - button will change on `hover`, button will expand navigation menu when clicked
   - All buttons are responsive on `hover` within the navigation bar
   - portfolio button changes on `hover`
   - social button in navigation menu scrolls user down to footer, where the social links are located
+<br><br>
 
-links:
+**links:**
+<br>
+
   - all footer element links highlight with their appropriate site colours on `hover`
   - when footer links clicked, all go to their relevant pages in seperate tabs
   - links in body text act as secondary links to other pages within the site. all work properly when clicked. and are responsive on `hover`.
+<br>
 
-    ![gif walkthrough of index page on desktop screen](assets/images/readme/testing/manual/01-index-dt-full.gif)
+![gif walkthrough of index page on desktop screen](assets/images/readme/testing/manual/01-index-dt-full.gif)
+<br>
 
-testing responsive design:
+**testing responsive design:**
+<br>
+
   - navigation button changes to mobile friendly size on resolutions below 1000px
   - Page works with all resolutions listed in chrome. with the exception of the galaxy fold. this has been logged in bugs with    more information.
-  - tested resolutions:
-    - desktop: 1290 x 1080
-    - iPhone SE: 375 x 667
-    - iPhone XR: 414 x 896
-    - iPhone 12 Pro: 390 x 844
-    - Google Pixel 5: 393 x 851
-    - Samsung Galaxy S8+: 360 x 740
-    - Samsung Galaxy S20 Ultra: 412 x 915
-    - iPad Air: 820 x 1180
-    - iPad Mini: 768 x 1024
-    - Surface Pro 7: 912 x 1368
-    - Surface Duo: 540 x 720
-    - Samsung Galaxy A51/71: 412 x 914
-    - Nest hub: 1024 x 600
-    - Nest Hub Max: 1280 x 800
+    <details><summary>tested resolutions</summary>
+    - desktop: 1290 x 1080<br>
+    - iPhone SE: 375 x 667<br>
+    - iPhone XR: 414 x 896<br>
+    - iPhone 12 Pro: 390 x 844<br>
+    - Google Pixel 5: 393 x 851<br>
+    - Samsung Galaxy S8+: 360 x 740<br>
+    - Samsung Galaxy S20 Ultra: 412 x 915<br>
+    - iPad Air: 820 x 1180<br>
+    - iPad Mini: 768 x 1024<br>
+    - Surface Pro 7: 912 x 1368<br>
+    - Surface Duo: 540 x 720<br>
+    - Samsung Galaxy A51/71: 412 x 914<br>
+    - Nest hub: 1024 x 600<br>
+    - Nest Hub Max: 1280 x 800<br>
+    </details>
+    <br>
     
-    ![gif walkthrough of index responsive design features](assets/images/readme/testing/manual/02-index-response.gif)
+![gif walkthrough of index responsive design features](assets/images/readme/testing/manual/02-index-response.gif)
+<br>
 
-#### Portfolio Page
-Testing of page load:
+<hr>
+
+## **| Portfolio Page |**
+<br>
+
+**Testing of page load:**
+<br>
+
   - navigating to Portfolio page via the index navigation menu to confirm link works, and to demonstrate correct page loading
   - Navigation animation works and is congruent with other pages
 
-content:
+**content:**
+<br>
+
   - all youtube videos load in correct dimensions
   - link to the first portfolio project's partner highlights with company's colors instead of pages. link opens in seperate tab
   - all feautres on all players work correctly
   - thumbnail for last portfolio video unaivalable as video had just been upoaded to youtube at time of testing
 
-navigation:
+**navigation:**
+<br>
+
   - navigation functions are congruent with all other pages. correct function characterised in index testing section
+  <br>
 
-  ![gif walkthrough of Portfolio page on desktop screen](assets/images/readme/testing/manual/03-portfolio-dt-full.gif)
+![gif walkthrough of Portfolio page on desktop screen](assets/images/readme/testing/manual/03-portfolio-dt-full.gif)
+<br>
 
-testing responsive design:
+**testing responsive design:**
+<br>
+
   - navigation button changes to mobile friendly size on resolutions below 1000px
   - Page works with all resolutions listed in chrome. with the exception of the galaxy fold. this has been logged in bugs with    more information.
-  - tested resolutions:
-    - desktop: 1290 x 1080
-    - iPhone SE: 375 x 667
-    - iPhone XR: 414 x 896
-    - iPhone 12 Pro: 390 x 844
-    - Google Pixel 5: 393 x 851
-    - Samsung Galaxy S8+: 360 x 740
-    - Samsung Galaxy S20 Ultra: 412 x 915
-    - iPad Air: 820 x 1180
-    - iPad Mini: 768 x 1024
-    - Surface Pro 7: 912 x 1368
-    - Surface Duo: 540 x 720
-    - Samsung Galaxy A51/71: 412 x 914
-    - Nest hub: 1024 x 600
-    - Nest Hub Max: 1280 x 800
+    <details><summary>tested resolutions</summary>
+    - desktop: 1290 x 1080<br>
+    - iPhone SE: 375 x 667<br>
+    - iPhone XR: 414 x 896<br>
+    - iPhone 12 Pro: 390 x 844<br>
+    - Google Pixel 5: 393 x 851<br>
+    - Samsung Galaxy S8+: 360 x 740<br>
+    - Samsung Galaxy S20 Ultra: 412 x 915<br>
+    - iPad Air: 820 x 1180<br>
+    - iPad Mini: 768 x 1024<br>
+    - Surface Pro 7: 912 x 1368<br>
+    - Surface Duo: 540 x 720<br>
+    - Samsung Galaxy A51/71: 412 x 914<br>
+    - Nest hub: 1024 x 600<br>
+    - Nest Hub Max: 1280 x 800<br>
+    </details>
+    <br>
 
-    ![gif walkthrough of Portfolio responsive design features](assets/images/readme/testing/manual/04-portfolio-response.gif)
+![gif walkthrough of Portfolio responsive design features](assets/images/readme/testing/manual/04-portfolio-response.gif)
+<br>
 
-#### FAQ
-Testing of Page load:
+<hr>
+
+## **| FAQ |**
+<br>
+
+**Testing of Page load:**
+<br>
+
   - navigating to FAQ page via the index navigation menu to confirm link works, and to demonstrate correct page loading
   - page loads in correct order, navigation button animation loads correctly
   - all animation congruent with correct outcomes so far
 
-navigation:
+**navigation:**
+<br>
+
   - social navigation section works as when hovered and clicked like previous pages, takes users to footer
 
-content:
+**content:**
+<br>
+
   - all social links highlight with correct colours on `hover`
   - extra contact link at bottom of page responds on `hover`
   - extra contact link goes to contact page
 
-    ![gif walkthrough of FAQ page on desktop screen](assets/images/readme/testing/manual/05-faq-dt-full.gif)
+![gif walkthrough of FAQ page on desktop screen](assets/images/readme/testing/manual/05-faq-dt-full.gif)
 
-testing responsive design:
+**testing responsive design:**
+<br>
+
   - navigation button changes to mobile friendly size on resolutions below 1000px
   - Page works with all resolutions listed in chrome. with the exception of the galaxy fold. this has been logged in bugs with    more information.
-  - tested resolutions:
-    - desktop: 1290 x 1080
-    - iPhone SE: 375 x 667
-    - iPhone XR: 414 x 896
-    - iPhone 12 Pro: 390 x 844
-    - Google Pixel 5: 393 x 851
-    - Samsung Galaxy S8+: 360 x 740
-    - Samsung Galaxy S20 Ultra: 412 x 915
-    - iPad Air: 820 x 1180
-    - iPad Mini: 768 x 1024
-    - Surface Pro 7: 912 x 1368
-    - Surface Duo: 540 x 720
-    - Samsung Galaxy A51/71: 412 x 914
-    - Nest hub: 1024 x 600
-    - Nest Hub Max: 1280 x 800
+    <details><summary>tested resolutions</summary>
+    - desktop: 1290 x 1080<br>
+    - iPhone SE: 375 x 667<br>
+    - iPhone XR: 414 x 896<br>
+    - iPhone 12 Pro: 390 x 844<br>
+    - Google Pixel 5: 393 x 851<br>
+    - Samsung Galaxy S8+: 360 x 740<br>
+    - Samsung Galaxy S20 Ultra: 412 x 915<br>
+    - iPad Air: 820 x 1180<br>
+    - iPad Mini: 768 x 1024<br>
+    - Surface Pro 7: 912 x 1368<br>
+    - Surface Duo: 540 x 720<br>
+    - Samsung Galaxy A51/71: 412 x 914<br>
+    - Nest hub: 1024 x 600<br>
+    - Nest Hub Max: 1280 x 800<br>
+    </details>
+    <br>
 
-    ![gif walkthrough of Portfolio responsive design features](assets/images/readme/testing/manual/06-faq-response.gif)
+![gif walkthrough of Portfolio responsive design features](assets/images/readme/testing/manual/06-faq-response.gif)
+<br>
 
-#### Contact 
+<hr>
 
-Testing of Page load:
+## **| Contact |** 
+<br>
+
+**Testing of Page load:**
+<br>
+
   - navigating to contact page via the index navigation menu to confirm link works, and to demonstrate correct page loading
   - page loads all elements
   - bug with navigation button where it appears as end state before starting animation. this has been logged with more information in the bugs section
 
-Navigation:
+**Navigation:**
+<br>
+
   - button transitions on `hover` and when clicked are same as index, work optimally.
   - all buttons perform correct transition on `hover`
   - social button scrolls user to footer where social links reside
 
-footer:
+**footer:**
+<br>
+
  - social media icons highlight with correct colours on `hover`
  - icon links open social pages in seperate tab
 
-Contact form:
+**Contact form:**
+<br>
+
   - form will not submit unless required fields are filled
   - email field must contain a valid email address or form will not submit
   - element changes on `focus` to match style of active navigation button
   - form will post data to https://formdump.codeinstitute.net/ to show form works (for assessment purposes)
+  <br>
 
-  ![gif walkthrough of contact page on desktop screen](assets/images/readme/testing/manual/07-contact-dt-full.gif) 
+![gif walkthrough of contact page on desktop screen](assets/images/readme/testing/manual/07-contact-dt-full.gif) 
+<br>
 
-testing responsive design:
+**testing responsive design:**
+<br>
+
   - navigation button changes to mobile friendly size on resolutions below 1000px
   - Page works with all resolutions listed in chrome.
-  - tested resolutions:
-    - desktop: 1290 x 1080
-    - iPhone SE: 375 x 667
-    - iPhone XR: 414 x 896
-    - iPhone 12 Pro: 390 x 844
-    - Google Pixel 5: 393 x 851
-    - Samsung Galaxy S8+: 360 x 740
-    - Samsung Galaxy S20 Ultra: 412 x 915
-    - iPad Air: 820 x 1180
-    - iPad Mini: 768 x 1024
-    - Surface Pro 7: 912 x 1368
-    - Surface Duo: 540 x 720
-    - Samsung Galaxy Fold: 280 x 653
-    - Samsung Galaxy A51/71: 412 x 914
-    - Nest hub: 1024 x 600
-    - Nest Hub Max: 1280 x 800
+    <details><summary>tested resolutions</summary>
+    - desktop: 1290 x 1080<br>
+    - iPhone SE: 375 x 667<br>
+    - iPhone XR: 414 x 896<br>
+    - iPhone 12 Pro: 390 x 844<br>
+    - Google Pixel 5: 393 x 851<br>
+    - Samsung Galaxy S8+: 360 x 740<br>
+    - Samsung Galaxy S20 Ultra: 412 x 915<br>
+    - iPad Air: 820 x 1180<br>
+    - iPad Mini: 768 x 1024<br>
+    - Surface Pro 7: 912 x 1368<br>
+    - Surface Duo: 540 x 720<br>
+    - Samsung Galaxy Fold: 280 x 653 <br>
+    - Samsung Galaxy A51/71: 412 x 914<br>
+    - Nest hub: 1024 x 600<br>
+    - Nest Hub Max: 1280 x 800<br>
+    </details>
+    <br>
 
-    ![gif walkthrough of contact responsive design features](assets/images/readme/testing/manual/08-contact-response.gif)
+![gif walkthrough of contact responsive design features](assets/images/readme/testing/manual/08-contact-response.gif)
+<br>
 
-#### About
+<hr>
 
-Testing of Page load:
+## **| About |**
+
+**Testing of Page load:**
+
   - navigating to contact page via the index navigation menu to confirm link works, and to demonstrate correct page loading
   - page loads all elements
   - Opening animations load correctly
+<br>
 
-  ![gif walkthrough of about page on desktop screen](assets/images/readme/testing/manual/09-about-dt-full.gif) 
+![gif walkthrough of about page on desktop screen](assets/images/readme/testing/manual/09-about-dt-full.gif) 
+<br>
 
-testing responsive design:
+**testing responsive design:**
+<br>
+
   - navigation button changes to mobile friendly size on resolutions below 1000px
   - Page works with all resolutions listed in chrome. with the exception of the galaxy fold. this has been logged in bugs with    more information.
-  - tested resolutions:
-    - desktop: 1290 x 1080
-    - iPhone SE: 375 x 667
-    - iPhone XR: 414 x 896
-    - iPhone 12 Pro: 390 x 844
-    - Google Pixel 5: 393 x 851
-    - Samsung Galaxy S8+: 360 x 740
-    - Samsung Galaxy S20 Ultra: 412 x 915
-    - iPad Air: 820 x 1180
-    - iPad Mini: 768 x 1024
-    - Surface Pro 7: 912 x 1368
-    - Surface Duo: 540 x 720
-    - Samsung Galaxy A51/71: 412 x 914
-    - Nest hub: 1024 x 600
-    - Nest Hub Max: 1280 x 800
+    <details><summary>tested resolutions</summary>
+    - desktop: 1290 x 1080<br>
+    - iPhone SE: 375 x 667<br>
+    - iPhone XR: 414 x 896<br>
+    - iPhone 12 Pro: 390 x 844<br>
+    - Google Pixel 5: 393 x 851<br>
+    - Samsung Galaxy S8+: 360 x 740<br>
+    - Samsung Galaxy S20 Ultra: 412 x 915<br>
+    - iPad Air: 820 x 1180<br>
+    - iPad Mini: 768 x 1024<br>
+    - Surface Pro 7: 912 x 1368<br>
+    - Surface Duo: 540 x 720<br>
+    - Samsung Galaxy A51/71: 412 x 914<br>
+    - Nest hub: 1024 x 600<br>
+    - Nest Hub Max: 1280 x 800<br>
+    </details>
+    <br>
 
-    ![gif walkthrough of About responsive design features]()
+![gif walkthrough of About responsive design features]()
+<br>
 
-#### 404
+<hr>
 
-Testing of Page load:
+## **| 404 |**
+
+**Testing of Page load:**
+<br>
+
   - navigating to contact page via the index navigation menu to confirm link works, and to demonstrate correct page loading
   - page loads all elements
   - Opening animations load correctly
 
-#### 500
+<br>
 
+<hr>
 
-## Automated testing
- 
-### code validation
+## **| 500 |**
+<br>
+
+  - navigating to contact page via the index navigation menu to confirm link works, and to demonstrate correct page loading
+  - page loads all elements
+  - Opening animations load correctly
+
+<hr>
+
+## Automated Testing
+
+<hr>
+
+## **code validation**
+
+<hr>
 
 all page html was validated using the [W3C Markup Validation Service](https://validator.w3.org/)
 
-### Index 
+## **| Index |** 
 
-#### html
+### **html**
 ![Index html validation Screenshot](assets/images/readme/testing/automated/html/index.png) 
 
-#### css
+### **css**
 ![Index css validation Screenshot](assets/images/readme/testing/automated/css/index-css.png) 
 
-### About 
+<hr>
 
-#### html
+## **| About |** 
+
+### **html**
 ![About html validation Screenshot](assets/images/readme/testing/automated/html/about.png) 
 
-#### css
+### **css**
 ![about css validation Screenshot](assets/images/readme/testing/automated/css/about-css.png) 
 
-### Portfolio 
+<hr>
 
-#### html
+## **| Portfolio |** 
+
+## **html**
 ![Portfolio html validation Screenshot](assets/images/readme/testing/automated/html/portfolio.png) 
 
-#### css
+## **css**
 ![portfolio css validation Screenshot](assets/images/readme/testing/automated/css/portfolio-css.png) 
 
-### FAQ
+## **| FAQ |**
 
-#### html
+## **html**
 ![FAQ html validation Screenshot](assets/images/readme/testing/automated/html/faq.png) 
 
-#### css
+## **css**
 ![FAQ css validation Screenshot](assets/images/readme/testing/automated/css/faq-css.png) 
 
-### Contact 
+## **| Contact |**
 
-#### html
+## **html**
 ![Contact html validation Screenshot](assets/images/readme/testing/automated/html/contact.png) 
 
-#### css
+## **css**
 ![contact css validation Screenshot](assets/images/readme/testing/automated/css/contact-css.png) 
 
-### 404
+## **| 404 |**
 
-#### html
+## **html**
 ![404 html validation Screenshot](assets/images/readme/testing/automated/html/404.png) 
 
-#### css
- - as the pages 404 and 500 share the css, this image represents both
+## **css**
+- as the pages 404 and 500 share the same css, this image represents both
 ![404 and 500 css validation Screenshot](assets/images/readme/testing/automated/css/404-500-css.png) 
 
-### 500
+## **| 500 |**
 
-#### html
+## **html**
 ![500 html validation Screenshot](assets/images/readme/testing/automated/html/500.png) 
 
-## Browser Validation
-Chrome: ![Chrome desktop Screenshot](assets/images/readme/testing/automated/browser-validation/chrome-sc.png)
-Firefox: ![Chrome desktop Screenshot](assets/images/readme/testing/automated/browser-validation/firefox-sc.png) 
-Opera: ![Chrome desktop Screenshot](assets/images/readme/testing/automated/browser-validation/opera-sc.png) 
-MS Edge: ![Chrome desktop Screenshot](assets/images/readme/testing/automated/browser-validation/edge-sc.png) 
-Chrome mobile: ![Chrome desktop Screenshot](assets/images/readme/testing/automated/browser-validation/chrome-mob-sc.jpeg)
-Safari mobile: ![Safari desktop Screenshot](assets/images/readme/testing/automated/browser-validation/safari-mob-sc.jpeg) 
+<hr>
+
+## **Browser Validation**
+<br>
+
+## **Chrome:** 
+![Chrome desktop Screenshot](assets/images/readme/testing/automated/browser-validation/chrome-sc.png)
+<br><br>
+
+## **Firefox:** 
+![Chrome desktop Screenshot](assets/images/readme/testing/automated/browser-validation/firefox-sc.png)
+<br><br>
+
+## **Opera:** 
+![Chrome desktop Screenshot](assets/images/readme/testing/automated/browser-validation/opera-sc.png)
+<br><br>
+
+## **MS Edge:** 
+![Chrome desktop Screenshot](assets/images/readme/testing/automated/browser-validation/edge-sc.png)
+<br><br>
+
+## **Chrome mobile:** 
+![Chrome desktop Screenshot](assets/images/readme/testing/automated/browser-validation/chrome-mob-sc.jpeg)
+<br><br>
+
+## **Safari mobile:** 
+![Safari desktop Screenshot](assets/images/readme/testing/automated/browser-validation/safari-mob-sc.jpeg) 
+<br><br>
+
+<hr>
 
 ## User Testing
-Special thanks to the following individuals took the time to meticulously go through the site and and give me excellent feedback
-- Sarah Breen
-- Gemma Hamill
-- Chris Williams
-- Daniel Cahill
-- Omercan Cirit
-- Seun Owonikoko
-- Christina Myrvold
-- Andrea Marshall
+
+<hr>
+
+**Special thanks to the following individuals took the time to meticulously go through the site and and give me excellent feedback:**
+- Sarah Breen: tested on iOS Mobile - safari
+- Gemma Hamill: tested on iOS Mobile - Safari
+- Chris Williams: tested on PC - Browser unknown
+- Daniel Cahill: tested on Android Mobile - Chrome
+- Omercan Cirit: tested on PC - Firefox, and Android Mobile
+- Seun Owonikoko: Mentor, tested on unknown
+- Christina Myrvold: Tested on PC -Browser unknown
+- Andrea Marshall: tested on iOS Mobile
 
 Also, a big thank you to Everyone In the Code Institute Slack who took the time to have a look at my project 
