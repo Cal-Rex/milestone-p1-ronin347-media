@@ -132,7 +132,7 @@ Talking with the client the, the target Demographic/s for this business are:
 * Sports oriented therapists
 * semi-professional Athletes
 
-### User Goals
+### User Stories
 
 ### **Small Independent Businesses**
 * _As a small business owner, I need to create some short instructional videos for our new staff in regard to some of our internal work systems_
