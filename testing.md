@@ -308,3 +308,22 @@ all page html was validated using the [W3C Markup Validation Service](https://va
 
 #### html
 ![500 html validation Screenshot](assets/images/readme/testing/automated/html/500.png) 
+
+## Browser Validation
+Chrome: ![Chrome desktop Screenshot](assets/images/readme/testing/automated/browser-validation/chrome-sc.png)
+Firefox: ![Chrome desktop Screenshot](assets/images/readme/testing/automated/browser-validation/firefox-sc.png) 
+Opera: ![Chrome desktop Screenshot](assets/images/readme/testing/automated/browser-validation/opera-sc.png) 
+MS Edge: ![Chrome desktop Screenshot](assets/images/readme/testing/automated/browser-validation/edge-sc.png) 
+Chrome mobile: ![Chrome desktop Screenshot](assets/images/readme/testing/automated/browser-validation/chrome-mob-sc.jpeg) 
+
+## User Testing
+Special thanks to the following individuals took the time to meticulously go through the site and and give me excellent feedback
+- Sarah Breen
+- Chris Williams
+- Daniel Cahill
+- Andrea Marshall
+- Omercan Cirit
+- Christina Myrvold
+- Seun Owonikoko
+
+Also, a big thank you to Everyone In the Code Institute Slack who took the time to have a look at my project 
