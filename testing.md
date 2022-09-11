@@ -455,7 +455,7 @@ Below are demonstrations of the common elements and functions on each page of th
     </details>
     <br>
 
-![gif walkthrough of About responsive design features]()
+![gif walkthrough of About responsive design features](../milestone-p1-ronin347-media/assets/images/readme/testing/manual/10-about-responsive.gif)
 <br>
 
 <hr>
@@ -592,7 +592,7 @@ all page html was validated using the [W3C Markup Validation Service](https://va
 - Daniel Cahill: tested on Android Mobile - Chrome
 - Omercan Cirit: tested on PC - Firefox, and Android Mobile
 - Seun Owonikoko: Mentor, tested on unknown
-- Christina Myrvold: Tested on PC -Browser unknown
+- Christina Myrvold: Tested on PC - Browser unknown
 - Andrea Marshall: tested on iOS Mobile
 
 Also, a big thank you to Everyone In the Code Institute Slack who took the time to have a look at my project 
