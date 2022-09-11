@@ -28,9 +28,11 @@
 
 4. FEATURES
    - Design Features
-   - Home Page
-   - Contact confrimation Page
-   - Projects page
+   - index Page
+   - about Page
+   - Portfolio page
+   - FAQ Page
+   - Conatct Page
    - 404 Page
    - 500 Page
    - Features to implement in future
@@ -303,28 +305,119 @@ _Desktop/Laptop Wireframes_
  - the link to the latest project button was updated to be an extra portfolio link, as the hero image became a video
  - the portfolio link was then moved to the left of the page so as to not clash with the `fixed` nav bar which is aligned right
  - the title on the index page was animated to disappear upon the video hero loading, as the video contains branding (index only)
- <br>
+ <br><br>
 
 <hr>
 
 ## Design
 
-### Colors
+<hr>
+
+
+## **| Colors |**
 ![Original Ronin Logo](assets/images/readme/old-ronin-logo.png "Original Ronin Logo")
 
 The client's Original Logo was taken as inspiration to create a color palette for the site. the image was ran through [Colorimind.io](http://colormind.io/) to create a color palette
 
 ![Colormind Palette](assets/images/readme/colormind-palette.png "Colormind Palette")
+<br>
 
-### typography
+The Palette was used as a guide to create colours, while the red and pink and off-white were adopted into the style, a solid black (#000000) was decided upon for easy implementation of external artwork and design features created outside of Git.
+<br><br>
+
+
+### **| typography |**
 
 Taking the old Logo as a reference, Fonts were sampled from [Google fonts](https://fonts.google.com/) and new logo samples were created from the selected fonts. As the Original Logo fonts had specific rights reserved by the author, they could not be embedded within a website.
 
 ![Font samples](assets/images/readme/ronin-logo-swatch.png "Font Samples")
 
-### Imagery
+The final choices from the shortlist of fonts were:
+
+| 'Teko' for `H1` | 'Michroma' for `H2` | 'Montserrat' for `body` |
+| --------------- | ------------------- | ----------------------- |
+| ![teko sample](assets/images/readme/teko-example.png "Teko Example") | ![Michroma Sample](assets/images/readme/michroma-example.png "Michroma Example") | ![montserrat example](assets/images/readme/montserrat-example.png "Montserrat Example") |
+
+Given the client's interest in Japanese culture, and, to match the brand name, it was decided that the navigation menu should resemble somewhat of a sashimono banner.
+
+To attempt to adopt this kind of style while giving the page a more modern look (which more aligns with the content), many serif fonts were experimented with. after a lot of painstaking deliberation, 'Times New Roman' fit the style the most.
+
+|Example of Sashimono Banner from [The MET Museum](https://www.metmuseum.org/art/collection/search/23882)| Depiction of Sashimono banner sourced from [alamy.com](https://www.alamy.com/stock-photo/sashimono.html) | Rendition on site |
+| ----- | ----- | ----- |
+|![Sashimono banner](assets/images/readme/sashimono-real.jpg "Sashimono Banner") | ![Sashimono depiction](assets/images/readme/sashimono-diagram.jpg "Sashimono banner depiction") | ![Inspired navigation](assets/images/readme/sashimono-nav.png "Sashimono banner inspired navigation") |
+<br>
+
+### **| Imagery |**
+<br>
+
+Fortunately, all imagery was supplied by the client. so full consent for all imagery has been given.
+Anything that wasn't supplied by the client was created in ProCreate, namely, button backgrounds and partitions:
+
+[ink line used to partition elements, as an example.](../milestone-p1-ronin347-media/assets/images/site-wide/ink-partition-4.png)
+
+The only piece of imagery that was not supplied by the client, or created from scratch, was the [pot of Greed Card by Alan Mac](https://www.deviantart.com/alanmac95/art/Pot-of-Greed-389315492) which was sourced from [Deviantart.com](https://www.deviantart.com/), and credited on the 404 and 500 pages where it is used. Should this site go live after assessment this will be removed.
+<br><br>
+
+<hr>
 
 # FEATURES
+
+## **| Design Features |**
+
+### **Consistent Design Features**
+The following Design features are prevalent across all pages, with the exception of the 404 and 500 pages (and the index page with regard to the page header)
+- Background: background on all pages has a slow 30 second animation where the background image scales down from `scale(1.1)` to `scale(1)` to give the site a cinematic feel.
+   - backgrounds will also adjust to make sure desire focal point of image is always visible (where possible). 
+- header: contains the company logo and an H1 title separated with a grid feature. This allows for a responsive design. The texts adjusts to fit all tested screen sizes and logo always adjusts to fit within the viewing screen.
+- Navigation: The Navigation element resides within a button that remains in a fixed position, regardless of the page being scrolled. meaning users can always access the navigation menu with a click or tap. The button also adjusts in size below resolutions under 1000px and becomes more compact to accomodate the drop and change in orientation of viewport real estate.
+   - when clicked, the navigation menu expands into a vertical banner, each link is resonsive with slow expanding text to let the user know that the element is clickable/interactive.
+- Body text: With the exception of the index page (at mid-to-high resolutions), there is a blurred opaque background on all text boxes to ensure legibility and easy reading of all text.
+- Footer: The footer is at the bottom of all conventional pages. it contains respoinsive social media buttons that highlight in the relevant social media brand colours when hovered over. 
+   - a placeholder link is being used for twitter. as the client has not yet created a business twiter account. for assessment purposes it has reained on the page.
+   - The Youtube links directly link to the client's youtube channel. but at this moment they have yet to upload any public material.
+   - all social media links open in seperate tabs
+   - there is also a link to the author's Github in the bottom left, and copyright information on the right. 
+
+### **Index Page**
+When this page loads, it first loads the background and body text, then after 1 second, the hero video scrolls down from the top, followed by swiping animation entry of the navigation button and portfolio button. This give the user a peak of the body text of the page, prompting the understanding that the page can be scrolled. This is especially useful, as on landscape devices, most of the time the hero banner will take up near all of the viewport. 
+another minor prompt is added with the use of the ink partition aong the bottom of the video, further implying there is more below the hero video.
+
+ - **Hero Video**
+   - kept under 50mb to ensure web optimisation
+
+ - **Watch our portfolio**
+   - this alternative link to the portfolio appears on the bottom left of the hero video. This is responsive to lower screen resolutions. On mobile, it changes to a red ink splash instead of black and aligns to the bottom right of the video. Changing it to a link that can be tapped and avoid a hover animation that would be obsolete on a touchpad device. 
+
+ - **Tell your Story**
+   - This introductory page text gives a brief overview of the purpose of this site, it also gives prompts to different sections in the site with their intended use. links to the pages are also embedded in the body text in addition to the navigation bar for further call to action.
+   - This section's margins adjust to always show the focal point of the background image. when this no longer becomes possible, a blurred background appears in the `div` housing the text to improve legibility. 
+
+### **About Page**
+This page uses a responsive grid layout that has a landscape design for larger screens and a portrait design for narrower screens. Images shift to accomodate the layout adjustment. all other features have already been listed in the **Consistent Design Features** section
+
+### **Portfolio page**
+This page consists of multiple grids stacked as block elements to give a strong pattern and continuity with other pages. Like the About page, this page has landscape focused grids for each block. which adjust to portrait orientation as necessary when resolution shifts. Each Section contains branding or a background representing the company/person or topic it is about.
+  - all videos on this page are sourced from the client's youtube.
+  - videos embedded into iframes allows for responsive aspect ratio on videos as resolution adjusts
+
+### **FAQ Page**
+The most straightforward of all pages. Following the site wide design, each Question is stached in a margined block element, complete with all **Consistent Design Features** listed.
+
+### **Contact Page**
+This page contains a singular block element housing the contact form. To have some congruence with site design. when a `text` input or `textarea` field is in `focus`, the style of the field changes to match the navigation style when it is in `focus`. The Button to submit the form also adopts the same styling, but on `hover` instead of `focus`.
+  - **Contact form**
+   - both the name and email field require information to be entered
+   - the email field will only accept a valid email
+   - form data is posted to [https://formdump.codeinstitute.net/](https://formdump.codeinstitute.net/) for assessment purposes.
+
+### **404 Page**
+following a different, but simplistic style to the rest of the site. this page calls to a meme that the client finds amusing. the page is simplistic, it displays the 404 error, then after 1 second, the [Pot of Greed](/alanmac95/art/Pot-of-Greed-389315492) card is "played" on the page. it glows with a yellow border and scales slightly in size on `hover`. the prompt on the page tells the user to click it to return to the homepage. The card image is anchored to the Index. The page also credits the artist.
+
+### **500 Page**
+Shares all same design features as 404, only one line of text is changed.
+
+###
+   - Features to implement in future
 
 # BUGS
 * navigation buttons not responding to hover
