@@ -5,6 +5,18 @@
 
 ## Contents
 
+1. User Stories
+  1. User Stories: Answered
+  2. Site Goals: Achieved
+2. Manual Testing
+  1. index page
+  2. Portfolio page
+  3. FAQ page
+  4. Contact page
+  5. About page
+  6. 404 page
+  7. 500 page
+
 
 ### User Stories
 
@@ -44,7 +56,7 @@
  - In addition to the index page sample video, the portfolio also displays exmaples for work like this. 
  - Site content is optimised for web, demonstrating products can be suitable for blogging.
 
-#### Based on the User Goals, this website needs to achieve the following:
+#### Based on the User Stories, this website needs to achieve the following:
 1. _"Demonstrate what this company does"_
  - the index page covers this with visual demonstration and introductory text in the body
  - the about page give more information on the company goal and the type of service provided
@@ -256,6 +268,36 @@ Testing of Page load:
 
   ![gif walkthrough of about page on desktop screen](assets/images/readme/testing/manual/09-about-dt-full.gif) 
 
+testing responsive design:
+  - navigation button changes to mobile friendly size on resolutions below 1000px
+  - Page works with all resolutions listed in chrome. with the exception of the galaxy fold. this has been logged in bugs with    more information.
+  - tested resolutions:
+    - desktop: 1290 x 1080
+    - iPhone SE: 375 x 667
+    - iPhone XR: 414 x 896
+    - iPhone 12 Pro: 390 x 844
+    - Google Pixel 5: 393 x 851
+    - Samsung Galaxy S8+: 360 x 740
+    - Samsung Galaxy S20 Ultra: 412 x 915
+    - iPad Air: 820 x 1180
+    - iPad Mini: 768 x 1024
+    - Surface Pro 7: 912 x 1368
+    - Surface Duo: 540 x 720
+    - Samsung Galaxy A51/71: 412 x 914
+    - Nest hub: 1024 x 600
+    - Nest Hub Max: 1280 x 800
+
+    ![gif walkthrough of About responsive design features]()
+
+#### 404
+
+Testing of Page load:
+  - navigating to contact page via the index navigation menu to confirm link works, and to demonstrate correct page loading
+  - page loads all elements
+  - Opening animations load correctly
+
+#### 500
+
 
 ## Automated testing
  
@@ -328,11 +370,12 @@ Safari mobile: ![Safari desktop Screenshot](assets/images/readme/testing/automat
 ## User Testing
 Special thanks to the following individuals took the time to meticulously go through the site and and give me excellent feedback
 - Sarah Breen
+- Gemma Hamill
 - Chris Williams
 - Daniel Cahill
-- Andrea Marshall
 - Omercan Cirit
-- Christina Myrvold
 - Seun Owonikoko
+- Christina Myrvold
+- Andrea Marshall
 
 Also, a big thank you to Everyone In the Code Institute Slack who took the time to have a look at my project 

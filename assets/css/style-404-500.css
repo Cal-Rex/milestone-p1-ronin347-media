@@ -8,13 +8,6 @@
     display: block;
 }
 
-html,
-body {
-    margin: 0;
-    height: 100%;
-    overflow: hidden
-}
-
 head {
     display: none;
 }
@@ -81,7 +74,7 @@ a:hover {
 
 .text-2 {
     display: block;
-    margin: 10px auto;
+    margin: 10px auto 2em auto;
     width: 66%;
     z-index: 2;
     text-shadow: 2px 2px #00000094;
@@ -89,9 +82,8 @@ a:hover {
 }
 
 .pot-img {
-    margin: 0 auto;
-    width: 30%;
     z-index: -1;
+    pointer-events: none;
     animation-name: pog-move;
     animation-timing-function: ease-in;
     animation-duration: 0.1s;
@@ -101,6 +93,7 @@ a:hover {
 .pot-img img {
     position: relative;
     top: 200%;
+    pointer-events: auto;
     width: auto;
     height: 450px;
     margin: 0 auto;
@@ -121,20 +114,41 @@ a:hover {
 
 /* footer */
 .acknowledgements {
-    position: absolute;
-    bottom: 0;
-    right: 0;
     text-align: right;
-    color: #f7f7f8
+    color: #f7f7f8;
+}
+
+.acknowledgements p {
+    padding: 0% 2% 1% 0%;
 }
 
 /* media queries */
+@media screen and (min-width: 1000px) {
+    html,
+    body {
+        margin: 0;
+        height: 100%;
+        overflow: hidden
+    }
+    .acknowledgements {
+        position: absolute;
+        bottom: 1%;
+        right: 2%;
+}
+}
+
+@media screen and (max-height: 700px) {
+    .pot-img img {
+        height: 50vh;
+}
+
 @media screen and (max-width: 315px) {
     .pot-img img {
         width: 100vw;
         height: auto;
         transition-duration: 0s;
     }
+}
 }
 
 /* animations */
