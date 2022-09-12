@@ -86,7 +86,7 @@ nav {
     height: 65px;
     line-height: 65px;
     pointer-events: auto;
-    background: url(../images/site-wide/pb1flip.png) no-repeat;
+    background: url(../images/site-wide/pb1flip.webp) no-repeat;
     background-size: 365px;
     background-position: 0% 77%;
     border-radius: 20px;
@@ -177,7 +177,7 @@ header {
 }
 
 .logo {
-    background: url(../images/site-wide/ronin-logo-clip.png) no-repeat;
+    background: url(../images/site-wide/ronin-logo-clip.webp) no-repeat;
     background-size: contain;
     background-position: 50%;
 }
@@ -241,7 +241,7 @@ header {
 .ink-partition {
     width: 100%;
     height: 200px;
-    background: url(../images/site-wide/ink-partition-4.png) no-repeat center;
+    background: url(../images/site-wide/ink-partition.webp) no-repeat center;
     background-size: cover;
     position: absolute;
     z-index: 1;

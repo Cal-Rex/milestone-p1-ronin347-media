@@ -35,7 +35,7 @@ body {
 }
 
 .bg {
-    background: url(../images/index/index-bg-b.png) no-repeat, #00000022;
+    background: url(../images/index/index-bg.webp) no-repeat, #00000022;
     background-blend-mode: overlay;
     background-position: right;
     background-size: cover;
@@ -51,7 +51,7 @@ body {
 .ink-partition {
     width: 100%;
     height: 200px;
-    background: url(../images/site-wide/ink-partition-4.png) no-repeat center;
+    background: url(../images/site-wide/ink-partition.webp) no-repeat center;
     background-size: cover;
     position: absolute;
     z-index: 1;
@@ -91,7 +91,7 @@ nav {
     height: 65px;
     line-height: 65px;
     pointer-events: auto;
-    background: url(../images/site-wide/pb1flip.png) no-repeat;
+    background: url(../images/site-wide/pb1flip.webp) no-repeat;
     background-size: 365px;
     background-position: 0% 77%;
     border-radius: 20px;
@@ -242,7 +242,7 @@ nav {
     z-index: 10 !important;
     text-decoration: none;
     color: #f8f8f7;
-    background: url(../images/index/pb1.png) no-repeat;
+    background: url(../images/index/pb1.webp) no-repeat;
     background-position: 100% 40%;
     background-size: 400px;
     border-radius: 10px;
@@ -262,7 +262,7 @@ nav {
     letter-spacing: 2px;
     font-family: 'Times New Roman', Times, serif;
     padding: 20px 15px 17px 40px !important;
-    background: url(../images/index/pb2.png) no-repeat !important;
+    background: url(../images/index/pb2.webp) no-repeat !important;
     background-position: 0% 50% !important;
     transition-duration: 1s;
     animation-duration: 1s;
@@ -569,7 +569,7 @@ nav {
         bottom: 0%;
         z-index: 10 !important;
         text-decoration: none;
-        background: url(../images/index/pb2.png) no-repeat;
+        background: url(../images/index/pb2.webp) no-repeat;
         background-position: 100% 30%;
         background-size: 400px;
         border-radius: 10px 10px 10px 0px;
