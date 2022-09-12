@@ -221,7 +221,7 @@ Below are demonstrations of the common elements and functions on each page of th
   - links in body text act as secondary links to other pages within the site. all work properly when clicked. and are responsive on `hover`
 <br>
 
-![gif walkthrough of index page on desktop screen](../milestone-p1-ronin347-media/assets/images/readme/testing/manual/01-index-dt-full.gif "gif walkthrough of index page on desktop screen")
+![gif walkthrough of index page on desktop screen](assets/images/readme/testing/manual/01-index-dt-full.gif "gif walkthrough of index page on desktop screen")
 
 <br>
 
@@ -459,7 +459,7 @@ Below are demonstrations of the common elements and functions on each page of th
     </details>
     <br>
 
-![gif walkthrough of About responsive design features](../milestone-p1-ronin347-media/assets/images/readme/testing/manual/10-about-responsive.gif "gif walkthrough of About responsive design features")
+![gif walkthrough of About responsive design features](assets/images/readme/testing/manual/10-about-responsive.gif "gif walkthrough of About responsive design features")
 <br>
 
 <hr>
@@ -494,7 +494,7 @@ Below are demonstrations of the common elements and functions on each page of th
 
 | 404 | 500 |
 | ----- | ----- |
-| [gif walkthrough of 404 design features](../milestone-p1-ronin347-media/assets/images/readme/testing/manual/11-404-dt-responsive.gif "gif walkthrough of 404 design features") | [gif walkthrough of 500 design features](../milestone-p1-ronin347-media/assets/images/readme/testing/manual/12-500-dt-responsive.gif "gif walkthrough of 500 design features") |
+| [gif walkthrough of 404 design features](assets/images/readme/testing/manual/11-404-dt-responsive.gif "gif walkthrough of 404 design features") | [gif walkthrough of 500 design features](assets/images/readme/testing/manual/12-500-dt-responsive.gif "gif walkthrough of 500 design features") |
 
 <hr>
 

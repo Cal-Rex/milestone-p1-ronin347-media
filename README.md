@@ -441,8 +441,8 @@ This page contains a singular block element housing the contact form to have som
 <hr>
 
 ### **404 Page**
-Following a different, but simplistic style to the rest of the site. This page calls to a meme that the client finds amusing. the page is simplistic, it displays the 404 error, then after 1 second, the [Pot of Greed](../milestone-p1-ronin347-media/assets/images/404-500/pot-of-greed.png) card is "played" on the page. It glows with a yellow border and scales slightly in size on `hover` to signify to the user that it is an interactive element. The prompt on the page – and the card, tells the user to click it to return to the homepage. The card image is anchored to the Index.
- - This image was bought royalty free on [sketchfab.com](https://sketchfab.com/3d-models/pot-of-greed-yugioh-049d734aa46845ec9f74a5d2a8a16b05) ([proof of purchase](../milestone-p1-ronin347-media/assets/images/readme/pot-of-greed-pop.png)) and then edited into a card style using MS PowerPoint and MS Paint.
+Following a different, but simplistic style to the rest of the site. This page calls to a meme that the client finds amusing. the page is simplistic, it displays the 404 error, then after 1 second, the [Pot of Greed](assets/images/404-500/pot-of-greed.png) card is "played" on the page. It glows with a yellow border and scales slightly in size on `hover` to signify to the user that it is an interactive element. The prompt on the page – and the card, tells the user to click it to return to the homepage. The card image is anchored to the Index.
+ - This image was bought royalty free on [sketchfab.com](https://sketchfab.com/3d-models/pot-of-greed-yugioh-049d734aa46845ec9f74a5d2a8a16b05) ([proof of purchase](assets/images/readme/pot-of-greed-pop.png)) and then edited into a card style using MS PowerPoint and MS Paint.
  <br><br>
 
 ### **500 Page**
