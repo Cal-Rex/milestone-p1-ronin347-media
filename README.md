@@ -461,6 +461,51 @@ After testing and discussion with test users, the following features may be impl
 
 # BUGS
 
+## **Resolved Bugs**
+**navigation buttons not responding to hover**
+- error in code targeting wrong element
+
+**Main page video hero image not fitting in container**
+- fixed with 3rd party code benmarshall.me
+
+**hero video not adapting to smaller screen sizes**
+- resolved by adjusting with media queries
+- bug now obsolete after implementing code from [Ben Marshall](https://www.benmarshall.me/responsive-iframes/)
+
+**navigation button on smaller screens has an unwanted line solid white line that appears**
+- fixed by adding positioning media query in navigation class
+
+**media queries for screen widths of 800px~ not working**
+- resolved by identifying conflict in pre-existing media queries
+
+**about-bg animation frame jittery and not static on resolutions narrower than 1000px**
+- vertical edges hidden with ink partition design.
+- Page redesigned, bug now obsolete.
+
+**black background added to smaller resolutions to hide jittery horizontal borders on animation**
+- bug and solution now obselete as structure of website changed to grid display
+
+**contact box exceeding viewport width when inder 950px~**
+- contact form completely rebuilt, issue no longer persists
+
+**contact box background overlapping ink partition even though overflow rule set**
+- solved by adding a top border to hide the break in black background and ink partition
+
+**Links in nav not clickable**
+- resolved by re-working nav bar to use Javascript from [W3schools](https://www.w3schools.com/howto/howto_js_accordion.asp)
+
+**some images not loading after first deployment:**
+- filepaths were absolute, changed to relative.
+
+**scroll bar toggling repeatedly on 404**
+- fixed with 3rd party code found on [Stack Overflow](https://stackoverflow.com/questions/28411499/disable-scrolling-on-body)
+
+**navigation bar preventing interaction with rest of site**
+fixed by implementing `pointer-events: none` to Nav element and `pointer-events: auto` to child elements of nav
+<br><br>
+
+## **Unresolved Bugs**
+
 **index video does not autoplay on safari/iOS devices**
 - tried resolving this with various suggestions across the internet. The common solution was to add `playsinline` to the `video` tag, however, while this makes the video playable, it does not enable an autoplay function.
 

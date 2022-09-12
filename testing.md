@@ -506,18 +506,18 @@ _Lighthouse_, in google chrome dev tools was used to primarily check accessibili
 
 | Index | About | Portfolio |
 | ----- | ----- | --------- |
-| ![Index Lighthouse score](../milestone-p1-ronin347-media/assets/images/readme/testing/automated/lighthouse/index-lighthouse.png) | ![About Lighthouse score](../milestone-p1-ronin347-media/assets/images/readme/testing/automated/lighthouse/about-lighthouse.png) | ![portfolio Lighthouse score](../milestone-p1-ronin347-media/assets/images/readme/testing/automated/lighthouse/portfolio-lighthouse.png) |
+| ![Index Lighthouse score](assets/images/readme/testing/automated/lighthouse/index-lighthouse.png) | ![About Lighthouse score](assets/images/readme/testing/automated/lighthouse/about-lighthouse.png) | ![portfolio Lighthouse score](assets/images/readme/testing/automated/lighthouse/portfolio-lighthouse.png) |
 <br>
 
 | FAQ | Contact |
 | ----- | ----- | 
-| ![FAQ Lighthouse score](../milestone-p1-ronin347-media/assets/images/readme/testing/automated/lighthouse/faq-lighthouse.png) | ![Contact Lighthouse score](../milestone-p1-ronin347-media/assets/images/readme/testing/automated/lighthouse/contact-lighthouse.png) |
+| ![FAQ Lighthouse score](assets/images/readme/testing/automated/lighthouse/faq-lighthouse.png) | ![Contact Lighthouse score](assets/images/readme/testing/automated/lighthouse/contact-lighthouse.png) |
 <br>
 
 | 404 | 500 |
 | ----- | ----- | 
-| ![404 Lighthouse score](../milestone-p1-ronin347-media/assets/images/readme/testing/automated/lighthouse//404-lighthouse.png) | ![500 Lighthouse score](../milestone-p1-ronin347-media/assets/images/readme/testing/automated/lighthouse/500-lighthouse.png) |
-<br><br>
+| ![404 Lighthouse score](assets/images/readme/testing/automated/lighthouse//404-lighthouse.png) | ![500 Lighthouse score](assets/images/readme/testing/automated/lighthouse/500-lighthouse.png) |
+<br>
 
 Issues flagged by lighthouse:
 - Index: Video network payload is main cause of lowering score for index performance, video will need to be revised by client in future
