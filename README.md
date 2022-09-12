@@ -1,3 +1,4 @@
+![amiresponsive render](../milestone-p1-ronin347-media/assets/images/readme/amiresponsive.png)
 # RONIN 347
 ## Media Production and consultancy
 <hr>
@@ -510,6 +511,9 @@ After testing and discussion with test users, the following features may be impl
 - Used ot create the ink line used for partitions and the background for buttons
 <br><br>
 
+**[GIMP - GNU Image Manipulation Program](https://www.gimp.org/)**
+- Used to convert images to .WEBP format.
+
 **[MS Word](https://www.microsoft.com/en-us/microsoft-365/word)**
 - Used to spellcheck and format text.
 <br><br>
@@ -561,20 +565,65 @@ After testing and discussion with test users, the following features may be impl
 <hr>
 
 # DEPLOYMENT
+This Site was created, developed, manages and stored on Github and Gitpod.
+
+The site is deployed on Github Pages, the following steps can be replicated to achieve the same result:
+1. Sign up/create an account with Github (or, log in with existing details).
+2. locate this repository (repo) by using the _search_ function.
+3. once clicked into the the repo, click the settings cogwheel at the top right of the project.
+4. navigate to the pages section.
+5. Navigate to source, select `main` from the dropdown menu to designate what branch to deploy.
+6. Once this has been selected, the page will refresh and the site will begin to deply. This could take some time.
+7. once the page has been deployed you will be able to see it on the right hand side of the main repo page.
+8. you can click into the deployment page and then click "view deployment" to ge the deployed link.
+
+This project was developed using GitPod, which was then committed and pushed to GitHub using the GitPod terminal.
+
+Deploying on GitHub Pages
+To deploy this page to GitHub Pages from its GitHub repository, the following steps were taken:
+
+Log into GitHub or create an account.
+Locate the GitHub Repository.
+At the top of the repository, select Settings from the menu items.
+Scroll down the Settings page to the "Pages" section.
+Under "Source" click the drop-down menu labelled "None" and select "Main".
+Upon selection, the page will automatically refresh meaning that the website is now deployed.
+Scroll back down to the "Pages" section to retrieve the deployed link.
 
 <hr>
 
 # CREDITS
 
-Video iframe on main page
-https://www.benmarshall.me/responsive-iframes/
+Content and Media:
+All Main media not created by myself was contributed by [Ronin347 Media © 2022](https://cal-rex.github.io/milestone-p1-ronin347-media/index.html)
+
+Video iframe on main page:
+[Ben Marshall](https://www.benmarshall.me/responsive-iframes/)
 
 creating and uploading favicon:
-https://www.lcn.com/blog/beginners-guide-favicons/- instructions on how to implement favicon
-http://faviconer.com/ - for creating favicon
+[lcn](https://www.lcn.com/blog/beginners-guide-favicons/) - instructions on how to implement favicon
+[faviconer.com](http://faviconer.com/) - for creating favicon
 
+Javasciript to make interactive navigation button:
+[w3schools: how to make an accordion](https://www.w3schools.com/howto/howto_js_accordion.asp)
+
+Code:
+The following sites were used as general rsources and reference for correct writing of code:
+[Stack Overflow](https://stackoverflow.com/)
+[W3Schools](https://www.w3schools.com/)
+[css-tricks](https://css-tricks.com/)
+[Adam-p on Github](https://github.com/adam-p/markdown-here)
+[google.com](google.com)
 
 <hr>
 
 # ACKNOWLEDGEMENTS
 
+- Many thanks to every individual on slack who helped tackle the bugs on my site as they cropped up
+- Thank you to Chris Williams for helping me with placing my script
+- Thank you to Lucy Woodman who helped me understand linking headings in markdown
+- Thank you to Christina Myrvold for her meticulous critique of features on the site
+- Thank you to Sarah Breen and Gemma Hammil, who tested the site rigorously on iOS devices
+- Thank you to Code institute student care team for accomodating an extension on my time due to Covid-19
+- Thank you to my partner for her patience with my obsessiveness over this project
+- Many thanks to My mentor, Seun, for her guidance, even though due to my own poor time management i was unable to get a final mentoring session in before the deadline.
