@@ -1,4 +1,4 @@
-![amiresponsive render](../milestone-p1-ronin347-media/assets/images/readme/amiresponsive.png)
+![amiresponsive render](assets/images/readme/amiresponsive.png)
 # RONIN 347
 ## Media Production and Consultancy
 <hr>
@@ -356,7 +356,7 @@ To attempt to adopt this kind of style while giving the page a more modern look 
 Fortunately, all photographic imagery was supplied by the client. so full consent for all imagery has been given.
 Anything that wasn't supplied by the client was created in Apple Procreate, MS PowerPoint, MS Paint and GIMP.
 
-[ink line used to partition elements, as an example.](../milestone-p1-ronin347-media/assets/images/site-wide/ink-partition-4.png)
+[ink line used to partition elements, as an example.](assets/images/site-wide/ink-partition.webp)
 <br><br>
 
 <hr>
