@@ -51,8 +51,8 @@
     - Programs
 <br><br>
 
-6. [TESTING](https://github.com/Cal-Rex/milestone-p1-ronin347-media/blob/main/testing.md#-index-)
-  - Contained as a seperate document [here](https://github.com/Cal-Rex/milestone-p1-ronin347-media/blob/main/testing.md#-index-)
+6. [TESTING](testing.md)
+  - Contained as a seperate document [here](testing.md)
    <br><br>
 
 7. [DEPLOYMENT](#deployment)
@@ -587,7 +587,7 @@ After testing and discussion with test users, the following features may be impl
 <br><br>
 
 **[Cloud Converter](https://cloudconvert.com/mp4-to-gif)**
-- Used to convert screen captures into gifs to reduce file size in repo and [testing.md](https://github.com/Cal-Rex/milestone-p1-ronin347-media/blob/main/testing.md#-index-).
+- Used to convert screen captures into gifs to reduce file size in repo and [testing.md](testing.md).
 <br><br>
 
 **[Opera](https://www.opera.com/)**
