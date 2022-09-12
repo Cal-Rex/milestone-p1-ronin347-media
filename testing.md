@@ -20,7 +20,8 @@
     6. 404 page
     7. 500 page
 3. [Automated Testing](#automated-testing)
-    1. Code Validation
+    1. Lighthouse Testing
+    2. Code Validation
        1. index page
        2. about page
        2. Portfolio page
@@ -28,7 +29,7 @@
        4. Contact page
        6. 404 page
        7. 500 page
-    2. [Browser Validation](#browser-validation)
+    3. [Browser Validation](#browser-validation)
 4. [User Testing](#user-testing)
     <br><br>
 
@@ -499,6 +500,29 @@ Below are demonstrations of the common elements and functions on each page of th
 ## Automated Testing
 
 <hr>
+
+## **Lighthouse Testing**
+_Lighthouse_, in google chrome dev tools was used to primarily check accessibility of each page:
+
+| Index | About | Portfolio |
+| ----- | ----- | --------- |
+| ![Index Lighthouse score](../milestone-p1-ronin347-media/assets/images/readme/testing/automated/lighthouse/index-lighthouse.png) | ![About Lighthouse score](../milestone-p1-ronin347-media/assets/images/readme/testing/automated/lighthouse/about-lighthouse.png) | ![portfolio Lighthouse score](../milestone-p1-ronin347-media/assets/images/readme/testing/automated/lighthouse/portfolio-lighthouse.png) |
+<br>
+
+| FAQ | Contact |
+| ----- | ----- | 
+| ![FAQ Lighthouse score](../milestone-p1-ronin347-media/assets/images/readme/testing/automated/lighthouse/faq-lighthouse.png) | ![Contact Lighthouse score](../milestone-p1-ronin347-media/assets/images/readme/testing/automated/lighthouse/contact-lighthouse.png) |
+<br>
+
+| 404 | 500 |
+| ----- | ----- | 
+| ![404 Lighthouse score](../milestone-p1-ronin347-media/assets/images/readme/testing/automated/lighthouse//404-lighthouse.png) | ![500 Lighthouse score](../milestone-p1-ronin347-media/assets/images/readme/testing/automated/lighthouse/500-lighthouse.png) |
+<br><br>
+
+Issues flagged by lighthouse:
+- Index: Video network payload is main cause of lowering score for index performance, video will need to be revised by client in future
+- Portfolio: youtube embeds flagging with external errors. Could not find how to resolve issue from the Ronin site end and all videos work as planned.
+<br><br>
 
 ## **code validation**
 
