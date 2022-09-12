@@ -533,60 +533,60 @@ All page html and css was validated using the [W3C Markup Validation Service](ht
 ## **| Index |** 
 
 ### **html**
-![Index html validation Screenshot](assets/images/readme/testing/automated/html/index.png) 
+[Index html validation Screenshot](assets/images/readme/testing/automated/html/index.png) 
 
 ### **css**
-![Index css validation Screenshot](assets/images/readme/testing/automated/css/index-css.png) 
+[Index css validation Screenshot](assets/images/readme/testing/automated/css/index-css.png) 
 
 <hr>
 
 ## **| About |** 
 
 ### **html**
-![About html validation Screenshot](assets/images/readme/testing/automated/html/about.png) 
+[About html validation Screenshot](assets/images/readme/testing/automated/html/about.png) 
 
 ### **css**
-![about css validation Screenshot](assets/images/readme/testing/automated/css/about-css.png) 
+[about css validation Screenshot](assets/images/readme/testing/automated/css/about-css.png) 
 
 <hr>
 
 ## **| Portfolio |** 
 
 ## **html**
-![Portfolio html validation Screenshot](assets/images/readme/testing/automated/html/portfolio.png) 
+[Portfolio html validation Screenshot](assets/images/readme/testing/automated/html/portfolio.png) 
 
 ## **css**
-![portfolio css validation Screenshot](assets/images/readme/testing/automated/css/portfolio-css.png) 
+[portfolio css validation Screenshot](assets/images/readme/testing/automated/css/portfolio-css.png) 
 
 ## **| FAQ |**
 
 ## **html**
-![FAQ html validation Screenshot](assets/images/readme/testing/automated/html/faq.png) 
+[FAQ html validation Screenshot](assets/images/readme/testing/automated/html/faq.png) 
 
 ## **css**
-![FAQ css validation Screenshot](assets/images/readme/testing/automated/css/faq-css.png) 
+[FAQ css validation Screenshot](assets/images/readme/testing/automated/css/faq-css.png) 
 
 ## **| Contact |**
 
 ## **html**
-![Contact html validation Screenshot](assets/images/readme/testing/automated/html/contact.png) 
+[Contact html validation Screenshot](assets/images/readme/testing/automated/html/contact.png) 
 
 ## **css**
-![contact css validation Screenshot](assets/images/readme/testing/automated/css/contact-css.png) 
+[contact css validation Screenshot](assets/images/readme/testing/automated/css/contact-css.png) 
 
 ## **| 404 |**
 
 ## **html**
-![404 html validation Screenshot](assets/images/readme/testing/automated/html/404.png) 
+[404 html validation Screenshot](assets/images/readme/testing/automated/html/404.png) 
 
 ## **css**
 - as the pages 404 and 500 share the same css, this image represents both
-![404 and 500 css validation Screenshot](assets/images/readme/testing/automated/css/404-500-css.png) 
+[404 and 500 css validation Screenshot](assets/images/readme/testing/automated/css/404-500-css.png) 
 
 ## **| 500 |**
 
 ## **html**
-![500 html validation Screenshot](assets/images/readme/testing/automated/html/500.png) 
+[500 html validation Screenshot](assets/images/readme/testing/automated/html/500.png) 
 
 <hr>
 
@@ -594,27 +594,27 @@ All page html and css was validated using the [W3C Markup Validation Service](ht
 <br>
 
 ## **Chrome:** 
-![Chrome desktop Screenshot](assets/images/readme/testing/automated/browser-validation/chrome-sc.png)
+[Chrome desktop Screenshot](assets/images/readme/testing/automated/browser-validation/chrome-sc.png)
 <br><br>
 
 ## **Firefox:** 
-![Chrome desktop Screenshot](assets/images/readme/testing/automated/browser-validation/firefox-sc.png)
+[Chrome desktop Screenshot](assets/images/readme/testing/automated/browser-validation/firefox-sc.png)
 <br><br>
 
 ## **Opera:** 
-![Chrome desktop Screenshot](assets/images/readme/testing/automated/browser-validation/opera-sc.png)
+[Chrome desktop Screenshot](assets/images/readme/testing/automated/browser-validation/opera-sc.png)
 <br><br>
 
 ## **MS Edge:** 
-![Chrome desktop Screenshot](assets/images/readme/testing/automated/browser-validation/edge-sc.png)
+[Chrome desktop Screenshot](assets/images/readme/testing/automated/browser-validation/edge-sc.png)
 <br><br>
 
 ## **Chrome mobile:** 
-![Chrome desktop Screenshot](assets/images/readme/testing/automated/browser-validation/chrome-mob-sc.jpeg)
+[Chrome desktop Screenshot](assets/images/readme/testing/automated/browser-validation/chrome-mob-sc.jpeg)
 <br><br>
 
 ## **Safari mobile:** 
-![Safari desktop Screenshot](assets/images/readme/testing/automated/browser-validation/safari-mob-sc.jpeg) 
+[Safari desktop Screenshot](assets/images/readme/testing/automated/browser-validation/safari-mob-sc.jpeg) 
 <br><br>
 
 <hr>
@@ -624,7 +624,7 @@ All page html and css was validated using the [W3C Markup Validation Service](ht
 <hr>
 
 **Special thanks to the following individuals took the time to meticulously go through the site and and give me excellent feedback:**
-- Sarah Breen: tested on iOS Mobile - safari
+- Sarah Breen: tested on iOS Mobile - Safari
 - Gemma Hamill: tested on iOS Mobile - Safari
 - Chris Williams: tested on PC - Browser unknown
 - Daniel Cahill: tested on Android Mobile - Chrome
