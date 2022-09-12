@@ -33,7 +33,7 @@
    - About Page
    - Portfolio page
    - FAQ Page
-   - Conatct Page
+   - Contact Page
    - 404 Page
    - 500 Page
    - Features to Implement in Future
@@ -433,6 +433,7 @@ The most straightforward of all pages. Following the site wide design, each Ques
 ### **Contact Page**
 This page contains a singular block element housing the contact form to have some congruence with site design. When a `text` input or `textarea` field is in `focus`, the style of the field changes to match the navigation button style when it is in `focus`. The Button to submit the form also adopts the same styling, but on `hover` instead of `focus`.
   - **Contact form**
+   - Original contact form was sourced directly from the [Code Institute Love running Project](https://github.com/Code-Institute-Org/love-running-2.0) when walkthrough was being conducted prior to this project. Style and structure was used as a basline, then fields were changed and re-styled to fit the pages needs.
    - Both the name and email field require information to be entered
    - The email field will only accept a valid email
    - Form data is posted to [https://formdump.codeinstitute.net/](https://formdump.codeinstitute.net/) for assessment purposes.
@@ -650,6 +651,11 @@ creating and uploading favicon:
 
 Javasciript to make interactive navigation button:
 [w3schools: how to make an accordion](https://www.w3schools.com/howto/howto_js_accordion.asp)
+
+Initial Contact form structure in addition to hosting a database to `post` form data to: 
+[Code Institute GitHub repo for Love Running](https://github.com/Code-Institute-Org/love-running-2.0)
+[Code institute](https://codeinstitute.net/) - https://formdump.codeinstitute.net/ 
+
 
 Code:
 The following sites were used as general rsources and reference for correct writing of code:
