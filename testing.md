@@ -529,7 +529,11 @@ Issues flagged by lighthouse:
 
 <hr>
 
-All page html and css was validated using the [W3C Markup Validation Service](https://validator.w3.org/)
+All page html and css was validated using the [W3C Markup Validation Service](https://validator.w3.org/), both by direct input and then by full URI in the final testing stages. It is worth noting at this point that the final validation for all pages revealed this level 0 warning. It pertains to a piece of code that was implemented to fix a bug with the navigation.
+
+![Jigsaw warning for all pages](assets/images/readme/testing/automated/jigsaw/jigsaw-warnings.png)
+
+According to the validator it does not carry much of a risk. This code will be considered for updating in the future however. 
 
 ## **| Index |** 
 
@@ -538,6 +542,9 @@ All page html and css was validated using the [W3C Markup Validation Service](ht
 
 ### **css**
 [Index css validation Screenshot](assets/images/readme/testing/automated/css/index-css.png) 
+
+### **Final Jigsaw Report**
+![Index jigsaw report](assets/images/readme/testing/automated/jigsaw/jigsaw-index.png)
 
 <hr>
 
@@ -549,6 +556,9 @@ All page html and css was validated using the [W3C Markup Validation Service](ht
 ### **css**
 [about css validation Screenshot](assets/images/readme/testing/automated/css/about-css.png) 
 
+### **Final Jigsaw Report**
+![About jigsaw report](assets/images/readme/testing/automated/jigsaw/jigsaw-about.png)
+
 <hr>
 
 ## **| Portfolio |** 
@@ -559,6 +569,11 @@ All page html and css was validated using the [W3C Markup Validation Service](ht
 ## **css**
 [portfolio css validation Screenshot](assets/images/readme/testing/automated/css/portfolio-css.png) 
 
+### **Final Jigsaw Report**
+![Portfolio jigsaw report](assets/images/readme/testing/automated/jigsaw/jigsaw-portfolio.png)
+
+<hr>
+
 ## **| FAQ |**
 
 ## **html**
@@ -567,6 +582,11 @@ All page html and css was validated using the [W3C Markup Validation Service](ht
 ## **css**
 [FAQ css validation Screenshot](assets/images/readme/testing/automated/css/faq-css.png) 
 
+### **Final Jigsaw Report**
+![FAQ jigsaw report](assets/images/readme/testing/automated/jigsaw/jigsaw-faq.png)
+
+<hr>
+
 ## **| Contact |**
 
 ## **html**
@@ -574,6 +594,11 @@ All page html and css was validated using the [W3C Markup Validation Service](ht
 
 ## **css**
 [contact css validation Screenshot](assets/images/readme/testing/automated/css/contact-css.png) 
+
+### **Final Jigsaw Report**
+![Contact jigsaw report](assets/images/readme/testing/automated/jigsaw/jigsaw-contact.png)
+
+<hr>
 
 ## **| 404 |**
 
@@ -588,6 +613,9 @@ All page html and css was validated using the [W3C Markup Validation Service](ht
 
 ## **html**
 [500 html validation Screenshot](assets/images/readme/testing/automated/html/500.png) 
+
+### **Final Jigsaw Report**
+![404 + 500 jigsaw report](assets/images/readme/testing/automated/jigsaw/jigsaw-404-500.png)
 
 <hr>
 
@@ -634,4 +662,4 @@ All page html and css was validated using the [W3C Markup Validation Service](ht
 - Christina Myrvold: Tested on PC - Browser unknown
 - Andrea Marshall: tested on iOS Mobile
 
-Also, a big thank you to Everyone In the Code Institute Slack who took the time to have a look at my project 
+Also, a big thank you to Everyone In the Code Institute Slack who took the time to have a look at my project. 
